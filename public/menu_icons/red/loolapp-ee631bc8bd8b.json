@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "loolapp",
+  "private_key_id": "ee631bc8bd8b44a0c0f1a6f7d0528a19849ebbcd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0i7SAthSdgr7V\nlafnV/mk1+QGOZrL3tj4cH03lEpTXJqeUsQ2NUXRwChNbuDlsHKyQtIBIGebr9bz\nZh4qjY/YJMR+11dZHe34NvKQhXQ+4x0RdS3em5FWB6WCGUDn+hMy7RraqjAdDoPA\n9m3pk5503ig+ZCf9IDOSZBnBY+iHHXvSLnXpWzu9m5ph6FgQFDlNxlfcI9Nij8gT\nQppzaVMraZV36OWkyzx+XXctInHoPGjiCCPTleGSDfS+SiMaX69QqXE+gRSNL09+\n7OMK8YxYkW3+MuGLde/P8tarG0C6mqhT6eDcPtDG26nYENrruBK6JfsiJIMve7kk\ncybf/XHrAgMBAAECggEAIeLgx5GlL+UExVi38VtZPz/IDAUO0Tnr1kFityZNhvTo\nDlQxgI0iJBqhVds8OdASzvNssApxd86alQdzHQCB4YsRGE95lP/hlMdXYpmxtkXx\nREAOkmv3bMK1pUPxIzkUFmhbNHRh4GpDf1mhSohK4tt5iTBKMx+ynkTMcrg6QfWN\nHAQC1lrIaNftI7pXPJPiVjASFgp5F2F1frSeUyscbLNR+oijYxfYsRVd0skXT7QK\n5zq/8pemOXhb5FGtooaPN2O2jLYjn+yJSNprWNcJZ7RQcOukBmepR8UzKOSNwrxB\nFDYe7Xx9fFZs6eG0xzYqEd38t6BasV5/0cxzB5PxSQKBgQDtCjt85Cu1lZyP2CI7\nt/UKsisif9xabkxkFhKSh87LhwTo3iXejxZEnZkEZS9WSkvlcW+COTCFyD/Wxa8p\ntY4Mc7CWY1EhosFaFLn0w/+HCWJdESc2ZAA8Zr7IgE1ylidvUbxCWUIITZYmVDMe\nqb9fwNoTyk7Ty83+46XUcLKQSQKBgQDC/Knvfbd+q/A5J3p65URysX4A1rHx2uRl\nY/H/6X4WjYP+J/gJs8qOEgdPMxJVopgUkVnzpd8vtKXZMZEZi1vlkTT2Mc24CW0H\nNidli9YIn7OYTd9Zpxt3QTvnKcztjWUlqhDVRCg/+GeL+rDRxM7vBCjFYBMoWFJT\ntz+1j//YkwKBgCVVYT0warn00G3PasThGlUO7sBGRxxvFtUErPQrM6TWpS1QH8LH\n4of4EmugzC3ZEc8XaKqn+z525accB5SYJcFMT1nAVrznd3CKpycn340TK0zhML3e\nTjM1M4M8wfX0NE3SH8aLbF0Ga0mqJUsFDUE1jKNlT7kH9m/YxvuIrHcRAoGBAIrZ\nu/Wkc5/LtrQsjcaoLvbxuAXG3U6aDpy48GLJlhVfTwgU1EesdWh4JCZc+whqUZwL\n6Z9cljN1k8i3yFkFaTpwDePnkVQlujMxeBqS2qanew/RHGTOX/urQ4oYtSrQzp9k\nnLoR4Au1y57dtT6bxLRmJNZw1ROc2Xtt+ftEAO/rAoGACX34oaQcKwXuTJBKUcS+\nqW5refuWQv3ZeFyKvocuxC7VXeWHM2t0JVXwM9lUzOx6y2zYIXkDFVqNneHsXaQJ\nU96mLc6jvjxUdwQ2ZAifploVPpPx/qIazGOnJJHajSsYNQDtYA7/xIvDWWyOYdJh\nXII6Y5sH6fju/RfR5H/ZcXE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "loolapp@loolapp.iam.gserviceaccount.com",
+  "client_id": "100225853232658684675",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/loolapp%40loolapp.iam.gserviceaccount.com"
+}
