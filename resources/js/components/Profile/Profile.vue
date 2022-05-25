@@ -279,10 +279,10 @@
 
           } else {
             if (this.actualy_date.diff(last_date_connection, 'days') >= 1) {
-              this.actualy_date.diff(last_date_connection, "days") + ' días'
+              return this.actualy_date.diff(last_date_connection, "days") + ' días'
             } else {
               if (this.actualy_date.diff(last_date_connection, 'minute') < 1) {
-                this.actualy_date.diff(last_date_connection, "seconds") + ' s'
+               return  this.actualy_date.diff(last_date_connection, "seconds") + ' s'
               }
             }
           }
