@@ -117,7 +117,7 @@
                         <div class="form-group boxed" v-if="usuario.role_id == 2">
                             <div class="input-wrapper">
                                 <label class="form-label" style="font-size:15px" for="name5">Descripción</label>
-                                <textarea id="address5" rows="6" maxlength="300" v-model="description"
+                                <textarea id="address5" rows="6" maxlength="90" v-model="description"
                                     class="form-control"></textarea>
                                 <i class="clear-input">
                                     <ion-icon name="close-circle" role="img" class="md hydrated"
@@ -127,7 +127,7 @@
                             <div class="invalid-input" style="text-align: left;" v-if="error_description == false">
                                 {{ error_desc_msg }}
                             </div>
-                            <p style="text-align: left;" class="mt-1">{{description?description.length:0}}/300</p>
+                            <p style="text-align: left;" class="mt-1">{{description?description.length:0}}/90</p>
                         </div>
                         <div class="mt-2">
                             <button class="btn btn-primary bg-primary-loole btn-block btn-lg rounded"
@@ -280,12 +280,12 @@
                     this.error_desc_msg = "Debes ingresar una descripción";
                     return;
                 } else {
-                    if (this.description.length > 300) {
+                    if (this.description.length > 90) {
                         this.error_description = false;
                         this.error_desc_msg = "La descripción es muy larga";
                         return;
                     } else {
-                        if (this.description != "" || this.description.length <= 300) {
+                        if (this.description != "" || this.description.length <= 90) {
                             this.error_description = true;
                             this.error_desc_msg = "";
                             return;

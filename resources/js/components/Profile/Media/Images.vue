@@ -19,10 +19,10 @@
                       v-lazy.container="publi.image" />
                   </a>
                 </div>
-                <div v-else class="imagen animated fadeIn">
-                  <a>
-                    <img @click="showFileBlock()" src="/images/blocked.svg" />
-                  </a>
+                <div v-else class="imagen animated fadeIn background-blocked">
+                    <div class="center">
+                      <img src="/images/blocked.svg" class="img-blocked" />
+                    </div>
                 </div>
 
               </div>
@@ -140,4 +140,6 @@
 </script>
 
 <style>
+ 
+
 </style>

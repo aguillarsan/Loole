@@ -24,9 +24,7 @@
         <div id="profile_content">
           <div class="section mt-2">
             <div class="profile-head">
-
               <div class="avatar">
-
                 <img v-lazy.container="usuario.profile_image" v-if="my_profile" alt="avatar"
                   class="imaged w64 rounded" />
                 <img v-lazy.container="looler.profile_image" v-if="looler.length != 0" alt="avatar"
@@ -38,7 +36,7 @@
                   {{!my_profile ? looler.name:''}}
 
                   <img v-if="my_profile && usuario.status_id == 3 && usuario.role_id == 2 "
-                    src="/images/sello/sello.svg" style="margin-top: -2px" />
+                    src="/images/sello/sello.svg"  />
                   <img v-if="looler.length != 0 && looler.status_id == 3 " src="/images/sello/sello.svg"
                     style="margin-top: -2px" />
                 </h3>
@@ -155,16 +153,13 @@
                 <Videos :user_id="my_profile ? usuario.id : (looler.length != 0 ? looler.id:'')" :usuario="usuario"
                   v-if="tab == 3">
                 </Videos>
-
               </div>
-
             </div>
           </div>
           <!-- * tab content -->
         </div>
       </div>
     </div>
-
   </div>
 </template>
 

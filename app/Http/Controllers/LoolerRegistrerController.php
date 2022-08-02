@@ -71,9 +71,6 @@ class LoolerRegistrerController extends Controller
     public function registerSuscriptor(Request $request)
     {
         $username =   uniqid();
-
-
-
         $user                = new User;
         $user->name          = $request->name;
         $user->email         = $request->email;

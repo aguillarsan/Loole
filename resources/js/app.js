@@ -10,7 +10,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 Vue.prototype.$eventBus = new Vue()
 
-// ########################## Lottie ##############################
+// ########################## vue toast ##############################
 import VueToast from 'vue-toast-notification';
 import 'vue-toast-notification/dist/theme-sugar.css';
 Vue.use(VueToast);

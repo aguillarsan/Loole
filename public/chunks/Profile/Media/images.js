@@ -251,22 +251,10 @@ var render = function () {
                                     : _c(
                                         "div",
                                         {
-                                          staticClass: "imagen animated fadeIn",
+                                          staticClass:
+                                            "imagen animated fadeIn background-blocked",
                                         },
-                                        [
-                                          _c("a", [
-                                            _c("img", {
-                                              attrs: {
-                                                src: "/images/blocked.svg",
-                                              },
-                                              on: {
-                                                click: function ($event) {
-                                                  return _vm.showFileBlock()
-                                                },
-                                              },
-                                            }),
-                                          ]),
-                                        ]
+                                        [_vm._m(0, true)]
                                       ),
                                 ]
                               )
@@ -422,7 +410,19 @@ var render = function () {
     ),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "center" }, [
+      _c("img", {
+        staticClass: "img-blocked",
+        attrs: { src: "/images/blocked.svg" },
+      }),
+    ])
+  },
+]
 render._withStripped = true
 
 

@@ -79,10 +79,6 @@ class User extends Authenticatable
         if (request()->username) {
             $query->where('username', 'like', "%" . request()->username . "%")->orWhere('name','like', "%" . request()->username . "%");
         }
-
-         
-        
-
     }
 
     

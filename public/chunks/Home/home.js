@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["chunks/Home/home"],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/home.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/home.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/homev2.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/homev2.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -75,227 +75,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 Vue.component("InfiniteLoading", __webpack_require__(/*! vue-infinite-loading */ "./node_modules/vue-infinite-loading/dist/vue-infinite-loading.js"));
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["usuario", "notification", "mobile"],
   components: {
     Hooper: hooper__WEBPACK_IMPORTED_MODULE_2__["Hooper"],
     Slide: hooper__WEBPACK_IMPORTED_MODULE_2__["Slide"],
@@ -305,35 +90,10 @@ Vue.component("InfiniteLoading", __webpack_require__(/*! vue-infinite-loading */
   },
   data: function data() {
     return {
-      notification_home: this.notification,
       posts: [],
-      files: [],
       infiniteId: +new Date(),
-      page: 1,
-      actualy_date: moment__WEBPACK_IMPORTED_MODULE_1___default()(),
-      report_options: [{
-        option: "Menores"
-      }, {
-        option: "Abuso"
-      }, {
-        option: "Drogas"
-      }, {
-        option: "Inapropiado"
-      }, {
-        option: "Otros"
-      }],
-      id_post_report: "",
-      post_select: []
+      page: 1
     };
-  },
-  created: function created() {
-    var self = this;
-    this.$eventBus.$on("refresh-home", function () {
-      self.refreshInfiniteLoading();
-    });
-    this.$eventBus.$on("update-notification-home", function () {
-      self.notificationActive();
-    });
   },
   methods: {
     infiniteHandler: function infiniteHandler($state) {
@@ -350,169 +110,6 @@ Vue.component("InfiniteLoading", __webpack_require__(/*! vue-infinite-loading */
           $state.complete();
         }
       });
-    },
-    saveIdPost: function saveIdPost(post) {
-      if (this.mobile) {
-        this.id_post_report = post;
-      }
-    },
-    notificationActive: function notificationActive(data) {
-      var _this2 = this;
-
-      if (this.usuario.role_id == 2) {
-        axios.get('/notification/status/user').then(function (response) {
-          _this2.notification_home = response.data;
-        });
-      }
-    },
-    validateProfile: function validateProfile() {
-      this.$eventBus.$emit('notification-account-inactive');
-    },
-    playVideo: function playVideo(vid) {
-      $("#modalVideo").modal("show");
-      var video = document.getElementById("videoPlayer");
-      this.$refs.videoplay.src = vid;
-      this.$refs.videoplay.load();
-      video.play();
-    },
-    displayBtn: function displayBtn(index) {
-      if (btn.style.display != "block") {
-        var _btn = document.getElementById("btn_video" + index);
-
-        _btn.style.display = "block";
-      }
-    },
-    updatePost: function updatePost() {
-      this.posts = [];
-      this.page = 0;
-      this.$refs.InfiniteLoadingHome.$emit('$InfiniteLoading:reset');
-    },
-    showFile: function showFile(post) {
-      this.$eventBus.$emit('show-gallery', post);
-    },
-    formatPrice: function formatPrice(value) {
-      parseInt(value);
-
-      if (value % 1 == 0) {
-        return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-      } else {
-        var val = (value / 1).toFixed(2).replace(".", ",");
-        return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-      }
-    },
-    shortName: function shortName(name) {
-      if (name.length > 15) {
-        var first_letters = name.substr(0, 15) + "...";
-        return first_letters;
-      } else {
-        if (name.length < 15) {
-          return name;
-        }
-      }
-    },
-    getname: function getname(name) {
-      return name;
-    },
-    searchDisplay: function searchDisplay() {
-      this.$eventBus.$emit('search-bar');
-    },
-    shortDescription: function shortDescription(description) {
-      if (description.length >= 160) {
-        var first_letters = description.substr(0, 160) + "...";
-        return first_letters;
-      } else {
-        if (description.length <= 160) {
-          return description;
-        }
-      }
-    },
-    getIndex: function getIndex(index, id) {
-      console.log(index, id);
-      return index;
-    },
-    userpost: function userpost(post_buy) {
-      var _this3 = this;
-
-      var post_buy_check = post_buy.find(function (data) {
-        return data.user_id == _this3.usuario.id;
-      });
-
-      if (post_buy_check) {
-        return true;
-      } else {
-        return false;
-      }
-    },
-    totalvideo: function totalvideo(video) {
-      var total = 0;
-
-      for (var i = 0; i < video.length; i++) {
-        var data = video[i];
-
-        if (data.video != null) {
-          total++;
-        }
-      }
-
-      return total;
-    },
-    totalimagenes: function totalimagenes(imagen) {
-      var total_img = 0;
-
-      for (var i = 0; i < imagen.length; i++) {
-        var data = imagen[i];
-
-        if (data.image != null) {
-          total_img++;
-        }
-      }
-
-      return total_img;
-    },
-    totalBuy: function totalBuy(post) {
-      var total_post = 0;
-
-      for (var i = 0; i < post.length; i++) {
-        var data = post[i];
-
-        if (data.image != null) {
-          total_post++;
-        }
-      }
-
-      return total_post;
-    },
-    reportPost: function reportPost(post, motivo) {
-      var _this4 = this;
-
-      var formData = new FormData();
-      formData.append('post_id', this.id_post_report != "" ? this.id_post_report : post.id);
-      formData.append('motivo', motivo);
-      axios.post('/report-post', formData).then(function (response) {
-        Vue.$toast.open({
-          message: response.data.message,
-          type: response.data.type,
-          position: 'top',
-          duration: 2000
-        });
-
-        if (response.data.type == 'success') {
-          _this4.sedMailNotificaionReport(response.data.report);
-        }
-      });
-    },
-    sedMailNotificaionReport: function sedMailNotificaionReport(data) {
-      var formData = new FormData();
-      formData.append('post_id', data.post_id);
-      formData.append('user_id', data.user_id);
-      formData.append('reason', data.reason);
-      axios.post('/email-notification-report', formData).then(function (response) {});
-    },
-    refreshInfiniteLoading: function refreshInfiniteLoading() {
-      console.log("hola");
-      this.posts = [];
-      this.page = 0;
-      this.$refs.InfiniteLoading.$emit("$InfiniteLoadingHome:reset");
     }
   }
 });
@@ -637,6 +234,25 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/homev2.vue?vue&type=style&index=0&lang=css&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/homev2.vue?vue&type=style&index=0&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.img-full-height {\n    height: 100vh !important;\n}\n.hooper-slide.is-current {\n    transform: scale(1.2);\n}\n.contenedor-img {\n    position: relative !important;\n    height: 100vh !important;\n    overflow: scroll !important;\n    background-color: white;\n    -ms-scroll-snap-type: y mandatory !important;\n        scroll-snap-type: y mandatory !important;\n}\n\n", ""]);
+
+// exports
+
 
 /***/ }),
 
@@ -942,10 +558,40 @@ webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/home.vue?vue&type=template&id=4aeb8eb4&":
-/*!************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/home.vue?vue&type=template&id=4aeb8eb4& ***!
-  \************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/homev2.vue?vue&type=style&index=0&lang=css&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/homev2.vue?vue&type=style&index=0&lang=css& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./homev2.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/homev2.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/homev2.vue?vue&type=template&id=957d2fa0&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/homev2.vue?vue&type=template&id=957d2fa0& ***!
+  \**************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -959,1006 +605,256 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { attrs: { id: "appCapsule" } },
     [
-      _c(
-        "div",
-        { attrs: { id: "appCapsule" } },
-        [
-          _c(
-            "div",
-            { attrs: { id: "post_home" } },
-            [
-              _vm._l(_vm.posts, function (post, indexM) {
-                return _c(
-                  "div",
-                  {
-                    key: indexM,
-                    staticClass: "section  ",
-                    attrs: { id: "card_post" },
-                  },
-                  [
-                    _c("div", { staticClass: "card no-box-shadow" }, [
-                      _c(
-                        "div",
-                        { staticClass: "card-header no-boreder-bottom" },
-                        [
-                          _c(
-                            "div",
-                            { staticClass: "d-flex align-items-center" },
-                            [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: " font_sixteen",
-                                  staticStyle: { "font-weight": "700" },
-                                  attrs: {
-                                    to: {
-                                      path: "/" + post.user.username,
-                                      params: { usermane: post.user.username },
-                                    },
-                                  },
-                                },
-                                [
-                                  _c("div", { staticClass: "image-wrapper" }, [
-                                    _c("img", {
-                                      staticClass: "imaged rounded avatar_post",
+      _vm._l(_vm.posts, function (post, indexM) {
+        return _c(
+          "div",
+          { key: indexM, staticClass: "section", attrs: { id: "card_post" } },
+          [
+            _c(
+              "hooper",
+              { staticStyle: { height: "100vh" } },
+              [
+                post.post_image.length > 1
+                  ? _c("hooper-pagination", {
+                      attrs: { slot: "hooper-addons" },
+                      slot: "hooper-addons",
+                    })
+                  : _vm._e(),
+                _vm._v(" "),
+                post.post_image.length > 1
+                  ? _c("hooper-navigation", {
+                      attrs: { slot: "hooper-addons", id: "hopper_addons" },
+                      slot: "hooper-addons",
+                    })
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm._l(post.post_image, function (img, index) {
+                  return _c("slide", { key: index, attrs: { index: index } }, [
+                    post.locked == 1 && post.user_id != _vm.usuario.id
+                      ? _c("div", [
+                          _vm.userpost(post.post_buy) == true
+                            ? _c("div", [
+                                img.image != null
+                                  ? _c("img", {
+                                      directives: [
+                                        {
+                                          name: "lazy",
+                                          rawName: "v-lazy.container",
+                                          value: img.image,
+                                          expression: "img.image",
+                                          modifiers: { container: true },
+                                        },
+                                      ],
+                                      staticClass: "img-fluid img-full-height ",
                                       attrs: {
-                                        src: post.user.profile_image,
-                                        alt: "image",
+                                        alt: "Image placeholder",
+                                        id: "img_post",
                                       },
-                                    }),
-                                  ]),
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "mx-3" }, [
+                                      on: {
+                                        click: function ($event) {
+                                          return _vm.showFile(post.post_image)
+                                        },
+                                      },
+                                    })
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                img.thumbail
+                                  ? _c("img", {
+                                      directives: [
+                                        {
+                                          name: "lazy",
+                                          rawName: "v-lazy.container",
+                                          value: img.thumbail,
+                                          expression: "img.thumbail",
+                                          modifiers: { container: true },
+                                        },
+                                      ],
+                                      staticClass: "img-fluid img-full-height ",
+                                      attrs: {
+                                        alt: "Image placeholder",
+                                        id: "img_post",
+                                      },
+                                    })
+                                  : _vm._e(),
+                                _vm._v(" "),
                                 _c(
                                   "div",
+                                  {
+                                    staticClass:
+                                      "video_play_profile hover_link",
+                                  },
                                   [
                                     _c(
-                                      "router-link",
+                                      "button",
                                       {
-                                        staticClass: " font_sixteen",
-                                        staticStyle: { "font-weight": "700" },
+                                        staticClass:
+                                          "btn btn-secondary bg-secondary-loole   hover_link ",
+                                        staticStyle: { "margin-top": "8%" },
                                         attrs: {
-                                          to: {
-                                            path: "/" + post.user.username,
-                                            params: {
-                                              usermane: post.user.username,
-                                            },
+                                          type: "button",
+                                          id: "btn_video" + img.id,
+                                        },
+                                        on: {
+                                          click: function ($event) {
+                                            return _vm.playVideo(img.video)
                                           },
                                         },
                                       },
                                       [
-                                        _vm._v(
-                                          "\n\n                    " +
-                                            _vm._s(
-                                              post.user.username
-                                                ? _vm.shortName(
-                                                    post.user.username
-                                                  )
-                                                : post.user.name
-                                            ) +
-                                            "\n                    "
-                                        ),
-                                        _c("img", {
-                                          staticStyle: { "margin-top": "-2px" },
-                                          attrs: {
-                                            src: "/images/sello/sello.svg",
+                                        _c("ion-icon", {
+                                          staticStyle: {
+                                            "font-size": "25px",
+                                            "margin-left": "10px",
                                           },
+                                          attrs: { name: "play" },
                                         }),
-                                      ]
+                                      ],
+                                      1
                                     ),
-                                  ],
-                                  1
+                                  ]
                                 ),
-                                _vm._v(" "),
-                                _vm.actualy_date.diff(
-                                  post.created_at,
-                                  "days"
-                                ) == 0 &&
-                                _vm.actualy_date.diff(
-                                  post.created_at,
-                                  "minute"
-                                ) >= 60
-                                  ? _c(
-                                      "small",
-                                      { staticClass: "d-block font-eleven" },
-                                      [
-                                        _vm._v(
-                                          "\n                  Hace " +
-                                            _vm._s(
-                                              _vm.actualy_date.diff(
-                                                post.created_at,
-                                                "hours"
-                                              )
-                                            ) +
-                                            " hrs\n                "
-                                        ),
-                                      ]
-                                    )
-                                  : _vm._e(),
-                                _vm._v(" "),
-                                _vm.actualy_date.diff(
-                                  post.created_at,
-                                  "minute"
-                                ) < 60 &&
-                                _vm.actualy_date.diff(
-                                  post.created_at,
-                                  "minute"
-                                ) >= 1
-                                  ? _c(
-                                      "small",
-                                      { staticClass: "d-block font-eleven" },
-                                      [
-                                        _vm._v(
-                                          "\n                  Hace " +
-                                            _vm._s(
-                                              _vm.actualy_date.diff(
-                                                post.created_at,
-                                                "minute"
-                                              )
-                                            ) +
-                                            " min\n                "
-                                        ),
-                                      ]
-                                    )
-                                  : _vm._e(),
-                                _vm._v(" "),
-                                _vm.actualy_date.diff(
-                                  post.created_at,
-                                  "days"
-                                ) >= 1
-                                  ? _c(
-                                      "small",
-                                      { staticClass: "d-block font-eleven" },
-                                      [
-                                        _vm._v(
-                                          "\n                  Hace " +
-                                            _vm._s(
-                                              _vm.actualy_date.diff(
-                                                post.created_at,
-                                                "days"
-                                              )
-                                            ) +
-                                            " días\n                "
-                                        ),
-                                      ]
-                                    )
-                                  : _vm._e(),
-                                _vm._v(" "),
-                                _vm.actualy_date.diff(
-                                  post.created_at,
-                                  "minute"
-                                ) < 1
-                                  ? _c(
-                                      "small",
-                                      { staticClass: "d-block font-eleven" },
-                                      [
-                                        _vm._v(
-                                          "\n                  Hace " +
-                                            _vm._s(
-                                              _vm.actualy_date.diff(
-                                                post.created_at,
-                                                "seconds"
-                                              )
-                                            ) +
-                                            " s\n                "
-                                        ),
-                                      ]
-                                    )
-                                  : _vm._e(),
-                              ]),
-                              _vm._v(" "),
-                              _vm.usuario.id != post.user_id
-                                ? _c(
-                                    "div",
-                                    { staticClass: "text-end ms-auto" },
-                                    [
-                                      _c("div", { staticClass: "dropstart" }, [
-                                        _c(
-                                          "a",
-                                          {
-                                            staticClass: "text-secondary",
-                                            attrs: {
-                                              "aria-expanded": "false",
-                                              "data-bs-toggle": _vm.mobile
-                                                ? "offcanvas"
-                                                : "dropdown",
-                                              href: "javascript:",
-                                              id: "dropdownMarketingCard",
-                                              "data-bs-target": _vm.mobile
-                                                ? "#actionSheetDefault"
-                                                : "",
-                                            },
-                                            on: {
-                                              click: function ($event) {
-                                                return _vm.saveIdPost(post.id)
-                                              },
-                                            },
-                                          },
-                                          [
-                                            _c("ion-icon", {
-                                              staticStyle: {
-                                                "font-size": "20px",
-                                                color: "grey",
-                                              },
-                                              attrs: {
-                                                name: "ellipsis-vertical-outline",
-                                              },
-                                            }),
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "ul",
-                                          {
-                                            staticClass:
-                                              " dropdown-menu dropdown-menu-lg-start px-2 py-3 box-s-nav ",
-                                            attrs: {
-                                              "aria-labelledby":
-                                                "dropdownMarketingCard",
-                                            },
-                                          },
-                                          [
-                                            _vm._m(0, true),
-                                            _vm._v(" "),
-                                            _vm._l(
-                                              _vm.report_options,
-                                              function (options, key) {
-                                                return _c("li", { key: key }, [
-                                                  _c(
-                                                    "a",
-                                                    {
-                                                      staticClass:
-                                                        "dropdown-item border-radius-md",
-                                                      on: {
-                                                        click: function (
-                                                          $event
-                                                        ) {
-                                                          return _vm.reportPost(
-                                                            post,
-                                                            options.option
-                                                          )
-                                                        },
-                                                      },
-                                                    },
-                                                    [
-                                                      _vm._v(
-                                                        "\n                        " +
-                                                          _vm._s(
-                                                            options.option
-                                                          ) +
-                                                          "\n                      "
-                                                      ),
-                                                    ]
-                                                  ),
-                                                ])
-                                              }
-                                            ),
-                                          ],
-                                          2
-                                        ),
-                                      ]),
-                                    ]
-                                  )
-                                : _vm._e(),
-                            ],
-                            1
-                          ),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "card-body" }, [
-                        post.description
-                          ? _c("p", { staticClass: "mb-4 " }, [
-                              _vm._v(
-                                "\n              " +
-                                  _vm._s(
-                                    post.description
-                                      ? _vm.shortDescription(post.description)
-                                      : ""
-                                  ) +
-                                  "\n            "
-                              ),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          [
-                            _c(
-                              "hooper",
-                              { staticStyle: { height: "100%" } },
-                              [
-                                _vm._l(post.post_image, function (img, index) {
-                                  return _c("slide", { key: index }, [
-                                    post.locked == 1 &&
-                                    post.user_id != _vm.usuario.id
-                                      ? _c("div", [
-                                          _vm.userpost(post.post_buy) == true
-                                            ? _c("div", [
-                                                img.image != null
-                                                  ? _c("img", {
-                                                      directives: [
-                                                        {
-                                                          name: "lazy",
-                                                          rawName:
-                                                            "v-lazy.container",
-                                                          value: img.image,
-                                                          expression:
-                                                            "img.image",
-                                                          modifiers: {
-                                                            container: true,
-                                                          },
-                                                        },
-                                                      ],
-                                                      staticClass:
-                                                        "img-fluid border-radius-lg shadow",
-                                                      attrs: {
-                                                        alt: "Image placeholder",
-                                                        id: "img_post",
-                                                      },
-                                                      on: {
-                                                        click: function (
-                                                          $event
-                                                        ) {
-                                                          return _vm.showFile(
-                                                            post.post_image
-                                                          )
-                                                        },
-                                                      },
-                                                    })
-                                                  : _vm._e(),
-                                                _vm._v(" "),
-                                                img.thumbail
-                                                  ? _c("img", {
-                                                      directives: [
-                                                        {
-                                                          name: "lazy",
-                                                          rawName:
-                                                            "v-lazy.container",
-                                                          value: img.thumbail,
-                                                          expression:
-                                                            "img.thumbail",
-                                                          modifiers: {
-                                                            container: true,
-                                                          },
-                                                        },
-                                                      ],
-                                                      staticClass:
-                                                        "img-fluid border-radius-lg shadow",
-                                                      attrs: {
-                                                        alt: "Image placeholder",
-                                                        id: "img_post",
-                                                      },
-                                                    })
-                                                  : _vm._e(),
-                                                _vm._v(" "),
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass:
-                                                      "video_play_profile hover_link",
-                                                  },
-                                                  [
-                                                    _c(
-                                                      "button",
-                                                      {
-                                                        staticClass:
-                                                          "btn btn-secondary bg-secondary-loole   hover_link ",
-                                                        staticStyle: {
-                                                          "margin-top": "8%",
-                                                        },
-                                                        attrs: {
-                                                          type: "button",
-                                                          id:
-                                                            "btn_video" +
-                                                            img.id,
-                                                        },
-                                                        on: {
-                                                          click: function (
-                                                            $event
-                                                          ) {
-                                                            return _vm.playVideo(
-                                                              img.video
-                                                            )
-                                                          },
-                                                        },
-                                                      },
-                                                      [
-                                                        _c("ion-icon", {
-                                                          staticStyle: {
-                                                            "font-size": "25px",
-                                                            "margin-left":
-                                                              "10px",
-                                                          },
-                                                          attrs: {
-                                                            name: "play",
-                                                          },
-                                                        }),
-                                                      ],
-                                                      1
-                                                    ),
-                                                  ]
-                                                ),
-                                              ])
-                                            : _c("div", [
-                                                _c("img", {
-                                                  staticClass:
-                                                    "img-fluid border-radius-lg shadow",
-                                                  attrs: {
-                                                    alt: "Image placeholder",
-                                                    id: "img_post",
-                                                    src: "/images/blocked.svg",
-                                                  },
-                                                }),
-                                              ]),
-                                        ])
-                                      : _c("div", [
-                                          img.image != null
-                                            ? _c("div", [
-                                                img.image != null
-                                                  ? _c("img", {
-                                                      directives: [
-                                                        {
-                                                          name: "lazy",
-                                                          rawName:
-                                                            "v-lazy.container",
-                                                          value: img.image,
-                                                          expression:
-                                                            "img.image",
-                                                          modifiers: {
-                                                            container: true,
-                                                          },
-                                                        },
-                                                      ],
-                                                      staticClass:
-                                                        "img-fluid border-radius-lg shadow",
-                                                      attrs: {
-                                                        alt: "Image placeholder",
-                                                        id: "img_post",
-                                                      },
-                                                      on: {
-                                                        click: function (
-                                                          $event
-                                                        ) {
-                                                          return _vm.showFile(
-                                                            post.post_image
-                                                          )
-                                                        },
-                                                      },
-                                                    })
-                                                  : _vm._e(),
-                                              ])
-                                            : _vm._e(),
-                                          _vm._v(" "),
-                                          img.video
-                                            ? _c("div", [
-                                                img.thumbail
-                                                  ? _c("img", {
-                                                      directives: [
-                                                        {
-                                                          name: "lazy",
-                                                          rawName:
-                                                            "v-lazy.container",
-                                                          value: img.thumbail,
-                                                          expression:
-                                                            "img.thumbail",
-                                                          modifiers: {
-                                                            container: true,
-                                                          },
-                                                        },
-                                                      ],
-                                                      staticClass:
-                                                        "img-fluid border-radius-lg shadow",
-                                                      attrs: {
-                                                        alt: "Image placeholder",
-                                                        id: "img_post",
-                                                      },
-                                                    })
-                                                  : _vm._e(),
-                                                _vm._v(" "),
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass:
-                                                      "video_play_profile hover_link",
-                                                  },
-                                                  [
-                                                    _c(
-                                                      "button",
-                                                      {
-                                                        staticClass:
-                                                          "btn btn-secondary bg-secondary-loole   hover_link ",
-                                                        staticStyle: {
-                                                          "margin-top": "8%",
-                                                        },
-                                                        attrs: {
-                                                          type: "button",
-                                                          id:
-                                                            "btn_video" +
-                                                            img.id,
-                                                        },
-                                                        on: {
-                                                          click: function (
-                                                            $event
-                                                          ) {
-                                                            return _vm.playVideo(
-                                                              img.video
-                                                            )
-                                                          },
-                                                        },
-                                                      },
-                                                      [
-                                                        _c("ion-icon", {
-                                                          staticStyle: {
-                                                            "font-size": "25px",
-                                                            "margin-left":
-                                                              "10px",
-                                                          },
-                                                          attrs: {
-                                                            name: "play",
-                                                          },
-                                                        }),
-                                                      ],
-                                                      1
-                                                    ),
-                                                  ]
-                                                ),
-                                              ])
-                                            : _vm._e(),
-                                        ]),
-                                  ])
+                              ])
+                            : _c("div", [
+                                _c("img", {
+                                  staticClass: "img-fluid img-full-height",
+                                  attrs: {
+                                    alt: "Image placeholder",
+                                    id: "img_post",
+                                    src: "/images/blocked.svg",
+                                  },
                                 }),
-                                _vm._v(" "),
-                                post.post_image.length > 1
-                                  ? _c("hooper-pagination", {
-                                      attrs: { slot: "hooper-addons" },
-                                      slot: "hooper-addons",
-                                    })
-                                  : _vm._e(),
-                                _vm._v(" "),
-                                post.post_image.length > 1
-                                  ? _c("hooper-navigation", {
+                              ]),
+                        ])
+                      : _c("div", [
+                          img.image != null
+                            ? _c("div", [
+                                img.image != null
+                                  ? _c("img", {
+                                      directives: [
+                                        {
+                                          name: "lazy",
+                                          rawName: "v-lazy.container",
+                                          value: img.image,
+                                          expression: "img.image",
+                                          modifiers: { container: true },
+                                        },
+                                      ],
+                                      staticClass: "img-fluid img-full-height ",
                                       attrs: {
-                                        slot: "hooper-addons",
-                                        id: "hopper_addons",
+                                        alt: "Image placeholder",
+                                        id: "img_post",
                                       },
-                                      slot: "hooper-addons",
+                                      on: {
+                                        click: function ($event) {
+                                          return _vm.showFile(post.post_image)
+                                        },
+                                      },
                                     })
                                   : _vm._e(),
-                              ],
-                              2
-                            ),
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          {
-                            staticStyle: {
-                              width: "100%",
-                              display: "flex",
-                              "flex-flow": "row wrap",
-                              "align-items": "center",
-                              "justify-content": "space-between",
-                              padding: "16px 0",
-                            },
-                          },
-                          [
-                            _c(
-                              "div",
-                              {
-                                staticStyle: {
-                                  display: "flex",
-                                  "flex-flow": "row wrap",
-                                  "align-items": "center",
-                                  "justify-content": "flex-start",
-                                },
-                              },
-                              [
-                                _c("a", [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "d-flex align-items-center",
-                                    },
-                                    [
-                                      _c("ion-icon", {
-                                        staticClass: "md hydrated",
-                                        staticStyle: { "font-size": "22px" },
-                                        attrs: {
-                                          name: "videocam-outline",
-                                          role: "img",
-                                        },
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          img.video
+                            ? _c("div", [
+                                img.thumbail
+                                  ? _c("img", {
+                                      directives: [
                                         {
-                                          staticClass: "text-sm me-3 ",
-                                          staticStyle: { "margin-left": "5px" },
+                                          name: "lazy",
+                                          rawName: "v-lazy.container",
+                                          value: img.thumbail,
+                                          expression: "img.thumbail",
+                                          modifiers: { container: true },
                                         },
-                                        [
-                                          _vm._v(
-                                            "\n                      " +
-                                              _vm._s(
-                                                _vm.totalvideo(post.post_image)
-                                              ) +
-                                              "\n                    "
-                                          ),
-                                        ]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                ]),
+                                      ],
+                                      staticClass: "img-fluid img-full-height ",
+                                      attrs: {
+                                        alt: "Image placeholder",
+                                        id: "img_post",
+                                      },
+                                    })
+                                  : _vm._e(),
                                 _vm._v(" "),
-                                _c("a", [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "d-flex align-items-center",
-                                    },
-                                    [
-                                      _c("ion-icon", {
-                                        staticClass: "md hydrated",
-                                        staticStyle: { "font-size": "22px" },
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "video_play_profile hover_link",
+                                  },
+                                  [
+                                    _c(
+                                      "button",
+                                      {
+                                        staticClass:
+                                          "btn btn-secondary bg-secondary-loole   hover_link ",
+                                        staticStyle: { "margin-top": "8%" },
                                         attrs: {
-                                          name: "image-outline",
-                                          role: "img",
+                                          type: "button",
+                                          id: "btn_video" + img.id,
                                         },
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "text-sm me-3 ",
-                                          staticStyle: { "margin-left": "6px" },
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                      " +
-                                              _vm._s(
-                                                _vm.totalimagenes(
-                                                  post.post_image
-                                                )
-                                              ) +
-                                              "\n                    "
-                                          ),
-                                        ]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                ]),
-                              ]
-                            ),
-                            _vm._v(" "),
-                            post.locked == 1
-                              ? _c("a", [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "d-flex align-items-center justify-content-sm-end",
-                                    },
-                                    [
-                                      _c("ion-icon", {
-                                        staticClass: "md hydrated",
-                                        staticStyle: { "font-size": "22px" },
-                                        attrs: {
-                                          name: "cash-outline",
-                                          role: "img",
-                                        },
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "text-sm ",
-                                          staticStyle: { "margin-left": "6px" },
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                    " +
-                                              _vm._s(post.post_buy.length) +
-                                              "\n                  "
-                                          ),
-                                        ]
-                                      ),
-                                    ],
-                                    1
-                                  ),
-                                ])
-                              : _vm._e(),
-                          ]
-                        ),
-                        _vm._v(" "),
-                        post.locked == 1 && post.user_id != _vm.usuario.id
-                          ? _c(
-                              "div",
-                              { staticClass: "row align-items-center" },
-                              [
-                                _vm.userpost(post.post_buy) == true
-                                  ? _c("div")
-                                  : _c("div", [
-                                      _c("div", { staticClass: "col-12" }, [
-                                        _c(
-                                          "a",
-                                          {
-                                            attrs: {
-                                              href:
-                                                "/purchase/detail?item=" +
-                                                post.post_key,
-                                            },
+                                        on: {
+                                          click: function ($event) {
+                                            return _vm.playVideo(img.video)
                                           },
-                                          [
-                                            _c(
-                                              "button",
-                                              {
-                                                staticClass:
-                                                  "btn btn-primary bg-primary-loole rounded me-1",
-                                                staticStyle: { width: "100%" },
-                                                attrs: { type: "button" },
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "\n                      Desbloquear publicación por CLP $" +
-                                                    _vm._s(
-                                                      _vm.formatPrice(
-                                                        post.price
-                                                      )
-                                                    ) +
-                                                    "\n                    "
-                                                ),
-                                              ]
-                                            ),
-                                          ]
-                                        ),
-                                      ]),
-                                    ]),
-                              ]
-                            )
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _c("hr", { staticClass: "horizontal dark my-3" }),
-                      ]),
-                    ]),
-                  ]
-                )
-              }),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "button bg-white goTop ",
-                  class:
-                    _vm.posts.length > 15
-                      ? "button bg-white goTop show"
-                      : "button bg-white goTop ",
-                  attrs: { href: "#topCard", id: "go_top" },
-                  on: { click: _vm.updatePost },
-                },
-                [
-                  _c("ion-icon", {
-                    staticClass: "md hydrated",
-                    attrs: {
-                      name: "arrow-up-outline",
-                      role: "img",
-                      "aria-label": "arrow up outline",
-                    },
-                  }),
-                ],
-                1
-              ),
-            ],
-            2
-          ),
-          _vm._v(" "),
-          _c(
-            "infinite-loading",
-            {
-              ref: "InfiniteLoadingHome",
-              staticStyle: { "margin-top": "50%" },
-              attrs: { identifier: _vm.infiniteId },
-              on: { infinite: _vm.infiniteHandler },
-            },
-            [
-              _c(
-                "div",
-                {
-                  staticClass: "text-white",
-                  attrs: { slot: "no-more" },
-                  slot: "no-more",
-                },
-                [_vm._v("\n        No hay más publicaciones\n      ")]
-              ),
-              _vm._v(" "),
-              _c("div", { attrs: { slot: "no-results" }, slot: "no-results" }, [
-                _vm._v("\n        No hay nada publicado aún\n      "),
-              ]),
-            ]
-          ),
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "offcanvas offcanvas-bottom action-sheet",
-          staticStyle: { visibility: "hidden" },
-          attrs: {
-            tabindex: "-1",
-            id: "actionSheetDefault",
-            "aria-hidden": "true",
-          },
-        },
-        [
-          _vm._m(1),
-          _vm._v(" "),
-          _c("div", { staticClass: "offcanvas-body" }, [
-            _c(
-              "ul",
-              { staticClass: "action-button-list" },
-              [
-                _vm._l(_vm.report_options, function (options, key) {
-                  return _c("li", { key: key }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "btn btn-list text",
-                        attrs: { href: "", "data-bs-dismiss": "offcanvas" },
-                        on: {
-                          click: function ($event) {
-                            return _vm.reportPost(options.option)
-                          },
-                        },
-                      },
-                      [_c("span", [_vm._v(_vm._s(options.option))])]
-                    ),
+                                        },
+                                      },
+                                      [
+                                        _c("ion-icon", {
+                                          staticStyle: {
+                                            "font-size": "25px",
+                                            "margin-left": "10px",
+                                          },
+                                          attrs: { name: "play" },
+                                        }),
+                                      ],
+                                      1
+                                    ),
+                                  ]
+                                ),
+                              ])
+                            : _vm._e(),
+                        ]),
                   ])
                 }),
-                _vm._v(" "),
-                _c("li", { staticClass: "action-divider" }),
-                _vm._v(" "),
-                _vm._m(2),
               ],
               2
             ),
-          ]),
-        ]
-      ),
+          ],
+          1
+        )
+      }),
       _vm._v(" "),
       _c(
-        "div",
+        "infinite-loading",
         {
-          staticClass: "modal fade modalbox",
-          staticStyle: { display: "none" },
-          attrs: {
-            id: "modalVideo",
-            "data-bs-backdrop": "static",
-            tabindex: "-1",
-            "aria-hidden": "true",
-          },
+          ref: "InfiniteLoadingHome",
+          staticStyle: { "margin-top": "50%" },
+          attrs: { identifier: _vm.infiniteId },
+          on: { infinite: _vm.infiniteHandler },
         },
         [
           _c(
             "div",
-            { staticClass: "modal-dialog", attrs: { role: "document" } },
-            [
-              _c(
-                "div",
-                {
-                  staticClass: "modal-content",
-                  staticStyle: { background: "rgb(0,0,0,0.3)" },
-                },
-                [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "modal-header",
-                      staticStyle: {
-                        background: "transparent",
-                        "border-bottom": "none",
-                      },
-                    },
-                    [
-                      _c("a", { staticClass: "profile-detail" }),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        {
-                          staticClass: "close-stories",
-                          attrs: { href: "#", "data-bs-dismiss": "modal" },
-                        },
-                        [
-                          _c("ion-icon", {
-                            staticClass: "md hydrated",
-                            staticStyle: {
-                              color: "white",
-                              "font-size": "28px",
-                            },
-                            attrs: {
-                              name: "close",
-                              role: "img",
-                              "aria-label": "close",
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("video", {
-                    ref: "videoplay",
-                    staticStyle: { width: "100%", height: "100%" },
-                    attrs: {
-                      id: "videoPlayer",
-                      controlslist: "nodownload",
-                      controls: "",
-                    },
-                  }),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "modal-body" }),
-                ]
-              ),
-            ]
+            {
+              staticClass: "text-white",
+              attrs: { slot: "no-more" },
+              slot: "no-more",
+            },
+            [_vm._v("\n            No hay más publicaciones\n        ")]
           ),
+          _vm._v(" "),
+          _c("div", { attrs: { slot: "no-results" }, slot: "no-results" }, [
+            _vm._v("\n            No hay nada publicado aún\n        "),
+          ]),
         ]
       ),
-      _vm._v(" "),
-      _c("LightGallery"),
     ],
-    1
+    2
   )
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { staticStyle: { "margin-left": "5px" } }, [
-        _c("strong", [
-          _vm._v(
-            "\n                          Reportar\n                        "
-          ),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "offcanvas-header" }, [
-      _c("h5", { staticClass: "offcanvas-title" }, [
-        _vm._v("Reportar publicación"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c(
-        "a",
-        {
-          staticClass: "btn btn-list text-danger",
-          attrs: { href: "#", "data-bs-dismiss": "offcanvas" },
-        },
-        [_c("span", [_vm._v("Cancelar")])]
-      ),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -2060,18 +956,20 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/components/Home/home.vue":
-/*!***********************************************!*\
-  !*** ./resources/js/components/Home/home.vue ***!
-  \***********************************************/
+/***/ "./resources/js/components/Home/homev2.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/Home/homev2.vue ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _home_vue_vue_type_template_id_4aeb8eb4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.vue?vue&type=template&id=4aeb8eb4& */ "./resources/js/components/Home/home.vue?vue&type=template&id=4aeb8eb4&");
-/* harmony import */ var _home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.vue?vue&type=script&lang=js& */ "./resources/js/components/Home/home.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _homev2_vue_vue_type_template_id_957d2fa0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homev2.vue?vue&type=template&id=957d2fa0& */ "./resources/js/components/Home/homev2.vue?vue&type=template&id=957d2fa0&");
+/* harmony import */ var _homev2_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./homev2.vue?vue&type=script&lang=js& */ "./resources/js/components/Home/homev2.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _homev2_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./homev2.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/Home/homev2.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -2079,10 +977,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _home_vue_vue_type_template_id_4aeb8eb4___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _home_vue_vue_type_template_id_4aeb8eb4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _homev2_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _homev2_vue_vue_type_template_id_957d2fa0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _homev2_vue_vue_type_template_id_957d2fa0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -2092,38 +990,54 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/Home/home.vue"
+component.options.__file = "resources/js/components/Home/homev2.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/components/Home/home.vue?vue&type=script&lang=js&":
-/*!************************************************************************!*\
-  !*** ./resources/js/components/Home/home.vue?vue&type=script&lang=js& ***!
-  \************************************************************************/
+/***/ "./resources/js/components/Home/homev2.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/Home/homev2.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./home.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/home.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_homev2_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./homev2.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/homev2.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_homev2_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/components/Home/home.vue?vue&type=template&id=4aeb8eb4&":
-/*!******************************************************************************!*\
-  !*** ./resources/js/components/Home/home.vue?vue&type=template&id=4aeb8eb4& ***!
-  \******************************************************************************/
+/***/ "./resources/js/components/Home/homev2.vue?vue&type=style&index=0&lang=css&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/Home/homev2.vue?vue&type=style&index=0&lang=css& ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_homev2_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./homev2.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/homev2.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_homev2_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_homev2_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_homev2_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_homev2_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/homev2.vue?vue&type=template&id=957d2fa0&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/Home/homev2.vue?vue&type=template&id=957d2fa0& ***!
+  \********************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_home_vue_vue_type_template_id_4aeb8eb4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./home.vue?vue&type=template&id=4aeb8eb4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/home.vue?vue&type=template&id=4aeb8eb4&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_home_vue_vue_type_template_id_4aeb8eb4___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_homev2_vue_vue_type_template_id_957d2fa0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./homev2.vue?vue&type=template&id=957d2fa0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/homev2.vue?vue&type=template&id=957d2fa0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_homev2_vue_vue_type_template_id_957d2fa0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_home_vue_vue_type_template_id_4aeb8eb4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_homev2_vue_vue_type_template_id_957d2fa0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

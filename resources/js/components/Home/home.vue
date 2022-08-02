@@ -1,10 +1,6 @@
 <template>
   <div>
-
-
     <div id="appCapsule">
-
-
       <div id="post_home">
         <div :key="indexM" class="section  " id="card_post" v-for="(post, indexM) in posts">
           <div class="card no-box-shadow">
@@ -79,11 +75,9 @@
             </div>
 
             <div class="card-body">
-
               <p class="mb-4 " v-if="post.description ">
                 {{ post.description ? shortDescription(post.description): '' }}
               </p>
-              <!--Images -->
               <div>
                 <hooper style="height: 100%">
                   <slide :key="index" v-for="(img, index) in post.post_image">
@@ -99,7 +93,6 @@
                             @click="playVideo(img.video)" :id="'btn_video'+img.id" style=" margin-top: 8%;">
                             <ion-icon name="play" style="font-size:25px;margin-left:10px;   "></ion-icon>
                           </button>
-
                         </div>
                       </div>
                       <div v-else="">
@@ -134,7 +127,8 @@
                   </slide>
                   <hooper-pagination slot="hooper-addons" v-if="post.post_image.length > 1">
                   </hooper-pagination>
-                  <hooper-navigation id="hopper_addons" v-if="post.post_image.length > 1" slot="hooper-addons"></hooper-navigation>
+                  <hooper-navigation id="hopper_addons" v-if="post.post_image.length > 1" slot="hooper-addons">
+                  </hooper-navigation>
                 </hooper>
               </div>
 
@@ -313,10 +307,7 @@
         self.notificationActive();
       });
 
-
-
     },
-
     methods: {
       infiniteHandler($state) {
         axios
@@ -507,7 +498,6 @@
         })
       },
       refreshInfiniteLoading() {
-        console.log("hola");
         this.posts = [];
 
         this.page = 0;

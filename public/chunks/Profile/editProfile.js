@@ -286,12 +286,12 @@ __webpack_require__.r(__webpack_exports__);
         this.error_desc_msg = "Debes ingresar una descripción";
         return;
       } else {
-        if (this.description.length > 300) {
+        if (this.description.length > 90) {
           this.error_description = false;
           this.error_desc_msg = "La descripción es muy larga";
           return;
         } else {
-          if (this.description != "" || this.description.length <= 300) {
+          if (this.description != "" || this.description.length <= 90) {
             this.error_description = true;
             this.error_desc_msg = "";
             return;
@@ -815,7 +815,7 @@ var render = function () {
                           },
                         ],
                         staticClass: "form-control",
-                        attrs: { id: "address5", rows: "6", maxlength: "300" },
+                        attrs: { id: "address5", rows: "6", maxlength: "90" },
                         domProps: { value: _vm.description },
                         on: {
                           input: function ($event) {
@@ -870,7 +870,7 @@ var render = function () {
                       [
                         _vm._v(
                           _vm._s(_vm.description ? _vm.description.length : 0) +
-                            "/300"
+                            "/90"
                         ),
                       ]
                     ),

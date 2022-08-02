@@ -9,11 +9,9 @@
             <div v-if="its_my_profile" class="imagen animated fadeIn" click="showVideo(publi.video)">
               <a>
                 <div class="video_play_profile hover_link">
-                  <button @click="showVideo(publi.video)"
-                    class="btn btn-secondary bg-secondary-loole   hover_link "><ion-icon name="play"  style="font-size:25px;margin-left:10px"></ion-icon></button>
-
+                  <img src="/menu_icons/white/play.svg" class="icon-play-video" />
                 </div>
-                <img class="animated fadeIn" v-if="publi.thumbail" v-lazy.container="publi.thumbail" />
+                <img class="animated fadeIn" v-if="publi.thumbail" @click="showVideo(publi.video)" v-lazy.container="publi.thumbail" />
 
               </a>
 
@@ -22,29 +20,27 @@
               <div v-if="publi.post['locked'] == 1" class="imagen animated fadeIn">
                 <div v-if="ifBuy(publi.post)" class="imagen animated fadeIn">
                   <div class="video_play_profile hover_link">
-                    <button  class="btn btn-secondary bg-secondary-loole   hover_link "><ion-icon name="play" style="font-size:25px;margin-left:10px"></ion-icon></button>
+                   
+                      <img src="/menu_icons/white/play.svg" class="icon-play-video"/>
+                 
 
                   </div>
-                  <img class="animated fadeIn" v-if="publi.thumbail" v-lazy.container="publi.thumbail" />
+                  <img class="animated fadeIn"  @click="showVideo(publi.video)" v-if="publi.thumbail" v-lazy.container="publi.thumbail" />
 
 
                 </div>
-                <div v-else class="imagen animated fadeIn">
-                  <a>
-                    <img @click="showPost(post)" src="/images/blocked.svg" />
-                  </a>
+                <div v-else class="imagen animated fadeIn background-blocked">
+                  <div class="center">
+                    <img src="/images/blocked.svg" class="img-blocked " />
+                  </div>
                 </div>
 
               </div>
               <div v-else class="imagen animated fadeIn" @click="showVideo(publi.video)">
                 <div class="video_play_profile hover_link">
-                  <button type="button"
-                    class="btn btn-secondary bg-secondary-loole   hover_link "><ion-icon name="play" style="font-size:25px;margin-left:10px"></ion-icon></button>
-
+                    <img src="/menu_icons/white/play.svg" class="icon-play-video" />
                 </div>
-                <img class="animated fadeIn" v-if="publi.thumbail" v-lazy.container="publi.thumbail" />
-
-
+                <img class="animated fadeIn" v-if="publi.thumbail"  @click="showVideo(publi.video)" v-lazy.container="publi.thumbail" />
               </div>
             </div>
           </div>
@@ -145,4 +141,8 @@
 </script>
 
 <style>
+  .icon-play-video{
+    width:32px !important;
+  }
+
 </style>

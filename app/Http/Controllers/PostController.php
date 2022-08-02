@@ -70,7 +70,7 @@ class PostController extends Controller
         $post = Post::whereIn(
             'user_id',
             User::where('status_id', 3)->pluck('id')
-        )->with('user', 'post_image', 'like', 'post_buy')->where('post_state_id', 1)->orderby('id', 'desc')->paginate(8);
+        )->with('user', 'post_image', 'like', 'post_buy')->where('post_state_id', 1)->orderby('id', 'desc')->paginate(2);
         return $post;
     }
 
@@ -139,7 +139,7 @@ class PostController extends Controller
             //****************** REGISTRO DEL POST ******************//
             $files      = $request->file('files_post');
             $first_file = $files[0];
-            $type       = substr($first_file->getClientMimeType(), 0, 5);
+            $type       = substr($first_file->getClientMimeType(), 0, 5); 
 
             if ($type == "image") {
 

@@ -5,25 +5,18 @@
         <div class="contenedor-imagenes" id="content_img">
           <div :id="'galery' + publi.id" @click="showPost(publi)" class="imagen fadeIn"
             v-for="(publi, key) in publications" :key="key">
-
             <div v-if="its_my_profile " class="imagen animated fadeIn">
               <div style=" position: relative" v-if="publi.image != null" class="imagen animated fadeIn">
                 <div class="video_play_profile hover_link">
-                  <ion-icon style="color:white;font-size:30px;" name="image-outline"
-                    v-if="publi.post_image.length <= 1"></ion-icon>
-                  <ion-icon style="color:white;font-size:30px;" v-if="publi.post_image.length > 1"
-                    name="images-outline"></ion-icon>
+                    <img src="/menu_icons/white/mascontenido.svg" class="icon-mas-content" v-if="publi.post_image.length > 1">
                 </div>
-
                 <img v-if="publi.image != null" class="animated fadeIn" v-lazy.container="publi.image" />
-
               </div>
               <div style=" position: relative" v-if="publi.video != null" class="imagen animated fadeIn">
                 <div class="video_play_profile hover_link">
                   <ion-icon name="videocam-outline" style="color:white;font-size:32px;"></ion-icon>
                 </div>
                 <img class="animated fadeIn" v-if="publi.thumbail" v-lazy.container="publi.thumbail" />
-
               </div>
             </div>
             <div v-else class="imagen animated fadeIn">
@@ -31,49 +24,37 @@
                 <div class="imagen animated fadeIn" v-if="userpost(publi.post_buy) == true">
                   <div style=" position: relative" v-if="publi.image != null" class="imagen animated fadeIn">
                     <div class="video_play_profile hover_link">
-                      <ion-icon style="color:white;font-size:30px;" name="image-outline"
-                        v-if="publi.post_image.length <= 1"></ion-icon>
-                      <ion-icon style="color:white;font-size:30px;" v-if="publi.post_image.length > 1"
-                        name="images-outline"></ion-icon>
+                      <img src="/menu_icons/white/mascontenido.svg" class="icon-mas-content" v-if="publi.post_image.length > 1">
                     </div>
-
                     <img v-if="publi.image != null" class="animated fadeIn" v-lazy.container="publi.image" />
-
                   </div>
                   <div style=" position: relative" v-if="publi.video != null" class="imagen animated fadeIn">
                     <div class="video_play_profile hover_link">
                       <ion-icon name="videocam-outline" style="color:white;font-size:32px;"></ion-icon>
                     </div>
                     <img class="animated fadeIn" v-if="publi.thumbail" v-lazy.container="publi.thumbail" />
-
                   </div>
                 </div>
-                <div class="imagen animated fadeIn" v-else="">
+                <div class="imagen animated fadeIn background-blocked" v-else="">
                   <div style=" position: relative" class="imagen animated fadeIn">
                     <div class="video_play_profile hover_link">
-                      <ion-icon style="color:white;font-size:30px;" name="image-outline"
-                        v-if="publi.image != null && publi.post_image.length <= 1"></ion-icon>
-                      <ion-icon style="color:white;font-size:30px;"
-                        v-if="publi.image != null && publi.post_image.length > 1" name="images-outline"></ion-icon>
+                      <img src="/menu_icons/white/mascontenido.svg"  class="icon-mas-content" v-if="publi.post_image.length > 1 && publi.post_image.length > 1">
                       <ion-icon v-if="publi.thumbail" name="videocam-outline" style="color:white;font-size:32px;">
                       </ion-icon>
                     </div>
-
-                    <img src="/images/blocked.svg" />
+                    <div class="center">
+                      <img src="/images/blocked.svg" class="img-blocked" />
+                    </div>
+                   
                   </div>
                 </div>
               </div>
               <div class="imagen animated fadeIn" v-else="">
                 <div style=" position: relative" v-if="publi.image != null" class="imagen animated fadeIn">
                   <div class="video_play_profile hover_link">
-                    <ion-icon style="color:white;font-size:30px;" name="image-outline"
-                      v-if="publi.post_image.length <= 1"></ion-icon>
-                    <ion-icon style="color:white;font-size:30px;" v-if="publi.post_image.length > 1"
-                      name="images-outline"></ion-icon>
+                    <img src="/menu_icons/white/mascontenido.svg" class="icon-mas-content" v-if="publi.post_image.length > 1">
                   </div>
-
                   <img v-if="publi.image != null" class="animated fadeIn" v-lazy.container="publi.image" />
-
                 </div>
                 <div style=" position: relative" v-if="publi.video != null" class="imagen animated fadeIn">
                   <div class="video_play_profile hover_link">
@@ -95,7 +76,6 @@
     </div>
   </div>
 </template>
-
 <script>
   Vue.component("InfiniteLoading", require("vue-infinite-loading"));
   export default {
@@ -156,4 +136,7 @@
 </script>
 
 <style>
+  .icon-mas-content{
+    width:32px !important;
+  }
 </style>

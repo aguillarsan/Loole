@@ -5,9 +5,7 @@
         </div>
         <div id="app_main_content" v-if="!load">
             <!--Search -->
-
             <div class="appHeader box-shw-profile-header" v-if="currentRoute == 'Home'">
-
                 <div class="pageTitle">
                     Inicio
                 </div>
@@ -16,11 +14,7 @@
                         <ion-icon name="search-outline" role="img" class="md hydrated"></ion-icon>
 
                     </router-link>
-
-
                     <router-link :to="'/Notifications'" class="headerButton">
-
-
                         <ion-icon name="notifications-outline" role="img" class="md hydrated"></ion-icon>
                         <span class="badge badge-danger" v-if="notification != 0">
                             {{notification}}
@@ -33,9 +27,6 @@
                     </a>
                 </div>
             </div>
-
-
-
             <!--End Search -->
             <!--hide sidebar buton -->
             <a class="item" data-bs-toggle="offcanvas" href="#sidebarPanel" id="burger_btn" style="display: none"
@@ -70,7 +61,7 @@
                 currentRoute != 'PublicacionUser' &&
                 currentRoute != 'EditAccount'
                 
-              ">
+              " style="min-height: 70px !important;">
                     <router-link :class="currentRoute == 'Home' ? 'item active' : 'item'" :to="'/home'"
                         @click.prevent="refresh()">
                         <div class="col">
@@ -87,7 +78,7 @@
                     </router-link>
                     <a @click="showNotification" class="item">
                         <div class="col">
-                            <div class="action-button large bg-primary-loole" style="margin-top: -20px">
+                            <div class="action-button  bg-primary-loole btn-40">
                                 <ion-icon aria-label="add outline" class="md hydrated" name="add-outline" role="img">
                                 </ion-icon>
                             </div>
@@ -111,7 +102,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="appBottomMenu" v-if="usuario.role_id == 3 && currentRoute != 'Notifications'">
+                <div class="appBottomMenu" v-if="usuario.role_id == 3 && currentRoute != 'Notifications'"
+                    :style="currentRoute == 'Home' ? 'background:transparent !important;border-top:none !important':''">
                     <router-link :to="'/home'" :class="currentRoute == 'Home' ? 'item active' : 'item'">
                         <div class="col">
                             <ion-icon aria-label="home outline" class="md hydrated" name="home-outline" role="img">
@@ -156,7 +148,7 @@
             <div class="offcanvas offcanvas-start" id="sidebarPanel" tabindex="-1">
                 <div class="offcanvas-body">
                     <!-- profile box -->
-                    <div class="profileBox  box-shw-profile-header bg-primary-loole" @click="closeSidebar()" >
+                    <div class="profileBox  box-shw-profile-header bg-primary-loole" @click="closeSidebar()">
                         <router-link :to="{ path:`/`+usuario.username, params: {usermane:usuario.username}} "
                             class="item">
                             <div class="image-wrapper">
@@ -373,13 +365,13 @@
             })
             window.Echo.channel('send-not.' + this.usuario.id)
                 .listen('WithdrawalsEvent', (notification) => {
-                   
-                        let message = notification.message.lenght >= 23 ? notification.message.substr(0, 23) + "...": notification.message;
-                        self.alert(this.success, message);
-                        this.notificationActive();
-                    
+
+                    let message = notification.message.lenght >= 23 ? notification.message.substr(0, 23) + "..." : notification.message;
+                    self.alert(this.success, message);
+                    this.notificationActive();
+
                 });
-           
+
 
 
             let self = this;
@@ -435,7 +427,7 @@
                     } else {
                         if (this.usuario.status_id == 3) {
 
-                           this.$router.push('/Publish')
+                            this.$router.push('/Publish')
 
                         }
                     }
@@ -527,3 +519,20 @@
         },
     };
 </script>
+<style>
+    .menu_tranparent {
+        background: red !important;
+        border-top: none !important;
+    }
+
+    .btn-40 {
+        width: 40px !important;
+        height: 40px !important;
+
+
+    }
+
+    .btn-white {
+        background: white !important;
+    }
+</style>

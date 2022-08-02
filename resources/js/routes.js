@@ -3,9 +3,9 @@ import Vue from 'vue';
 import Router from 'vue-router';
 Vue.use(Router)
 let Home = () =>
-    import( /* webpackChunkName: "chunks/Home/home"*/ './components/Home/home.vue')
+    import( /* webpackChunkName: "chunks/Home/home"*/ './components/Home/homev2.vue')
 let Profile = () =>
-    import( /* webpackChunkName: "chunks/Profile/profile"*/ './components/Profile/Profile.vue')
+    import( /* webpackChunkName: "chunks/Profile/profile"*/ './components/Profile/NewProfile.vue')
 let Wallet = () =>
     import( /* webpackChunkName: "chunks/Wallet/wallet"*/ './components/Wallet/Wallet.vue')
 let Withdrawals = () =>
@@ -613,5 +613,9 @@ export default new Router({
             })
         }
 
-    },]
+    },],
+    scrollBehavior() {
+        window.scrollTo(0, 0);
+    }
+
 })

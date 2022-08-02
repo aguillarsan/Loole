@@ -124,14 +124,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -176,8 +168,6 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     publish: function publish() {
       var _this = this;
-
-      console.log('entro');
 
       if (this.validateForm()) {
         this.load = true;
@@ -358,7 +348,7 @@ var render = function () {
             ),
             _vm._v(" "),
             _c("div", { staticClass: "pageTitle" }, [
-              _vm._v("\n        Publicar\n      "),
+              _vm._v("\n                Publicar\n            "),
             ]),
           ]),
           _vm._v(" "),
@@ -502,7 +492,7 @@ var render = function () {
                     },
                     [
                       _vm._v(
-                        "\n          Debes seleccionar al menos un archivo\n        "
+                        "\n                    Debes seleccionar al menos un archivo\n                "
                       ),
                     ]
                   )
@@ -546,7 +536,7 @@ var render = function () {
                               },
                               [
                                 _vm._v(
-                                  "\n                    Añade una descripción\n                  "
+                                  "\n                                        Añade una descripción\n                                    "
                                 ),
                               ]
                             ),
@@ -585,7 +575,7 @@ var render = function () {
                             _vm.desc == false
                               ? _c("div", { staticClass: "invalid-input" }, [
                                   _vm._v(
-                                    "\n                    Debes ingresar una descripcion\n                  "
+                                    "\n                                        Debes ingresar una descripcion\n                                    "
                                   ),
                                 ])
                               : _vm._e(),
@@ -606,7 +596,7 @@ var render = function () {
                               { staticStyle: { "font-weight": "500" } },
                               [
                                 _vm._v(
-                                  "\n                    Contenido premiun\n                  "
+                                  "\n                                        Contenido premiun\n                                    "
                                 ),
                               ]
                             ),
@@ -685,7 +675,7 @@ var render = function () {
                               { staticStyle: { "font-weight": "500" } },
                               [
                                 _vm._v(
-                                  "\n                    Valor CLP\n                  "
+                                  "\n                                        Valor CLP\n                                    "
                                 ),
                               ]
                             ),
@@ -725,7 +715,7 @@ var render = function () {
                           _vm.correctValue == false
                             ? _c("div", { staticClass: "invalid-input" }, [
                                 _vm._v(
-                                  "\n                  El monto ingresado es incorrecto.\n                "
+                                  "\n                                    El monto ingresado es incorrecto.\n                                "
                                 ),
                               ])
                             : _vm._e(),
@@ -741,7 +731,7 @@ var render = function () {
                             },
                             [
                               _vm._v(
-                                "\n                * El monto mínimo es de $5.000 CLP y máximo $100.000 CLP\n              "
+                                "\n                                * El monto mínimo es de $5.000 CLP y máximo $100.000 CLP\n                            "
                               ),
                             ]
                           )
@@ -761,7 +751,11 @@ var render = function () {
                             },
                           },
                         },
-                        [_vm._v("\n                Publicar\n              ")]
+                        [
+                          _vm._v(
+                            "\n                                Publicar\n                            "
+                          ),
+                        ]
                       ),
                     ]),
                   ]

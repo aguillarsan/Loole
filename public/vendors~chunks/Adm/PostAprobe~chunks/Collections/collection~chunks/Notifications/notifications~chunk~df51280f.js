@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["vendors~chunks/Adm/PostAprobe~chunks/Collections/collection~chunks/Notifications/notifications~chunk~5adeb17f"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["vendors~chunks/Adm/PostAprobe~chunks/Collections/collection~chunks/Notifications/notifications~chunk~df51280f"],{
 
 /***/ "./node_modules/moment/locale/af.js":
 /*!******************************************!*\
