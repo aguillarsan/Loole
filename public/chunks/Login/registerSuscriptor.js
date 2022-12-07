@@ -9,126 +9,6 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -277,10 +157,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/RegisterSusCriptor.vue?vue&type=template&id=57612ea4&":
-/*!***************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Login/RegisterSusCriptor.vue?vue&type=template&id=57612ea4& ***!
-  \***************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/RegisterSusCriptor.vue?vue&type=template&id=57612ea4&":
+/*!*********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Login/RegisterSusCriptor.vue?vue&type=template&id=57612ea4& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -288,589 +168,397 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm.load
-      ? _c("div", { staticClass: "logo-load-center " }, [
-          _c("img", {
-            staticClass: "animate-flicker",
-            attrs: { src: "/images/img_0.png" },
-          }),
-        ])
-      : _vm._e(),
-    _vm._v(" "),
-    !_vm.load
-      ? _c(
-          "div",
-          {
-            staticClass:
-              "appHeader no-border transparent position-absolute animated fadeIn",
-          },
-          [
-            _c(
-              "div",
-              { staticClass: "left" },
-              [
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "headerButton goBack",
-                    attrs: { to: "/Login" },
-                  },
-                  [
-                    _c("ion-icon", {
-                      staticClass: "md hydrated",
-                      attrs: {
-                        name: "chevron-back-outline",
-                        role: "img",
-                        "aria-label": "chevron back outline",
-                      },
-                    }),
-                  ],
-                  1
-                ),
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "pageTitle" }),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "right" },
-              [
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "headerButton text-primary",
-                    attrs: { to: "/Login" },
-                  },
-                  [_vm._v(" Login ")]
-                ),
-              ],
-              1
-            ),
-          ]
-        )
-      : _vm._e(),
-    _vm._v(" "),
-    !_vm.load
-      ? _c("div", { attrs: { id: "appCapsule" } }, [
-          _c("div", { staticClass: "login-form" }, [
-            _vm._m(0),
-            _vm._v(" "),
-            _c("div", { staticClass: "section mt-2 mb-5" }, [
-              _c("form", { attrs: { action: "app-pages.html" } }, [
-                _c("div", { staticClass: "form-group boxed" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "input-wrapper",
-                      staticStyle: { "text-align": "left" },
-                    },
-                    [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "label white",
-                          attrs: { for: "email1" },
-                        },
-                        [_vm._v("Nombre")]
-                      ),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.inputs.fullname,
-                            expression: "inputs.fullname",
-                          },
-                        ],
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "text",
-                          id: "name1",
-                          placeholder: "Nombre completo",
-                        },
-                        domProps: { value: _vm.inputs.fullname },
-                        on: {
-                          change: function ($event) {
-                            return _vm.validateName()
-                          },
-                          input: function ($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(
-                              _vm.inputs,
-                              "fullname",
-                              $event.target.value
-                            )
-                          },
-                        },
-                      }),
-                      _vm._v(" "),
-                      _vm.inputs.fullname
-                        ? _c(
-                            "i",
-                            {
-                              staticClass: "clear-input",
-                              staticStyle: { display: "flex" },
-                              on: {
-                                click: function ($event) {
-                                  return _vm.clearInput(1)
-                                },
-                              },
-                            },
-                            [
-                              _c("ion-icon", {
-                                staticClass: "md hydrated hover_link",
-                                attrs: {
-                                  name: "close-circle",
-                                  role: "img",
-                                  "aria-label": "close circle",
-                                },
-                                on: {
-                                  click: function ($event) {
-                                    return _vm.clearInput(1)
-                                  },
-                                },
-                              }),
-                            ],
-                            1
-                          )
-                        : _vm._e(),
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _vm.error_name == false
-                    ? _c("div", { staticClass: "invalid-input" }, [
-                        _vm._v(
-                          "\n              El nombre es obligatorio\n            "
-                        ),
-                      ])
-                    : _vm._e(),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group boxed" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "input-wrapper",
-                      staticStyle: { "text-align": "left" },
-                    },
-                    [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "label white",
-                          attrs: { for: "email1" },
-                        },
-                        [_vm._v("Correo")]
-                      ),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.inputs.email,
-                            expression: "inputs.email",
-                          },
-                        ],
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "email",
-                          id: "email1",
-                          placeholder: "Correo",
-                        },
-                        domProps: { value: _vm.inputs.email },
-                        on: {
-                          change: function ($event) {
-                            return _vm.validateEmail()
-                          },
-                          input: function ($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(_vm.inputs, "email", $event.target.value)
-                          },
-                        },
-                      }),
-                      _vm._v(" "),
-                      _vm.inputs.email
-                        ? _c(
-                            "i",
-                            {
-                              staticClass: "clear-input",
-                              staticStyle: { display: "flex" },
-                              on: {
-                                click: function ($event) {
-                                  return _vm.clearInput(2)
-                                },
-                              },
-                            },
-                            [
-                              _c("ion-icon", {
-                                staticClass: "md hydrated hover_link",
-                                attrs: {
-                                  name: "close-circle",
-                                  role: "img",
-                                  "aria-label": "close circle",
-                                },
-                                on: {
-                                  click: function ($event) {
-                                    return _vm.clearInput(1)
-                                  },
-                                },
-                              }),
-                            ],
-                            1
-                          )
-                        : _vm._e(),
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _vm.error_email == false
-                    ? _c("div", { staticClass: "invalid-input" }, [
-                        _vm._v(
-                          "\n              " +
-                            _vm._s(_vm.error_mail) +
-                            "\n            "
-                        ),
-                      ])
-                    : _vm._e(),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group boxed" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "input-wrapper",
-                      staticStyle: { "text-align": "left" },
-                    },
-                    [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "label white",
-                          attrs: { for: "email1" },
-                        },
-                        [_vm._v("Contraseña")]
-                      ),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.inputs.password,
-                            expression: "inputs.password",
-                          },
-                        ],
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "password",
-                          id: "password1",
-                          autocomplete: "off",
-                          placeholder: "Ingrese su contraseña",
-                        },
-                        domProps: { value: _vm.inputs.password },
-                        on: {
-                          change: function ($event) {
-                            return _vm.validatePasswords()
-                          },
-                          input: function ($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(
-                              _vm.inputs,
-                              "password",
-                              $event.target.value
-                            )
-                          },
-                        },
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "i",
-                        {
-                          staticClass: "clear-input",
-                          staticStyle: { display: "flex" },
-                          on: {
-                            click: function ($event) {
-                              return _vm.seePassword(1)
-                            },
-                          },
-                        },
-                        [
-                          _c("ion-icon", {
-                            staticClass: "md hydrated hover_link",
-                            attrs: {
-                              name: _vm.icon_name,
-                              role: "img",
-                              "aria-label": "close circle",
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _vm.error_password == false
-                    ? _c("div", { staticClass: "invalid-input" }, [
-                        _vm._v(
-                          "\n              La contraseña debe tener entre 8 y 16 caracteres\n            "
-                        ),
-                      ])
-                    : _vm._e(),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group boxed" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "input-wrapper ",
-                      staticStyle: { "text-align": "left" },
-                    },
-                    [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "label white",
-                          attrs: { for: "email1" },
-                        },
-                        [_vm._v("Repita la Contraseña")]
-                      ),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.inputs.confirm_pass,
-                            expression: "inputs.confirm_pass",
-                          },
-                        ],
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "password",
-                          id: "password2",
-                          autocomplete: "off",
-                          placeholder: "Confirmar contraseña",
-                        },
-                        domProps: { value: _vm.inputs.confirm_pass },
-                        on: {
-                          change: function ($event) {
-                            return _vm.validatePasswords()
-                          },
-                          input: function ($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(
-                              _vm.inputs,
-                              "confirm_pass",
-                              $event.target.value
-                            )
-                          },
-                        },
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "i",
-                        {
-                          staticClass: "clear-input",
-                          staticStyle: { display: "flex" },
-                          on: {
-                            click: function ($event) {
-                              return _vm.seePassword(2)
-                            },
-                          },
-                        },
-                        [
-                          _c("ion-icon", {
-                            staticClass: "md hydrated hover_link",
-                            attrs: {
-                              name: _vm.icon_name,
-                              role: "img",
-                              "aria-label": "close circle",
-                            },
-                          }),
-                        ],
-                        1
-                      ),
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _vm.error_confirm_password == false
-                    ? _c("div", { staticClass: "invalid-input" }, [
-                        _vm._v(
-                          "\n              La contraseñas no coinciden\n            "
-                        ),
-                      ])
-                    : _vm._e(),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "mt-5 text-start" }, [
-                  _c("div", { staticClass: "form-check" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.inputs.terms_conditions,
-                          expression: "inputs.terms_conditions",
-                        },
-                      ],
-                      staticClass: "form-check-input",
-                      attrs: { type: "checkbox", id: "customCheckb1" },
-                      domProps: {
-                        checked: Array.isArray(_vm.inputs.terms_conditions)
-                          ? _vm._i(_vm.inputs.terms_conditions, null) > -1
-                          : _vm.inputs.terms_conditions,
-                      },
-                      on: {
-                        change: [
-                          function ($event) {
-                            var $$a = _vm.inputs.terms_conditions,
-                              $$el = $event.target,
-                              $$c = $$el.checked ? true : false
-                            if (Array.isArray($$a)) {
-                              var $$v = null,
-                                $$i = _vm._i($$a, $$v)
-                              if ($$el.checked) {
-                                $$i < 0 &&
-                                  _vm.$set(
-                                    _vm.inputs,
-                                    "terms_conditions",
-                                    $$a.concat([$$v])
-                                  )
-                              } else {
-                                $$i > -1 &&
-                                  _vm.$set(
-                                    _vm.inputs,
-                                    "terms_conditions",
-                                    $$a.slice(0, $$i).concat($$a.slice($$i + 1))
-                                  )
-                              }
-                            } else {
-                              _vm.$set(_vm.inputs, "terms_conditions", $$c)
-                            }
-                          },
-                          function ($event) {
-                            return _vm.validateTernmconditions()
-                          },
-                        ],
-                      },
-                    }),
-                    _vm._v(" "),
-                    _c(
-                      "label",
-                      {
-                        staticClass: "form-check-label",
-                        attrs: { for: "customCheckb1" },
-                      },
-                      [
-                        _vm._v("Acepto\n                "),
-                        _c(
-                          "router-link",
-                          { attrs: { target: "_blank", to: "/Terms" } },
-                          [
-                            _vm._v(
-                              "\n                  Los Términos y Condiciones\n                "
-                            ),
-                          ]
-                        ),
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _vm.error_term_conditions == false
-                      ? _c(
-                          "div",
-                          {
-                            staticClass: "invalid-input",
-                            staticStyle: { "text-align": "center" },
-                          },
-                          [
-                            _vm._v(
-                              "\n                Debes aceptar los Términos y Condiciones\n              "
-                            ),
-                          ]
-                        )
-                      : _vm._e(),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "mt-5",
-                    on: {
-                      click: function ($event) {
-                        $event.preventDefault()
-                        return _vm.register()
-                      },
-                    },
-                  },
-                  [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary rounded me-1",
-                        staticStyle: { width: "100%" },
-                        attrs: {
-                          type: "submit",
-                          disabled: _vm.load ? true : false,
-                        },
-                      },
-                      [
-                        _vm.load
-                          ? _c("span", {
-                              staticClass:
-                                "spinner-border spinner-border-sm me-05",
-                              attrs: { role: "status", "aria-hidden": "true" },
-                            })
-                          : _vm._e(),
-                        _vm._v("\n              Inscribirse\n            "),
-                      ]
-                    ),
-                  ]
-                ),
-              ]),
-            ]),
-          ]),
-        ])
-      : _vm._e(),
-  ])
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "section" }, [
-      _c("img", {
-        staticClass: "form-image",
-        staticStyle: { "max-width": "130px", width: "100%" },
-        attrs: { src: "/images/logo/isotipo.svg", alt: "image" },
-      }),
-      _vm._v(" "),
-      _c("h4", { staticClass: "mt-2" }, [
-        _vm._v("Miles de Loolers están esperando por ti"),
-      ]),
-    ])
-  },
-]
-render._withStripped = true
+var render = function render() {
+  var _vm = this,
+      _c = _vm._self._c;
 
+  return _c("div", [_vm.load ? _c("div", {
+    staticClass: "logo-load-center"
+  }, [_c("img", {
+    staticClass: "animate-flicker",
+    attrs: {
+      src: "/images/img_0.png"
+    }
+  })]) : _vm._e(), _vm._v(" "), !_vm.load ? _c("div", {
+    staticClass: "appHeader no-border transparent position-absolute animated fadeIn"
+  }, [_c("div", {
+    staticClass: "left"
+  }, [_c("router-link", {
+    staticClass: "headerButton goBack",
+    attrs: {
+      to: "/Login"
+    }
+  }, [_c("ion-icon", {
+    staticClass: "md hydrated",
+    attrs: {
+      name: "chevron-back-outline",
+      role: "img",
+      "aria-label": "chevron back outline"
+    }
+  })], 1)], 1), _vm._v(" "), _c("div", {
+    staticClass: "pageTitle"
+  }), _vm._v(" "), _c("div", {
+    staticClass: "right"
+  }, [_c("router-link", {
+    staticClass: "headerButton text-primary",
+    attrs: {
+      to: "/Login"
+    }
+  }, [_vm._v(" Login ")])], 1)]) : _vm._e(), _vm._v(" "), !_vm.load ? _c("div", {
+    attrs: {
+      id: "appCapsule"
+    }
+  }, [_c("div", {
+    staticClass: "login-form"
+  }, [_vm._m(0), _vm._v(" "), _c("div", {
+    staticClass: "section mt-2 mb-5"
+  }, [_c("form", {
+    attrs: {
+      action: "app-pages.html"
+    }
+  }, [_c("div", {
+    staticClass: "form-group boxed"
+  }, [_c("div", {
+    staticClass: "input-wrapper",
+    staticStyle: {
+      "text-align": "left"
+    }
+  }, [_c("label", {
+    staticClass: "label white",
+    attrs: {
+      "for": "email1"
+    }
+  }, [_vm._v("Nombre")]), _vm._v(" "), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.inputs.fullname,
+      expression: "inputs.fullname"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      type: "text",
+      id: "name1",
+      placeholder: "Nombre completo"
+    },
+    domProps: {
+      value: _vm.inputs.fullname
+    },
+    on: {
+      change: function change($event) {
+        return _vm.validateName();
+      },
+      input: function input($event) {
+        if ($event.target.composing) return;
+
+        _vm.$set(_vm.inputs, "fullname", $event.target.value);
+      }
+    }
+  }), _vm._v(" "), _vm.inputs.fullname ? _c("i", {
+    staticClass: "clear-input",
+    staticStyle: {
+      display: "flex"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.clearInput(1);
+      }
+    }
+  }, [_c("ion-icon", {
+    staticClass: "md hydrated hover_link",
+    attrs: {
+      name: "close-circle",
+      role: "img",
+      "aria-label": "close circle"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.clearInput(1);
+      }
+    }
+  })], 1) : _vm._e()]), _vm._v(" "), _vm.error_name == false ? _c("div", {
+    staticClass: "invalid-input"
+  }, [_vm._v("\n              El nombre es obligatorio\n            ")]) : _vm._e()]), _vm._v(" "), _c("div", {
+    staticClass: "form-group boxed"
+  }, [_c("div", {
+    staticClass: "input-wrapper",
+    staticStyle: {
+      "text-align": "left"
+    }
+  }, [_c("label", {
+    staticClass: "label white",
+    attrs: {
+      "for": "email1"
+    }
+  }, [_vm._v("Correo")]), _vm._v(" "), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.inputs.email,
+      expression: "inputs.email"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      type: "email",
+      id: "email1",
+      placeholder: "Correo"
+    },
+    domProps: {
+      value: _vm.inputs.email
+    },
+    on: {
+      change: function change($event) {
+        return _vm.validateEmail();
+      },
+      input: function input($event) {
+        if ($event.target.composing) return;
+
+        _vm.$set(_vm.inputs, "email", $event.target.value);
+      }
+    }
+  }), _vm._v(" "), _vm.inputs.email ? _c("i", {
+    staticClass: "clear-input",
+    staticStyle: {
+      display: "flex"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.clearInput(2);
+      }
+    }
+  }, [_c("ion-icon", {
+    staticClass: "md hydrated hover_link",
+    attrs: {
+      name: "close-circle",
+      role: "img",
+      "aria-label": "close circle"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.clearInput(1);
+      }
+    }
+  })], 1) : _vm._e()]), _vm._v(" "), _vm.error_email == false ? _c("div", {
+    staticClass: "invalid-input"
+  }, [_vm._v("\n              " + _vm._s(_vm.error_mail) + "\n            ")]) : _vm._e()]), _vm._v(" "), _c("div", {
+    staticClass: "form-group boxed"
+  }, [_c("div", {
+    staticClass: "input-wrapper",
+    staticStyle: {
+      "text-align": "left"
+    }
+  }, [_c("label", {
+    staticClass: "label white",
+    attrs: {
+      "for": "email1"
+    }
+  }, [_vm._v("Contraseña")]), _vm._v(" "), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.inputs.password,
+      expression: "inputs.password"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      type: "password",
+      id: "password1",
+      autocomplete: "off",
+      placeholder: "Ingrese su contraseña"
+    },
+    domProps: {
+      value: _vm.inputs.password
+    },
+    on: {
+      change: function change($event) {
+        return _vm.validatePasswords();
+      },
+      input: function input($event) {
+        if ($event.target.composing) return;
+
+        _vm.$set(_vm.inputs, "password", $event.target.value);
+      }
+    }
+  }), _vm._v(" "), _c("i", {
+    staticClass: "clear-input",
+    staticStyle: {
+      display: "flex"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.seePassword(1);
+      }
+    }
+  }, [_c("ion-icon", {
+    staticClass: "md hydrated hover_link",
+    attrs: {
+      name: _vm.icon_name,
+      role: "img",
+      "aria-label": "close circle"
+    }
+  })], 1)]), _vm._v(" "), _vm.error_password == false ? _c("div", {
+    staticClass: "invalid-input"
+  }, [_vm._v("\n              La contraseña debe tener entre 8 y 16 caracteres\n            ")]) : _vm._e()]), _vm._v(" "), _c("div", {
+    staticClass: "form-group boxed"
+  }, [_c("div", {
+    staticClass: "input-wrapper",
+    staticStyle: {
+      "text-align": "left"
+    }
+  }, [_c("label", {
+    staticClass: "label white",
+    attrs: {
+      "for": "email1"
+    }
+  }, [_vm._v("Repita la Contraseña")]), _vm._v(" "), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.inputs.confirm_pass,
+      expression: "inputs.confirm_pass"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      type: "password",
+      id: "password2",
+      autocomplete: "off",
+      placeholder: "Confirmar contraseña"
+    },
+    domProps: {
+      value: _vm.inputs.confirm_pass
+    },
+    on: {
+      change: function change($event) {
+        return _vm.validatePasswords();
+      },
+      input: function input($event) {
+        if ($event.target.composing) return;
+
+        _vm.$set(_vm.inputs, "confirm_pass", $event.target.value);
+      }
+    }
+  }), _vm._v(" "), _c("i", {
+    staticClass: "clear-input",
+    staticStyle: {
+      display: "flex"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.seePassword(2);
+      }
+    }
+  }, [_c("ion-icon", {
+    staticClass: "md hydrated hover_link",
+    attrs: {
+      name: _vm.icon_name,
+      role: "img",
+      "aria-label": "close circle"
+    }
+  })], 1)]), _vm._v(" "), _vm.error_confirm_password == false ? _c("div", {
+    staticClass: "invalid-input"
+  }, [_vm._v("\n              La contraseñas no coinciden\n            ")]) : _vm._e()]), _vm._v(" "), _c("div", {
+    staticClass: "mt-5 text-start"
+  }, [_c("div", {
+    staticClass: "form-check"
+  }, [_c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.inputs.terms_conditions,
+      expression: "inputs.terms_conditions"
+    }],
+    staticClass: "form-check-input",
+    attrs: {
+      type: "checkbox",
+      id: "customCheckb1"
+    },
+    domProps: {
+      checked: Array.isArray(_vm.inputs.terms_conditions) ? _vm._i(_vm.inputs.terms_conditions, null) > -1 : _vm.inputs.terms_conditions
+    },
+    on: {
+      change: [function ($event) {
+        var $$a = _vm.inputs.terms_conditions,
+            $$el = $event.target,
+            $$c = $$el.checked ? true : false;
+
+        if (Array.isArray($$a)) {
+          var $$v = null,
+              $$i = _vm._i($$a, $$v);
+
+          if ($$el.checked) {
+            $$i < 0 && _vm.$set(_vm.inputs, "terms_conditions", $$a.concat([$$v]));
+          } else {
+            $$i > -1 && _vm.$set(_vm.inputs, "terms_conditions", $$a.slice(0, $$i).concat($$a.slice($$i + 1)));
+          }
+        } else {
+          _vm.$set(_vm.inputs, "terms_conditions", $$c);
+        }
+      }, function ($event) {
+        return _vm.validateTernmconditions();
+      }]
+    }
+  }), _vm._v(" "), _c("label", {
+    staticClass: "form-check-label",
+    attrs: {
+      "for": "customCheckb1"
+    }
+  }, [_vm._v("Acepto\n                "), _c("router-link", {
+    attrs: {
+      target: "_blank",
+      to: "/Terms"
+    }
+  }, [_vm._v("\n                  Los Términos y Condiciones\n                ")])], 1), _vm._v(" "), _vm.error_term_conditions == false ? _c("div", {
+    staticClass: "invalid-input",
+    staticStyle: {
+      "text-align": "center"
+    }
+  }, [_vm._v("\n                Debes aceptar los Términos y Condiciones\n              ")]) : _vm._e()])]), _vm._v(" "), _c("div", {
+    staticClass: "mt-5",
+    on: {
+      click: function click($event) {
+        $event.preventDefault();
+        return _vm.register();
+      }
+    }
+  }, [_c("button", {
+    staticClass: "btn btn-primary rounded me-1",
+    staticStyle: {
+      width: "100%"
+    },
+    attrs: {
+      type: "submit",
+      disabled: _vm.load ? true : false
+    }
+  }, [_vm.load ? _c("span", {
+    staticClass: "spinner-border spinner-border-sm me-05",
+    attrs: {
+      role: "status",
+      "aria-hidden": "true"
+    }
+  }) : _vm._e(), _vm._v("\n              Inscribirse\n            ")])])])])])]) : _vm._e()]);
+};
+
+var staticRenderFns = [function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "section"
+  }, [_c("img", {
+    staticClass: "form-image",
+    staticStyle: {
+      "max-width": "130px",
+      width: "100%"
+    },
+    attrs: {
+      src: "/images/logo/isotipo.svg",
+      alt: "image"
+    }
+  }), _vm._v(" "), _c("h4", {
+    staticClass: "mt-2"
+  }, [_vm._v("Miles de Loolers están esperando por ti")])]);
+}];
+render._withStripped = true;
 
 
 /***/ }),
@@ -935,10 +623,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RegisterSusCriptor_vue_vue_type_template_id_57612ea4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./RegisterSusCriptor.vue?vue&type=template&id=57612ea4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/RegisterSusCriptor.vue?vue&type=template&id=57612ea4&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RegisterSusCriptor_vue_vue_type_template_id_57612ea4___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_RegisterSusCriptor_vue_vue_type_template_id_57612ea4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!../../../../node_modules/vue-loader/lib??vue-loader-options!./RegisterSusCriptor.vue?vue&type=template&id=57612ea4& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Login/RegisterSusCriptor.vue?vue&type=template&id=57612ea4&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_RegisterSusCriptor_vue_vue_type_template_id_57612ea4___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RegisterSusCriptor_vue_vue_type_template_id_57612ea4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_RegisterSusCriptor_vue_vue_type_template_id_57612ea4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

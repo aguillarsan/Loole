@@ -11,79 +11,6 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_0__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 Vue.component('InfiniteLoading', __webpack_require__(/*! vue-infinite-loading */ "./node_modules/vue-infinite-loading/dist/vue-infinite-loading.js"));
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -139,6 +66,141 @@ Vue.component('InfiniteLoading', __webpack_require__(/*! vue-infinite-loading */
     }
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Notifications/Notifications.vue?vue&type=template&id=3368df74&":
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Notifications/Notifications.vue?vue&type=template&id=3368df74& ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function render() {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", [_c("div", {
+    staticClass: "appHeader box-shw-profile-header"
+  }, [_c("div", {
+    staticClass: "left",
+    attrs: {
+      id: "back_arrow"
+    }
+  }, [_c("router-link", {
+    staticClass: "headerButton goBack",
+    attrs: {
+      to: "/home"
+    }
+  }, [_c("ion-icon", {
+    staticClass: "md hydrated",
+    attrs: {
+      name: "chevron-back-outline",
+      role: "img",
+      "aria-label": "chevron back outline"
+    }
+  })], 1)], 1), _vm._v(" "), _c("div", {
+    staticClass: "pageTitle"
+  }, [_vm._v("Notificaciones")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "appCapsule"
+    }
+  }, [_c("div", {
+    attrs: {
+      id: "notifications_content"
+    }
+  }, [_c("ul", {
+    staticClass: "listview image-listview media mb-2 no-border-top-bottom"
+  }, _vm._l(_vm.notifications, function (notification) {
+    return _c("li", {
+      staticClass: "hover_link",
+      on: {
+        mouseover: function mouseover($event) {
+          return _vm.updateNotification(notification);
+        },
+        click: function click($event) {
+          return _vm.goToNotification(notification);
+        }
+      }
+    }, [_c("div", {
+      staticClass: "item",
+      attrs: {
+        href: "#"
+      }
+    }, [_c("div", {
+      staticClass: "imageWrapper"
+    }, [notification.type_notification_id == 5 || notification.type_notification_id == 6 ? _c("ion-icon", {
+      staticClass: "text-danger",
+      staticStyle: {
+        "font-size": "48px"
+      },
+      attrs: {
+        name: "close-circle-outline"
+      }
+    }) : _vm._e(), _vm._v(" "), notification.type_notification_id == 1 || notification.type_notification_id == 4 ? _c("img", {
+      staticClass: "imaged w48 rounded",
+      attrs: {
+        src: notification.user.profile_image,
+        alt: "image"
+      }
+    }) : _vm._e(), _vm._v(" "), notification.type_notification_id == 2 || notification.type_notification_id == 3 ? _c("img", {
+      staticClass: "imaged w48 rounded",
+      attrs: {
+        src: "/images/notification/wallet.svg",
+        alt: "image"
+      }
+    }) : _vm._e()], 1), _vm._v(" "), _c("div", {
+      staticClass: "in"
+    }, [_c("div", {
+      attrs: {
+        id: "contain_data_noification"
+      }
+    }, [_c("div", {
+      staticClass: "section-title text"
+    }, [_vm._v(_vm._s(notification.type_notification.type_notification) + "\n                ")]), _vm._v(" "), _c("div", {
+      staticClass: "text"
+    }, [_vm._v(_vm._s(notification.message))]), _vm._v(" "), _vm.actualy_date.diff(notification.created_at, "days") == 0 && _vm.actualy_date.diff(notification.created_at, "minute") >= 60 ? _c("div", {
+      staticClass: "text-muted"
+    }, [_vm._v("\n                  Hace " + _vm._s(_vm.actualy_date.diff(notification.created_at, "hours")) + " hrs\n                ")]) : _vm._e(), _vm._v(" "), _vm.actualy_date.diff(notification.created_at, "minute") < 60 && _vm.actualy_date.diff(notification.created_at, "minute") >= 1 ? _c("div", {
+      staticClass: "text-muted"
+    }, [_vm._v("\n                  Hace " + _vm._s(_vm.actualy_date.diff(notification.created_at, "minute")) + " min\n                ")]) : _vm._e(), _vm._v(" "), _vm.actualy_date.diff(notification.created_at, "days") >= 1 ? _c("div", {
+      staticClass: "text-muted"
+    }, [_vm._v("\n                  Hace " + _vm._s(_vm.actualy_date.diff(notification.created_at, "days")) + " días\n                ")]) : _vm._e(), _vm._v(" "), _vm.actualy_date.diff(notification.created_at, "minute") < 1 ? _c("div", {
+      staticClass: "text-muted"
+    }, [_vm._v("\n                  Hace " + _vm._s(_vm.actualy_date.diff(notification.created_at, "seconds")) + " s\n                ")]) : _vm._e()]), _vm._v(" "), notification.active == 1 ? _c("span", {
+      staticClass: "badge badge-danger badge-empty"
+    }) : _vm._e()])])]);
+  }), 0), _vm._v(" "), _c("infinite-loading", {
+    staticStyle: {
+      "margin-top": "15px"
+    },
+    attrs: {
+      identifier: _vm.infiniteIdNotificaction
+    },
+    on: {
+      infinite: _vm.infiniteHandlerNotification
+    }
+  }, [_c("div", {
+    staticClass: "text-black popins",
+    attrs: {
+      slot: "no-more"
+    },
+    slot: "no-more"
+  }, [_vm._v("\n          No hay más notificaciones\n        ")]), _vm._v(" "), _c("div", {
+    attrs: {
+      slot: "no-results popins"
+    },
+    slot: "no-results popins"
+  }, [_vm._v("\n          No hay más notificaciones\n        ")])])], 1)])]);
+};
+
+var staticRenderFns = [];
+render._withStripped = true;
+
 
 /***/ }),
 
@@ -444,263 +506,6 @@ webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Notifications/Notifications.vue?vue&type=template&id=3368df74&":
-/*!******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Notifications/Notifications.vue?vue&type=template&id=3368df74& ***!
-  \******************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "appHeader box-shw-profile-header" }, [
-      _c(
-        "div",
-        { staticClass: "left", attrs: { id: "back_arrow" } },
-        [
-          _c(
-            "router-link",
-            { staticClass: "headerButton goBack", attrs: { to: "/home" } },
-            [
-              _c("ion-icon", {
-                staticClass: "md hydrated",
-                attrs: {
-                  name: "chevron-back-outline",
-                  role: "img",
-                  "aria-label": "chevron back outline",
-                },
-              }),
-            ],
-            1
-          ),
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "pageTitle" }, [_vm._v("Notificaciones")]),
-    ]),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "appCapsule" } }, [
-      _c(
-        "div",
-        { attrs: { id: "notifications_content" } },
-        [
-          _c(
-            "ul",
-            {
-              staticClass:
-                "listview image-listview media mb-2 no-border-top-bottom",
-            },
-            _vm._l(_vm.notifications, function (notification) {
-              return _c(
-                "li",
-                {
-                  staticClass: "hover_link",
-                  on: {
-                    mouseover: function ($event) {
-                      return _vm.updateNotification(notification)
-                    },
-                    click: function ($event) {
-                      return _vm.goToNotification(notification)
-                    },
-                  },
-                },
-                [
-                  _c("div", { staticClass: "item", attrs: { href: "#" } }, [
-                    _c(
-                      "div",
-                      { staticClass: "imageWrapper" },
-                      [
-                        notification.type_notification_id == 5 ||
-                        notification.type_notification_id == 6
-                          ? _c("ion-icon", {
-                              staticClass: "text-danger",
-                              staticStyle: { "font-size": "48px" },
-                              attrs: { name: "close-circle-outline" },
-                            })
-                          : _vm._e(),
-                        _vm._v(" "),
-                        notification.type_notification_id == 1 ||
-                        notification.type_notification_id == 4
-                          ? _c("img", {
-                              staticClass: "imaged w48 rounded",
-                              attrs: {
-                                src: notification.user.profile_image,
-                                alt: "image",
-                              },
-                            })
-                          : _vm._e(),
-                        _vm._v(" "),
-                        notification.type_notification_id == 2 ||
-                        notification.type_notification_id == 3
-                          ? _c("img", {
-                              staticClass: "imaged w48 rounded",
-                              attrs: {
-                                src: "/images/notification/wallet.svg",
-                                alt: "image",
-                              },
-                            })
-                          : _vm._e(),
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "in" }, [
-                      _c("div", { attrs: { id: "contain_data_noification" } }, [
-                        _c("div", { staticClass: "section-title text" }, [
-                          _vm._v(
-                            _vm._s(
-                              notification.type_notification.type_notification
-                            ) + "\n                "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "text" }, [
-                          _vm._v(_vm._s(notification.message)),
-                        ]),
-                        _vm._v(" "),
-                        _vm.actualy_date.diff(
-                          notification.created_at,
-                          "days"
-                        ) == 0 &&
-                        _vm.actualy_date.diff(
-                          notification.created_at,
-                          "minute"
-                        ) >= 60
-                          ? _c("div", { staticClass: "text-muted" }, [
-                              _vm._v(
-                                "\n                  Hace " +
-                                  _vm._s(
-                                    _vm.actualy_date.diff(
-                                      notification.created_at,
-                                      "hours"
-                                    )
-                                  ) +
-                                  " hrs\n                "
-                              ),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.actualy_date.diff(
-                          notification.created_at,
-                          "minute"
-                        ) < 60 &&
-                        _vm.actualy_date.diff(
-                          notification.created_at,
-                          "minute"
-                        ) >= 1
-                          ? _c("div", { staticClass: "text-muted" }, [
-                              _vm._v(
-                                "\n                  Hace " +
-                                  _vm._s(
-                                    _vm.actualy_date.diff(
-                                      notification.created_at,
-                                      "minute"
-                                    )
-                                  ) +
-                                  " min\n                "
-                              ),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.actualy_date.diff(
-                          notification.created_at,
-                          "days"
-                        ) >= 1
-                          ? _c("div", { staticClass: "text-muted" }, [
-                              _vm._v(
-                                "\n                  Hace " +
-                                  _vm._s(
-                                    _vm.actualy_date.diff(
-                                      notification.created_at,
-                                      "days"
-                                    )
-                                  ) +
-                                  " días\n                "
-                              ),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.actualy_date.diff(
-                          notification.created_at,
-                          "minute"
-                        ) < 1
-                          ? _c("div", { staticClass: "text-muted" }, [
-                              _vm._v(
-                                "\n                  Hace " +
-                                  _vm._s(
-                                    _vm.actualy_date.diff(
-                                      notification.created_at,
-                                      "seconds"
-                                    )
-                                  ) +
-                                  " s\n                "
-                              ),
-                            ])
-                          : _vm._e(),
-                      ]),
-                      _vm._v(" "),
-                      notification.active == 1
-                        ? _c("span", {
-                            staticClass: "badge badge-danger badge-empty",
-                          })
-                        : _vm._e(),
-                    ]),
-                  ]),
-                ]
-              )
-            }),
-            0
-          ),
-          _vm._v(" "),
-          _c(
-            "infinite-loading",
-            {
-              staticStyle: { "margin-top": "15px" },
-              attrs: { identifier: _vm.infiniteIdNotificaction },
-              on: { infinite: _vm.infiniteHandlerNotification },
-            },
-            [
-              _c(
-                "div",
-                {
-                  staticClass: "text-black popins",
-                  attrs: { slot: "no-more" },
-                  slot: "no-more",
-                },
-                [_vm._v("\n          No hay más notificaciones\n        ")]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  attrs: { slot: "no-results popins" },
-                  slot: "no-results popins",
-                },
-                [_vm._v("\n          No hay más notificaciones\n        ")]
-              ),
-            ]
-          ),
-        ],
-        1
-      ),
-    ]),
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
 /***/ "./resources/js/components/Notifications/Notifications.vue":
 /*!*****************************************************************!*\
   !*** ./resources/js/components/Notifications/Notifications.vue ***!
@@ -761,10 +566,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_template_id_3368df74___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Notifications.vue?vue&type=template&id=3368df74& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Notifications/Notifications.vue?vue&type=template&id=3368df74&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_template_id_3368df74___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_template_id_3368df74___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!../../../../node_modules/vue-loader/lib??vue-loader-options!./Notifications.vue?vue&type=template&id=3368df74& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Notifications/Notifications.vue?vue&type=template&id=3368df74&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_template_id_3368df74___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_template_id_3368df74___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_Notifications_vue_vue_type_template_id_3368df74___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

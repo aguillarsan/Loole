@@ -11,123 +11,6 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_0__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 Vue.component("InfiniteLoading", __webpack_require__(/*! vue-infinite-loading */ "./node_modules/vue-infinite-loading/dist/vue-infinite-loading.js"));
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -211,221 +94,6 @@ Vue.component("InfiniteLoading", __webpack_require__(/*! vue-infinite-loading */
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var v_money__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! v-money */ "./node_modules/v-money/dist/v-money.js");
 /* harmony import */ var v_money__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(v_money__WEBPACK_IMPORTED_MODULE_0__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -506,6 +174,569 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Wallet/Wallet.vue?vue&type=template&id=101c1f14&":
+/*!**********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Wallet/Wallet.vue?vue&type=template&id=101c1f14& ***!
+  \**********************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function render() {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", [_c("div", {
+    staticClass: "appHeader box-shw-profile-header"
+  }, [_c("div", {
+    staticClass: "left",
+    attrs: {
+      id: "back_arrow"
+    }
+  }, [_c("router-link", {
+    staticClass: "headerButton goBack",
+    attrs: {
+      to: "/home"
+    }
+  }, [_c("ion-icon", {
+    staticClass: "md hydrated",
+    attrs: {
+      "aria-label": "chevron back outline",
+      name: "chevron-back-outline",
+      role: "img"
+    }
+  })], 1)], 1), _vm._v(" "), _c("div", {
+    staticClass: "pageTitle"
+  }, [_vm._v("\n      Movimientos\n    ")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "appCapsule"
+    }
+  }, [_c("div", {
+    attrs: {
+      id: "wallet_container"
+    }
+  }, [_c("div", {
+    staticClass: "section mb-2"
+  }, [_vm.usuario.role_id == 2 ? _c("div", {
+    staticClass: "card comment-box no-box-shadow",
+    staticStyle: {
+      background: "transparent"
+    }
+  }, [_vm._m(0), _vm._v(" "), _c("h1", {
+    staticClass: "card-title mt-1",
+    staticStyle: {
+      "font-size": "26px"
+    }
+  }, [_vm.load ? _c("strong", [_vm._v("\n              $" + _vm._s(_vm.money == null ? 0 : _vm.formatPrice(_vm.money)) + "\n            ")]) : _vm._e(), _vm._v(" "), !_vm.load ? _c("div", {
+    staticClass: "spinner-border text-secondary",
+    staticStyle: {
+      "font-size": "15px"
+    },
+    attrs: {
+      role: "status"
+    }
+  }) : _vm._e()]), _vm._v(" "), _c("div", {
+    staticClass: "text mt-3"
+  }, [_c("router-link", {
+    attrs: {
+      to: "/Withdrawals"
+    }
+  }, [_vm.money != null && !_vm.withdrawals_request ? _c("button", {
+    staticClass: "btn btn-primary rounded"
+  }, [_vm._v("\n\n                Solicitar retiro\n              ")]) : _vm._e()]), _vm._v(" "), _vm.withdrawals_request ? _c("div", [_c("router-link", {
+    attrs: {
+      to: {
+        path: "/OrderStatus/" + _vm.withdrawals_request.id,
+        params: {
+          order: _vm.withdrawals_request.id
+        }
+      }
+    }
+  }, [_c("button", {
+    staticClass: "btn btn-outline-secondary rounded"
+  }, [_vm._v("\n                  Ver estado de retiro\n                ")])])], 1) : _vm._e()], 1)]) : _vm._e()]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("ul", {
+    staticClass: "listview image-listview no-border-top-bottom",
+    staticStyle: {
+      "padding-right": "20px"
+    }
+  }, [_vm._l(_vm.movements, function (movement) {
+    return _vm.usuario.role_id == 2 ? _c("li", {
+      "class": movement.type_movement_id == 2 ? "hover_link" : "",
+      on: {
+        click: function click($event) {
+          return _vm.seeOrderSatatus(movement);
+        }
+      }
+    }, [_c("div", {
+      staticClass: "item"
+    }, [_vm.usuario.role_id == 2 && movement.type_movement_id == 1 ? _c("img", {
+      staticClass: "image",
+      attrs: {
+        alt: "image",
+        src: movement.suscriptorimg
+      }
+    }) : _vm._e(), _vm._v(" "), _vm.usuario.role_id == 2 && movement.type_movement_id == 2 ? _c("img", {
+      staticClass: "image",
+      attrs: {
+        alt: "image",
+        src: movement.loolerimg
+      }
+    }) : _vm._e(), _vm._v(" "), _c("div", {
+      staticClass: "in"
+    }, [_c("div", [_vm._v("\n                " + _vm._s(movement.type_movement) + "\n                "), _c("footer", [_vm._v(_vm._s(_vm.formatDate(movement.created_at)))])]), _vm._v(" "), _c("span", {
+      "class": movement.type_movement_id == 1 ? "text-secondary" : "text-danger"
+    }, [_vm._v("\n                " + _vm._s(movement.type_movement_id == 1 ? "+ $" + _vm.formatPrice(movement.movement_amount) : movement.type_movement_id == 2 ? "- $" + _vm.formatPrice(movement.movement_amount) : "") + "\n              ")])])])]) : _vm._e();
+  }), _vm._v(" "), _vm._l(_vm.movements, function (movement) {
+    return _vm.usuario.role_id == 3 ? _c("li", [_c("div", {
+      staticClass: "item"
+    }, [_c("img", {
+      staticClass: "image",
+      attrs: {
+        alt: "image",
+        src: movement.profile_image
+      }
+    }), _vm._v(" "), _c("div", {
+      staticClass: "in"
+    }, [_c("div", [_vm._v("\n                " + _vm._s(movement.type_movement) + "\n                "), _c("footer", [_vm._v(_vm._s(_vm.formatDate(movement.created_at)))])]), _vm._v(" "), _c("span", {
+      staticClass: "text-black"
+    }, [_vm._v("\n                $" + _vm._s(_vm.formatPrice(movement.movement_amount)) + "\n\n              ")])])])]) : _vm._e();
+  }), _vm._v(" "), _c("infinite-loading", {
+    attrs: {
+      identifier: _vm.infiniteIdMovements
+    },
+    on: {
+      infinite: _vm.infiniteHandlerMovements
+    }
+  }, [_c("div", {
+    staticClass: "white",
+    attrs: {
+      slot: "no-more"
+    },
+    slot: "no-more"
+  }, [_vm._v("\n            No hay más movimientos\n          ")]), _vm._v(" "), _c("div", {
+    staticClass: "white",
+    attrs: {
+      slot: "no-results"
+    },
+    slot: "no-results"
+  }, [_vm._v("\n            No hay más movimientos\n          ")])]), _vm._v(" "), _vm.movements.length == 0 ? _c("div", {
+    staticClass: "text-black center",
+    staticStyle: {
+      "text-align": "center"
+    }
+  }, [_vm._v("No hay movimientos\n          registrados")]) : _vm._e()], 2)])])]);
+};
+
+var staticRenderFns = [function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", [_c("img", {
+    staticStyle: {
+      width: "35px",
+      height: "35px"
+    },
+    attrs: {
+      src: "/menu_icons/rose/loolecoin.svg"
+    }
+  }), _vm._v("\n            CLP\n\n          ")]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "listview-title mt-2"
+  }, [_c("h3", [_vm._v("\n          Últimos movimientos\n        ")])]);
+}];
+render._withStripped = true;
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Wallet/Withdrawals.vue?vue&type=template&id=726c5ad3&":
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Wallet/Withdrawals.vue?vue&type=template&id=726c5ad3& ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function render() {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", [_vm.step == 1 ? _c("div", [_c("div", {
+    staticClass: "appHeader box-shw-profile-header"
+  }, [_c("div", {
+    staticClass: "left",
+    attrs: {
+      id: "back_arrow"
+    }
+  }, [_c("router-link", {
+    staticClass: "headerButton goBack",
+    attrs: {
+      to: "/Wallet"
+    }
+  }, [_c("ion-icon", {
+    staticClass: "md hydrated",
+    attrs: {
+      "aria-label": "chevron back outline",
+      name: "chevron-back-outline",
+      role: "img"
+    }
+  })], 1)], 1), _vm._v(" "), _c("div", {
+    staticClass: "pageTitle"
+  }, [_vm._v("\n        Retirar dinero\n      ")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "appCapsule"
+    }
+  }, [_c("div", {
+    attrs: {
+      id: "wallet_container"
+    }
+  }, [_c("div", {
+    staticClass: "section mb-2",
+    staticStyle: {
+      padding: "0 0px"
+    }
+  }, [_c("div", {
+    staticClass: "card comment-box no-box-shadow"
+  }, [_c("ul", {
+    staticClass: "listview image-listview text no-border-top-bottom"
+  }, [_c("li", [_c("div", {
+    staticClass: "item",
+    attrs: {
+      href: "#"
+    }
+  }, [_c("div", {
+    staticClass: "in"
+  }, [_vm._m(0), _vm._v(" "), _vm.load ? _c("span", [_vm._v("\n                      $" + _vm._s(_vm.formatPrice(_vm.real_balance)) + "\n                    ")]) : _vm._e(), _vm._v(" "), !_vm.load ? _c("div", {
+    staticClass: "spinner-border text-secondary",
+    staticStyle: {
+      "font-size": "15px"
+    },
+    attrs: {
+      role: "status"
+    }
+  }) : _vm._e()])])])])])]), _vm._v(" "), _c("div", {
+    staticClass: "section full mt-2 mb-2"
+  }, [_c("div", {
+    staticClass: "wide-block pb-1 pt-2 no-border-top-bottom"
+  }, [_c("form", [_c("div", {
+    staticClass: "form-group boxed"
+  }, [_c("div", {
+    staticClass: "input-wrapper"
+  }, [_c("label", {
+    attrs: {
+      "for": "name5"
+    }
+  }, [_vm._v("\n                    ¿Cuánto quieres retirar?\n                  ")]), _vm._v(" "), _c("money", _vm._b({
+    staticClass: "form-control",
+    staticStyle: {
+      width: "100%"
+    },
+    attrs: {
+      id: "inputMoney"
+    },
+    model: {
+      value: _vm.inputs.price,
+      callback: function callback($$v) {
+        _vm.$set(_vm.inputs, "price", $$v);
+      },
+      expression: "inputs.price"
+    }
+  }, "money", _vm.money, false)), _vm._v(" "), _c("i", {
+    staticClass: "clear-input"
+  }, [_c("ion-icon", {
+    staticClass: "md hydrated",
+    attrs: {
+      "aria-label": "close circle",
+      name: "close-circle",
+      role: "img"
+    }
+  })], 1)], 1), _vm._v(" "), _c("div", {
+    staticClass: "invalid-input"
+  }, [_vm._v("\n                  " + _vm._s(_vm.inputs.price != 0 && _vm.inputs.price < _vm.min ? "El monto debe ser igual o mayor a $10.000" : _vm.inputs.price > _vm.real_balance ? "El monto no puede ser mayor al saldo" : "") + "\n                ")]), _vm._v(" "), _c("p", {
+    staticClass: "mt-3",
+    staticStyle: {
+      "font-size": "13px"
+    }
+  }, [_vm._v("\n                  * El monto mínimo a retirar son CLP $10.000\n                ")])])]), _vm._v(" "), _c("div", {
+    staticClass: "mt-5"
+  }, [_c("button", {
+    staticClass: "btn btn-primary bg-primary-loole btn-block btn-lg rounded",
+    attrs: {
+      disabled: _vm.inputs.price < _vm.min ? true : _vm.inputs.price > _vm.real_balance ? true : false,
+      type: "submit"
+    },
+    on: {
+      click: _vm.nextStep
+    }
+  }, [_vm._v("\n                Continuar\n              ")])])])])])])]) : _vm._e(), _vm._v(" "), _vm.step == 2 ? _c("div", [_c("div", {
+    staticClass: "appHeader box-shw-profile-header"
+  }, [_c("div", {
+    staticClass: "left",
+    attrs: {
+      id: "back_arrow"
+    }
+  }, [_c("a", {
+    staticClass: "headerButton goBack",
+    on: {
+      click: _vm.backStep
+    }
+  }, [_c("ion-icon", {
+    staticClass: "md hydrated",
+    attrs: {
+      "aria-label": "chevron back outline",
+      name: "chevron-back-outline",
+      role: "img"
+    }
+  })], 1)]), _vm._v(" "), _c("div", {
+    staticClass: "pageTitle"
+  }, [_vm._v("\n        Confirmar retiro\n      ")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "appCapsule"
+    }
+  }, [_c("div", {
+    attrs: {
+      id: "wallet_container"
+    }
+  }, [_c("div", {
+    staticClass: "section mb-2",
+    staticStyle: {
+      padding: "0 0px"
+    }
+  }, [_c("div", {
+    staticClass: "card comment-box no-box-shadow"
+  }, [_c("ul", {
+    staticClass: "listview image-listview text no-border-top-bottom"
+  }, [_c("li", [_c("div", {
+    staticClass: "item",
+    attrs: {
+      href: "#"
+    }
+  }, [_c("div", {
+    staticClass: "in"
+  }, [_vm._m(1), _vm._v(" "), _vm.load ? _c("span", [_vm._v("\n                      $" + _vm._s(_vm.formatPrice(_vm.value_total)) + "\n                    ")]) : _vm._e(), _vm._v(" "), !_vm.load ? _c("div", {
+    staticClass: "spinner-border text-secondary",
+    staticStyle: {
+      "font-size": "15px"
+    },
+    attrs: {
+      role: "status"
+    }
+  }) : _vm._e()])])]), _vm._v(" "), _c("li", [_c("div", {
+    staticClass: "item",
+    attrs: {
+      href: "#"
+    }
+  }, [_c("div", {
+    staticClass: "in"
+  }, [_vm._m(2), _vm._v(" "), _vm.load ? _c("span", [_vm._v("\n                      $" + _vm._s(_vm.formatPrice(_vm.porcent)) + "\n                    ")]) : _vm._e(), _vm._v(" "), !_vm.load ? _c("div", {
+    staticClass: "spinner-border text-secondary",
+    staticStyle: {
+      "font-size": "15px"
+    },
+    attrs: {
+      role: "status"
+    }
+  }) : _vm._e()])])])])])]), _vm._v(" "), _c("div", {
+    staticClass: "section mt-2 mb-2"
+  }, [_c("div", {
+    staticClass: "card comment-box no-box-shadow"
+  }, [_c("h4", {
+    staticClass: "card-title"
+  }, [_vm._v("\n              Total a retirar\n            ")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c("div", {
+    staticClass: "text"
+  }, [_c("h1", [_vm._v("\n                $" + _vm._s(_vm.formatPrice(_vm.value_total)) + "\n              ")])])])]), _vm._v(" "), _c("div", {
+    staticClass: "section full mt-2 mb-2"
+  }, [_c("div", {
+    staticClass: "wide-block pb-1 pt-2 no-border-top-bottom"
+  }, [_c("div", {
+    staticClass: "mt-5"
+  }, [_c("button", {
+    staticClass: "btn btn-primary bg-primary-loole btn-block btn-lg rounded",
+    attrs: {
+      type: "submit"
+    },
+    on: {
+      click: _vm.nextStep
+    }
+  }, [_vm._v("\n                Continuar\n              ")])])])])])])]) : _vm._e(), _vm._v(" "), _vm.step == 3 ? _c("div", [_c("div", {
+    attrs: {
+      id: "wallet_container"
+    }
+  }, [_c("div", {
+    attrs: {
+      id: "appCapsule"
+    }
+  }, [_c("div", {
+    staticClass: "section mt-2 mb-2"
+  }, [_vm._m(4), _vm._v(" "), _c("div", {
+    staticClass: "mt-5"
+  }, [_c("router-link", {
+    attrs: {
+      to: "/Wallet"
+    }
+  }, [_c("button", {
+    staticClass: "btn btn-primary bg-primary-loole btn-block btn-lg rounded",
+    attrs: {
+      type: "button"
+    },
+    on: {
+      click: _vm.nextStep
+    }
+  }, [_vm._v("\n                Volver a mi Wallet\n              ")])])], 1)])])])]) : _vm._e(), _vm._v(" "), _c("div", {
+    staticClass: "modal fade dialogbox show",
+    staticStyle: {
+      display: "none"
+    },
+    attrs: {
+      id: "modal_confirmation",
+      "data-bs-backdrop": "static",
+      tabindex: "-1",
+      role: "dialog",
+      "aria-modal": "true"
+    }
+  }, [_c("div", {
+    staticClass: "modal-dialog",
+    attrs: {
+      role: "document"
+    }
+  }, [_c("div", {
+    staticClass: "modal-content",
+    staticStyle: {
+      "max-width": "600px",
+      "max-height": "none !important"
+    }
+  }, [_vm._m(5), _vm._v(" "), _vm._m(6), _vm._v(" "), _c("div", {
+    staticClass: "modal-footer"
+  }, [_c("div", {
+    staticClass: "btn-inline"
+  }, [_c("a", {
+    staticClass: "btn text-black",
+    attrs: {
+      href: "#",
+      "data-bs-dismiss": "modal"
+    }
+  }, [_vm._v("Cancelar")]), _vm._v(" "), _c("a", {
+    staticClass: "btn btn-text-primary",
+    on: {
+      click: _vm.confirmationWithdrawals
+    }
+  }, [_vm._v("Aceptar")])])])])])])]);
+};
+
+var staticRenderFns = [function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", [_c("img", {
+    staticStyle: {
+      width: "25px",
+      height: "25px"
+    },
+    attrs: {
+      src: "/menu_icons/rose/loolecoin.svg"
+    }
+  }), _vm._v("\n                      Saldo CLP\n                    ")]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", [_c("img", {
+    staticStyle: {
+      width: "25px",
+      height: "25px"
+    },
+    attrs: {
+      src: "/menu_icons/rose/loolecoin.svg"
+    }
+  }), _vm._v("\n                      Vas a retirar\n                    ")]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", [_c("img", {
+    staticStyle: {
+      width: "25px",
+      height: "25px"
+    },
+    attrs: {
+      src: "/images/logo/isotipo.svg"
+    }
+  }), _vm._v("\n                      Servicios Loole\n                    ")]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "text"
+  }, [_c("img", {
+    staticStyle: {
+      width: "25px",
+      height: "25px"
+    },
+    attrs: {
+      src: "/menu_icons/rose/loolecoin.svg"
+    }
+  })]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "card comment-box no-box-shadow"
+  }, [_c("img", {
+    staticStyle: {
+      width: "100%",
+      height: "200px"
+    },
+    attrs: {
+      src: "/images/collect_img/money.svg"
+    }
+  }), _vm._v(" "), _c("h4", {
+    staticClass: "card-title",
+    staticStyle: {
+      "margin-top": "20px"
+    }
+  }, [_vm._v(" Solicitud envida")]), _vm._v(" "), _c("div", {
+    staticClass: "text"
+  }, [_vm._v("\n\n              Nos encargaremos de tu solicitud, si quieres saber cual es su estado, accede Mi wallet > Estado retiro\n\n            ")])]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "modal-header"
+  }, [_c("h5", {
+    staticClass: "modal-title"
+  }, [_vm._v("\n            Confirmar retiro 💸\n          ")])]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "modal-body text-start mb-2"
+  }, [_c("div", {
+    staticClass: "col-lg-12 col-md-7 mx-auto"
+  }, [_c("div", {
+    staticClass: "text-center"
+  }, [_c("div", {
+    staticClass: "mb-3"
+  }, [_vm._v("\n\n                Una vez enviada la solicitud no la podrás cancelar, ¿Estás seguro que quieres continuar con el retiro\n                de tu dinero?\n\n              ")])])])]);
+}];
+render._withStripped = true;
+
 
 /***/ }),
 
@@ -822,940 +1053,6 @@ webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Wallet/Wallet.vue?vue&type=template&id=101c1f14&":
-/*!****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Wallet/Wallet.vue?vue&type=template&id=101c1f14& ***!
-  \****************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "appHeader box-shw-profile-header" }, [
-      _c(
-        "div",
-        { staticClass: "left", attrs: { id: "back_arrow" } },
-        [
-          _c(
-            "router-link",
-            { staticClass: "headerButton goBack", attrs: { to: "/home" } },
-            [
-              _c("ion-icon", {
-                staticClass: "md hydrated",
-                attrs: {
-                  "aria-label": "chevron back outline",
-                  name: "chevron-back-outline",
-                  role: "img",
-                },
-              }),
-            ],
-            1
-          ),
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "pageTitle" }, [
-        _vm._v("\n      Movimientos\n    "),
-      ]),
-    ]),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "appCapsule" } }, [
-      _c("div", { attrs: { id: "wallet_container" } }, [
-        _c("div", { staticClass: "section mb-2" }, [
-          _vm.usuario.role_id == 2
-            ? _c(
-                "div",
-                {
-                  staticClass: "card comment-box no-box-shadow",
-                  staticStyle: { background: "transparent" },
-                },
-                [
-                  _vm._m(0),
-                  _vm._v(" "),
-                  _c(
-                    "h1",
-                    {
-                      staticClass: "card-title mt-1",
-                      staticStyle: { "font-size": "26px" },
-                    },
-                    [
-                      _vm.load
-                        ? _c("strong", [
-                            _vm._v(
-                              "\n              $" +
-                                _vm._s(
-                                  _vm.money == null
-                                    ? 0
-                                    : _vm.formatPrice(_vm.money)
-                                ) +
-                                "\n            "
-                            ),
-                          ])
-                        : _vm._e(),
-                      _vm._v(" "),
-                      !_vm.load
-                        ? _c("div", {
-                            staticClass: "spinner-border text-secondary",
-                            staticStyle: { "font-size": "15px" },
-                            attrs: { role: "status" },
-                          })
-                        : _vm._e(),
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "text mt-3" },
-                    [
-                      _c("router-link", { attrs: { to: "/Withdrawals" } }, [
-                        _vm.money != null && !_vm.withdrawals_request
-                          ? _c(
-                              "button",
-                              { staticClass: "btn btn-primary rounded" },
-                              [
-                                _vm._v(
-                                  "\n\n                Solicitar retiro\n              "
-                                ),
-                              ]
-                            )
-                          : _vm._e(),
-                      ]),
-                      _vm._v(" "),
-                      _vm.withdrawals_request
-                        ? _c(
-                            "div",
-                            [
-                              _c(
-                                "router-link",
-                                {
-                                  attrs: {
-                                    to: {
-                                      path:
-                                        "/OrderStatus/" +
-                                        _vm.withdrawals_request.id,
-                                      params: {
-                                        order: _vm.withdrawals_request.id,
-                                      },
-                                    },
-                                  },
-                                },
-                                [
-                                  _c(
-                                    "button",
-                                    {
-                                      staticClass:
-                                        "btn btn-outline-secondary rounded ",
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  Ver estado de retiro\n                "
-                                      ),
-                                    ]
-                                  ),
-                                ]
-                              ),
-                            ],
-                            1
-                          )
-                        : _vm._e(),
-                    ],
-                    1
-                  ),
-                ]
-              )
-            : _vm._e(),
-        ]),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _c(
-          "ul",
-          {
-            staticClass: "listview image-listview no-border-top-bottom ",
-            staticStyle: { "padding-right": "20px" },
-          },
-          [
-            _vm._l(_vm.movements, function (movement) {
-              return _vm.usuario.role_id == 2
-                ? _c(
-                    "li",
-                    {
-                      class: movement.type_movement_id == 2 ? "hover_link" : "",
-                      on: {
-                        click: function ($event) {
-                          return _vm.seeOrderSatatus(movement)
-                        },
-                      },
-                    },
-                    [
-                      _c("div", { staticClass: "item" }, [
-                        _vm.usuario.role_id == 2 &&
-                        movement.type_movement_id == 1
-                          ? _c("img", {
-                              staticClass: "image",
-                              attrs: {
-                                alt: "image",
-                                src: movement.suscriptorimg,
-                              },
-                            })
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.usuario.role_id == 2 &&
-                        movement.type_movement_id == 2
-                          ? _c("img", {
-                              staticClass: "image",
-                              attrs: { alt: "image", src: movement.loolerimg },
-                            })
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "in" }, [
-                          _c("div", [
-                            _vm._v(
-                              "\n                " +
-                                _vm._s(movement.type_movement) +
-                                "\n                "
-                            ),
-                            _c("footer", [
-                              _vm._v(
-                                _vm._s(_vm.formatDate(movement.created_at))
-                              ),
-                            ]),
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "span",
-                            {
-                              class:
-                                movement.type_movement_id == 1
-                                  ? "text-secondary"
-                                  : "text-danger",
-                            },
-                            [
-                              _vm._v(
-                                "\n                " +
-                                  _vm._s(
-                                    movement.type_movement_id == 1
-                                      ? "+ $" +
-                                          _vm.formatPrice(
-                                            movement.movement_amount
-                                          )
-                                      : movement.type_movement_id == 2
-                                      ? "- $" +
-                                        _vm.formatPrice(
-                                          movement.movement_amount
-                                        )
-                                      : ""
-                                  ) +
-                                  "\n              "
-                              ),
-                            ]
-                          ),
-                        ]),
-                      ]),
-                    ]
-                  )
-                : _vm._e()
-            }),
-            _vm._v(" "),
-            _vm._l(_vm.movements, function (movement) {
-              return _vm.usuario.role_id == 3
-                ? _c("li", [
-                    _c("div", { staticClass: "item" }, [
-                      _c("img", {
-                        staticClass: "image",
-                        attrs: { alt: "image", src: movement.profile_image },
-                      }),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "in" }, [
-                        _c("div", [
-                          _vm._v(
-                            "\n                " +
-                              _vm._s(movement.type_movement) +
-                              "\n                "
-                          ),
-                          _c("footer", [
-                            _vm._v(_vm._s(_vm.formatDate(movement.created_at))),
-                          ]),
-                        ]),
-                        _vm._v(" "),
-                        _c("span", { staticClass: "text-black" }, [
-                          _vm._v(
-                            "\n                $" +
-                              _vm._s(
-                                _vm.formatPrice(movement.movement_amount)
-                              ) +
-                              "\n\n              "
-                          ),
-                        ]),
-                      ]),
-                    ]),
-                  ])
-                : _vm._e()
-            }),
-            _vm._v(" "),
-            _c(
-              "infinite-loading",
-              {
-                attrs: { identifier: _vm.infiniteIdMovements },
-                on: { infinite: _vm.infiniteHandlerMovements },
-              },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass: "white",
-                    attrs: { slot: "no-more" },
-                    slot: "no-more",
-                  },
-                  [_vm._v("\n            No hay más movimientos\n          ")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "white",
-                    attrs: { slot: "no-results" },
-                    slot: "no-results",
-                  },
-                  [_vm._v("\n            No hay más movimientos\n          ")]
-                ),
-              ]
-            ),
-            _vm._v(" "),
-            _vm.movements.length == 0
-              ? _c(
-                  "div",
-                  {
-                    staticClass: "text-black center",
-                    staticStyle: { "text-align": "center" },
-                  },
-                  [_vm._v("No hay movimientos\n          registrados")]
-                )
-              : _vm._e(),
-          ],
-          2
-        ),
-      ]),
-    ]),
-  ])
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("img", {
-        staticStyle: { width: "35px", height: "35px" },
-        attrs: { src: "/menu_icons/rose/loolecoin.svg" },
-      }),
-      _vm._v("\n            CLP\n\n          "),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "listview-title mt-2" }, [
-      _c("h3", [_vm._v("\n          Últimos movimientos\n        ")]),
-    ])
-  },
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Wallet/Withdrawals.vue?vue&type=template&id=726c5ad3&":
-/*!*********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Wallet/Withdrawals.vue?vue&type=template&id=726c5ad3& ***!
-  \*********************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm.step == 1
-      ? _c("div", [
-          _c("div", { staticClass: "appHeader box-shw-profile-header" }, [
-            _c(
-              "div",
-              { staticClass: "left", attrs: { id: "back_arrow" } },
-              [
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "headerButton goBack",
-                    attrs: { to: "/Wallet" },
-                  },
-                  [
-                    _c("ion-icon", {
-                      staticClass: "md hydrated",
-                      attrs: {
-                        "aria-label": "chevron back outline",
-                        name: "chevron-back-outline",
-                        role: "img",
-                      },
-                    }),
-                  ],
-                  1
-                ),
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "pageTitle" }, [
-              _vm._v("\n        Retirar dinero\n      "),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { attrs: { id: "appCapsule" } }, [
-            _c("div", { attrs: { id: "wallet_container" } }, [
-              _c(
-                "div",
-                {
-                  staticClass: "section mb-2",
-                  staticStyle: { padding: "0 0px" },
-                },
-                [
-                  _c("div", { staticClass: "card comment-box no-box-shadow" }, [
-                    _c(
-                      "ul",
-                      {
-                        staticClass:
-                          "listview image-listview text no-border-top-bottom",
-                      },
-                      [
-                        _c("li", [
-                          _c(
-                            "div",
-                            { staticClass: "item", attrs: { href: "#" } },
-                            [
-                              _c("div", { staticClass: "in" }, [
-                                _vm._m(0),
-                                _vm._v(" "),
-                                _vm.load
-                                  ? _c("span", [
-                                      _vm._v(
-                                        "\n                      $" +
-                                          _vm._s(
-                                            _vm.formatPrice(_vm.real_balance)
-                                          ) +
-                                          "\n                    "
-                                      ),
-                                    ])
-                                  : _vm._e(),
-                                _vm._v(" "),
-                                !_vm.load
-                                  ? _c("div", {
-                                      staticClass:
-                                        "spinner-border text-secondary",
-                                      staticStyle: { "font-size": "15px" },
-                                      attrs: { role: "status" },
-                                    })
-                                  : _vm._e(),
-                              ]),
-                            ]
-                          ),
-                        ]),
-                      ]
-                    ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "section full mt-2 mb-2" }, [
-                _c(
-                  "div",
-                  { staticClass: "wide-block pb-1 pt-2 no-border-top-bottom" },
-                  [
-                    _c("form", [
-                      _c("div", { staticClass: "form-group boxed" }, [
-                        _c(
-                          "div",
-                          { staticClass: "input-wrapper" },
-                          [
-                            _c("label", { attrs: { for: "name5" } }, [
-                              _vm._v(
-                                "\n                    ¿Cuánto quieres retirar?\n                  "
-                              ),
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "money",
-                              _vm._b(
-                                {
-                                  staticClass: "form-control",
-                                  staticStyle: { width: "100%" },
-                                  attrs: { id: "inputMoney" },
-                                  model: {
-                                    value: _vm.inputs.price,
-                                    callback: function ($$v) {
-                                      _vm.$set(_vm.inputs, "price", $$v)
-                                    },
-                                    expression: "inputs.price",
-                                  },
-                                },
-                                "money",
-                                _vm.money,
-                                false
-                              )
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "i",
-                              { staticClass: "clear-input" },
-                              [
-                                _c("ion-icon", {
-                                  staticClass: "md hydrated",
-                                  attrs: {
-                                    "aria-label": "close circle",
-                                    name: "close-circle",
-                                    role: "img",
-                                  },
-                                }),
-                              ],
-                              1
-                            ),
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "invalid-input" }, [
-                          _vm._v(
-                            "\n                  " +
-                              _vm._s(
-                                _vm.inputs.price != 0 &&
-                                  _vm.inputs.price < _vm.min
-                                  ? "El monto debe ser igual o mayor a $10.000"
-                                  : _vm.inputs.price > _vm.real_balance
-                                  ? "El monto no puede ser mayor al saldo"
-                                  : ""
-                              ) +
-                              "\n                "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "p",
-                          {
-                            staticClass: "mt-3",
-                            staticStyle: { "font-size": "13px" },
-                          },
-                          [
-                            _vm._v(
-                              "\n                  * El monto mínimo a retirar son CLP $10.000\n                "
-                            ),
-                          ]
-                        ),
-                      ]),
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "mt-5" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "btn btn-primary bg-primary-loole btn-block btn-lg rounded",
-                          attrs: {
-                            disabled:
-                              _vm.inputs.price < _vm.min
-                                ? true
-                                : _vm.inputs.price > _vm.real_balance
-                                ? true
-                                : false,
-                            type: "submit",
-                          },
-                          on: { click: _vm.nextStep },
-                        },
-                        [_vm._v("\n                Continuar\n              ")]
-                      ),
-                    ]),
-                  ]
-                ),
-              ]),
-            ]),
-          ]),
-        ])
-      : _vm._e(),
-    _vm._v(" "),
-    _vm.step == 2
-      ? _c("div", [
-          _c("div", { staticClass: "appHeader box-shw-profile-header" }, [
-            _c("div", { staticClass: "left", attrs: { id: "back_arrow" } }, [
-              _c(
-                "a",
-                {
-                  staticClass: "headerButton goBack",
-                  on: { click: _vm.backStep },
-                },
-                [
-                  _c("ion-icon", {
-                    staticClass: "md hydrated",
-                    attrs: {
-                      "aria-label": "chevron back outline",
-                      name: "chevron-back-outline",
-                      role: "img",
-                    },
-                  }),
-                ],
-                1
-              ),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "pageTitle" }, [
-              _vm._v("\n        Confirmar retiro\n      "),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { attrs: { id: "appCapsule" } }, [
-            _c("div", { attrs: { id: "wallet_container" } }, [
-              _c(
-                "div",
-                {
-                  staticClass: "section mb-2",
-                  staticStyle: { padding: "0 0px" },
-                },
-                [
-                  _c("div", { staticClass: "card comment-box no-box-shadow" }, [
-                    _c(
-                      "ul",
-                      {
-                        staticClass:
-                          "listview image-listview text no-border-top-bottom",
-                      },
-                      [
-                        _c("li", [
-                          _c(
-                            "div",
-                            { staticClass: "item", attrs: { href: "#" } },
-                            [
-                              _c("div", { staticClass: "in" }, [
-                                _vm._m(1),
-                                _vm._v(" "),
-                                _vm.load
-                                  ? _c("span", [
-                                      _vm._v(
-                                        "\n                      $" +
-                                          _vm._s(
-                                            _vm.formatPrice(_vm.value_total)
-                                          ) +
-                                          "\n                    "
-                                      ),
-                                    ])
-                                  : _vm._e(),
-                                _vm._v(" "),
-                                !_vm.load
-                                  ? _c("div", {
-                                      staticClass:
-                                        "spinner-border text-secondary",
-                                      staticStyle: { "font-size": "15px" },
-                                      attrs: { role: "status" },
-                                    })
-                                  : _vm._e(),
-                              ]),
-                            ]
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c(
-                            "div",
-                            { staticClass: "item", attrs: { href: "#" } },
-                            [
-                              _c("div", { staticClass: "in" }, [
-                                _vm._m(2),
-                                _vm._v(" "),
-                                _vm.load
-                                  ? _c("span", [
-                                      _vm._v(
-                                        "\n                      $" +
-                                          _vm._s(_vm.formatPrice(_vm.porcent)) +
-                                          "\n                    "
-                                      ),
-                                    ])
-                                  : _vm._e(),
-                                _vm._v(" "),
-                                !_vm.load
-                                  ? _c("div", {
-                                      staticClass:
-                                        "spinner-border text-secondary",
-                                      staticStyle: { "font-size": "15px" },
-                                      attrs: { role: "status" },
-                                    })
-                                  : _vm._e(),
-                              ]),
-                            ]
-                          ),
-                        ]),
-                      ]
-                    ),
-                  ]),
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "section mt-2 mb-2" }, [
-                _c("div", { staticClass: "card comment-box no-box-shadow " }, [
-                  _c("h4", { staticClass: "card-title" }, [
-                    _vm._v("\n              Total a retirar\n            "),
-                  ]),
-                  _vm._v(" "),
-                  _vm._m(3),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "text" }, [
-                    _c("h1", [
-                      _vm._v(
-                        "\n                $" +
-                          _vm._s(_vm.formatPrice(_vm.value_total)) +
-                          "\n              "
-                      ),
-                    ]),
-                  ]),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "section full mt-2 mb-2" }, [
-                _c(
-                  "div",
-                  { staticClass: "wide-block pb-1 pt-2 no-border-top-bottom" },
-                  [
-                    _c("div", { staticClass: "mt-5" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "btn btn-primary bg-primary-loole btn-block btn-lg rounded",
-                          attrs: { type: "submit" },
-                          on: { click: _vm.nextStep },
-                        },
-                        [_vm._v("\n                Continuar\n              ")]
-                      ),
-                    ]),
-                  ]
-                ),
-              ]),
-            ]),
-          ]),
-        ])
-      : _vm._e(),
-    _vm._v(" "),
-    _vm.step == 3
-      ? _c("div", [
-          _c("div", { attrs: { id: "wallet_container" } }, [
-            _c("div", { attrs: { id: "appCapsule" } }, [
-              _c("div", { staticClass: "section mt-2 mb-2" }, [
-                _vm._m(4),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "mt-5" },
-                  [
-                    _c("router-link", { attrs: { to: "/Wallet" } }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass:
-                            "btn btn-primary bg-primary-loole btn-block btn-lg rounded",
-                          attrs: { type: "button" },
-                          on: { click: _vm.nextStep },
-                        },
-                        [
-                          _vm._v(
-                            "\n                Volver a mi Wallet\n              "
-                          ),
-                        ]
-                      ),
-                    ]),
-                  ],
-                  1
-                ),
-              ]),
-            ]),
-          ]),
-        ])
-      : _vm._e(),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass: "modal fade dialogbox show",
-        staticStyle: { display: "none" },
-        attrs: {
-          id: "modal_confirmation",
-          "data-bs-backdrop": "static",
-          tabindex: "-1",
-          role: "dialog",
-          "aria-modal": "true",
-        },
-      },
-      [
-        _c(
-          "div",
-          { staticClass: "modal-dialog", attrs: { role: "document" } },
-          [
-            _c(
-              "div",
-              {
-                staticClass: "modal-content",
-                staticStyle: {
-                  "max-width": "600px",
-                  "max-height": "none !important",
-                },
-              },
-              [
-                _vm._m(5),
-                _vm._v(" "),
-                _vm._m(6),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-footer" }, [
-                  _c("div", { staticClass: "btn-inline" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "btn text-black",
-                        attrs: { href: "#", "data-bs-dismiss": "modal" },
-                      },
-                      [_vm._v("Cancelar")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      {
-                        staticClass: "btn btn-text-primary",
-                        on: { click: _vm.confirmationWithdrawals },
-                      },
-                      [_vm._v("Aceptar")]
-                    ),
-                  ]),
-                ]),
-              ]
-            ),
-          ]
-        ),
-      ]
-    ),
-  ])
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("img", {
-        staticStyle: { width: "25px", height: "25px" },
-        attrs: { src: "/menu_icons/rose/loolecoin.svg" },
-      }),
-      _vm._v("\n                      Saldo CLP\n                    "),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("img", {
-        staticStyle: { width: "25px", height: "25px" },
-        attrs: { src: "/menu_icons/rose/loolecoin.svg" },
-      }),
-      _vm._v("\n                      Vas a retirar\n                    "),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("img", {
-        staticStyle: { width: "25px", height: "25px" },
-        attrs: { src: "/images/logo/isotipo.svg" },
-      }),
-      _vm._v("\n                      Servicios Loole\n                    "),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text" }, [
-      _c("img", {
-        staticStyle: { width: "25px", height: "25px" },
-        attrs: { src: "/menu_icons/rose/loolecoin.svg" },
-      }),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card comment-box no-box-shadow " }, [
-      _c("img", {
-        staticStyle: { width: "100%", height: "200px" },
-        attrs: { src: "/images/collect_img/money.svg" },
-      }),
-      _vm._v(" "),
-      _c(
-        "h4",
-        { staticClass: "card-title", staticStyle: { "margin-top": "20px" } },
-        [_vm._v(" Solicitud envida")]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "text" }, [
-        _vm._v(
-          "\n\n              Nos encargaremos de tu solicitud, si quieres saber cual es su estado, accede Mi wallet > Estado retiro\n\n            "
-        ),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-header" }, [
-      _c("h5", { staticClass: "modal-title" }, [
-        _vm._v("\n            Confirmar retiro 💸\n          "),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-body text-start mb-2" }, [
-      _c("div", { staticClass: "col-lg-12 col-md-7 mx-auto" }, [
-        _c("div", { staticClass: "text-center" }, [
-          _c("div", { staticClass: "mb-3 " }, [
-            _vm._v(
-              "\n\n                Una vez enviada la solicitud no la podrás cancelar, ¿Estás seguro que quieres continuar con el retiro\n                de tu dinero?\n\n              "
-            ),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
 /***/ "./resources/js/components/Wallet/Wallet.vue":
 /*!***************************************************!*\
   !*** ./resources/js/components/Wallet/Wallet.vue ***!
@@ -1816,10 +1113,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Wallet_vue_vue_type_template_id_101c1f14___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Wallet.vue?vue&type=template&id=101c1f14& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Wallet/Wallet.vue?vue&type=template&id=101c1f14&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Wallet_vue_vue_type_template_id_101c1f14___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_Wallet_vue_vue_type_template_id_101c1f14___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!../../../../node_modules/vue-loader/lib??vue-loader-options!./Wallet.vue?vue&type=template&id=101c1f14& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Wallet/Wallet.vue?vue&type=template&id=101c1f14&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_Wallet_vue_vue_type_template_id_101c1f14___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Wallet_vue_vue_type_template_id_101c1f14___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_Wallet_vue_vue_type_template_id_101c1f14___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -1885,10 +1182,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Withdrawals_vue_vue_type_template_id_726c5ad3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Withdrawals.vue?vue&type=template&id=726c5ad3& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Wallet/Withdrawals.vue?vue&type=template&id=726c5ad3&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Withdrawals_vue_vue_type_template_id_726c5ad3___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_Withdrawals_vue_vue_type_template_id_726c5ad3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!../../../../node_modules/vue-loader/lib??vue-loader-options!./Withdrawals.vue?vue&type=template&id=726c5ad3& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Wallet/Withdrawals.vue?vue&type=template&id=726c5ad3&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_Withdrawals_vue_vue_type_template_id_726c5ad3___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Withdrawals_vue_vue_type_template_id_726c5ad3___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_Withdrawals_vue_vue_type_template_id_726c5ad3___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -14,373 +14,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var hooper_dist_hooper_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(hooper_dist_hooper_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -588,6 +221,786 @@ Vue.component("InfiniteLoading", __webpack_require__(/*! vue-infinite-loading */
     }
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Post/Post.vue?vue&type=template&id=4abc5918&":
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Post/Post.vue?vue&type=template&id=4abc5918& ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function render() {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", [_c("div", {
+    staticClass: "appHeader box-shw-profile-header"
+  }, [_c("div", {
+    staticClass: "left",
+    attrs: {
+      id: "back_arrow"
+    }
+  }, [_c("router-link", {
+    staticClass: "headerButton goBack",
+    attrs: {
+      to: {
+        path: "/" + _vm.username,
+        params: {
+          usermane: _vm.username
+        }
+      }
+    }
+  }, [_c("ion-icon", {
+    staticClass: "md hydrated",
+    attrs: {
+      "aria-label": "chevron back outline",
+      name: "chevron-back-outline",
+      role: "img"
+    }
+  })], 1)], 1), _vm._v(" "), _c("div", {
+    staticClass: "pageTitle"
+  }, [_vm._v("\n      Publicaciones\n    ")])]), _vm._v(" "), _c("div", {
+    attrs: {
+      id: "appCapsule"
+    }
+  }, [_c("div", {
+    attrs: {
+      id: "post_home"
+    }
+  }, [_vm._l(_vm.posts, function (post, indexM) {
+    return _c("div", {
+      key: indexM,
+      staticClass: "section",
+      attrs: {
+        id: "card_post"
+      }
+    }, [_c("div", {
+      staticClass: "card no-box-shadow"
+    }, [_c("div", {
+      staticClass: "card-header no-boreder-bottom"
+    }, [_c("div", {
+      staticClass: "d-flex align-items-center"
+    }, [_c("router-link", {
+      staticClass: "font_sixteen",
+      staticStyle: {
+        "font-weight": "700"
+      },
+      attrs: {
+        to: {
+          path: "/" + post.user.username,
+          params: {
+            usermane: post.user.username
+          }
+        }
+      }
+    }, [_c("div", {
+      staticClass: "image-wrapper"
+    }, [_c("img", {
+      staticClass: "imaged rounded avatar_post",
+      attrs: {
+        src: post.user.profile_image,
+        alt: "image"
+      }
+    })])]), _vm._v(" "), _c("div", {
+      staticClass: "mx-3"
+    }, [_c("div", [_c("router-link", {
+      staticClass: "font_sixteen",
+      staticStyle: {
+        "font-weight": "700"
+      },
+      attrs: {
+        to: {
+          path: "/" + post.user.username,
+          params: {
+            usermane: post.user.username
+          }
+        }
+      }
+    }, [_vm._v("\n\n                    " + _vm._s(post.user.username ? _vm.shortName(post.user.username) : post.user.name) + "\n                    "), _c("img", {
+      staticStyle: {
+        "margin-top": "-2px"
+      },
+      attrs: {
+        src: "/images/sello/sello.svg"
+      }
+    })])], 1), _vm._v(" "), _vm.actualy_date.diff(post.created_at, "days") == 0 && _vm.actualy_date.diff(post.created_at, "minute") >= 60 ? _c("small", {
+      staticClass: "d-block font-eleven"
+    }, [_vm._v("\n                  Hace " + _vm._s(_vm.actualy_date.diff(post.created_at, "hours")) + " hrs\n                ")]) : _vm._e(), _vm._v(" "), _vm.actualy_date.diff(post.created_at, "minute") < 60 && _vm.actualy_date.diff(post.created_at, "minute") >= 1 ? _c("small", {
+      staticClass: "d-block font-eleven"
+    }, [_vm._v("\n                  Hace " + _vm._s(_vm.actualy_date.diff(post.created_at, "minute")) + " min\n                ")]) : _vm._e(), _vm._v(" "), _vm.actualy_date.diff(post.created_at, "days") >= 1 ? _c("small", {
+      staticClass: "d-block font-eleven"
+    }, [_vm._v("\n                  Hace " + _vm._s(_vm.actualy_date.diff(post.created_at, "days")) + " días\n                ")]) : _vm._e(), _vm._v(" "), _vm.actualy_date.diff(post.created_at, "minute") < 1 ? _c("small", {
+      staticClass: "d-block font-eleven"
+    }, [_vm._v("\n                  Hace " + _vm._s(_vm.actualy_date.diff(post.created_at, "seconds")) + " s\n                ")]) : _vm._e()]), _vm._v(" "), _vm.usuario.id != post.user_id ? _c("div", {
+      staticClass: "text-end ms-auto"
+    }, [_c("div", {
+      staticClass: "dropstart"
+    }, [_c("a", {
+      staticClass: "text-secondary",
+      attrs: {
+        "aria-expanded": "false",
+        "data-bs-toggle": _vm.mobile ? "offcanvas" : "dropdown",
+        href: "javascript:",
+        id: "dropdownMarketingCard",
+        "data-bs-target": _vm.mobile ? "#actionSheetDefault" : ""
+      },
+      on: {
+        click: function click($event) {
+          return _vm.saveIdPost(post.id);
+        }
+      }
+    }, [_c("ion-icon", {
+      staticStyle: {
+        "font-size": "20px",
+        color: "grey"
+      },
+      attrs: {
+        name: "ellipsis-vertical-outline"
+      }
+    })], 1), _vm._v(" "), _c("ul", {
+      staticClass: "dropdown-menu dropdown-menu-lg-start px-2 py-3 box-s-nav",
+      attrs: {
+        "aria-labelledby": "dropdownMarketingCard"
+      }
+    }, [_vm._m(0, true), _vm._v(" "), _vm._l(_vm.report_options, function (options, key) {
+      return _c("li", {
+        key: key
+      }, [_c("a", {
+        staticClass: "dropdown-item border-radius-md",
+        on: {
+          click: function click($event) {
+            return _vm.reportPost(post, options.option);
+          }
+        }
+      }, [_vm._v("\n                        " + _vm._s(options.option) + "\n                      ")])]);
+    })], 2)])]) : _vm._e(), _vm._v(" "), _vm.usuario.id == post.user_id ? _c("div", {
+      staticClass: "text-end ms-auto"
+    }, [_c("div", {
+      staticClass: "dropstart"
+    }, [_c("a", {
+      staticClass: "text-secondary",
+      attrs: {
+        "aria-expanded": "false",
+        "data-bs-toggle": _vm.mobile ? "offcanvas" : "dropdown",
+        href: "javascript:",
+        id: "dropdownMarketingCard",
+        "data-bs-target": _vm.mobile ? "#actionEdit" : ""
+      },
+      on: {
+        click: function click($event) {
+          return _vm.saveIdPost(post);
+        }
+      }
+    }, [_c("ion-icon", {
+      staticStyle: {
+        "font-size": "20px",
+        color: "grey"
+      },
+      attrs: {
+        name: "ellipsis-vertical-outline"
+      }
+    })], 1), _vm._v(" "), _c("ul", {
+      staticClass: "dropdown-menu dropdown-menu-lg-start px-2 py-3 box-s-nav",
+      attrs: {
+        "aria-labelledby": "dropdownMarketingCard"
+      }
+    }, [_vm._m(1, true), _vm._v(" "), _c("li", [_c("a", {
+      staticClass: "dropdown-item border-radius-md hover_link",
+      on: {
+        click: function click($event) {
+          return _vm.editPost(post);
+        }
+      }
+    }, [_vm._v("\n                        Editar\n                      ")]), _vm._v(" "), _c("a", {
+      staticClass: "dropdown-item border-radius-md hover_link",
+      on: {
+        click: function click($event) {
+          return _vm.deletePost(post.id);
+        }
+      }
+    }, [_vm._v("\n                        Eliminar\n                      ")])])])])]) : _vm._e()], 1)]), _vm._v(" "), _c("div", {
+      staticClass: "card-body"
+    }, [_c("p", {
+      staticClass: "mb-4",
+      attrs: {
+        id: "description" + post.id
+      }
+    }, [_vm._v("\n              " + _vm._s(post.description ? _vm.shortDescription(post.description) : "") + "\n            ")]), _vm._v(" "), _c("textarea", {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: _vm.description_post,
+        expression: "description_post"
+      }],
+      staticClass: "form-control no-display animated fadeIn",
+      staticStyle: {
+        "margin-bottom": "6px",
+        "margin-top": "-10px",
+        height: "100px"
+      },
+      attrs: {
+        id: "textEdit" + post.id
+      },
+      domProps: {
+        value: _vm.description_post
+      },
+      on: {
+        input: function input($event) {
+          if ($event.target.composing) return;
+          _vm.description_post = $event.target.value;
+        }
+      }
+    }), _vm._v(" "), _vm.my_profile ? _c("div", [_c("hooper", {
+      staticStyle: {
+        height: "100%"
+      }
+    }, [_vm._l(post.post_image, function (img, index) {
+      return _c("slide", {
+        key: index
+      }, [img.image != null ? _c("img", {
+        directives: [{
+          name: "lazy",
+          rawName: "v-lazy.container",
+          value: img.image,
+          expression: "img.image",
+          modifiers: {
+            container: true
+          }
+        }],
+        staticClass: "img-fluid border-radius-lg shadow",
+        attrs: {
+          alt: "Image placeholder",
+          id: "img_post"
+        }
+      }) : _vm._e(), _vm._v(" "), img.video ? _c("div", [img.thumbail ? _c("img", {
+        directives: [{
+          name: "lazy",
+          rawName: "v-lazy.container",
+          value: img.thumbail,
+          expression: "img.thumbail",
+          modifiers: {
+            container: true
+          }
+        }],
+        staticClass: "img-fluid border-radius-lg shadow",
+        attrs: {
+          alt: "Image placeholder",
+          id: "img_post"
+        }
+      }) : _vm._e(), _vm._v(" "), _c("div", {
+        staticClass: "video_play_profile hover_link"
+      }, [_c("button", {
+        staticClass: "btn btn-secondary bg-secondary-loole hover_link",
+        staticStyle: {
+          "margin-top": "8%"
+        },
+        attrs: {
+          type: "button",
+          id: "btn_video" + img.id
+        },
+        on: {
+          click: function click($event) {
+            return _vm.playVideo(img.video);
+          }
+        }
+      }, [_c("ion-icon", {
+        staticStyle: {
+          "font-size": "25px",
+          "margin-left": "10px"
+        },
+        attrs: {
+          name: "play"
+        }
+      })], 1)])]) : _vm._e()]);
+    }), _vm._v(" "), post.post_image.length > 1 ? _c("hooper-pagination", {
+      attrs: {
+        slot: "hooper-addons"
+      },
+      slot: "hooper-addons"
+    }) : _vm._e(), _vm._v(" "), post.post_image.length > 1 ? _c("hooper-navigation", {
+      attrs: {
+        slot: "hooper-addons",
+        id: "hopper_addons"
+      },
+      slot: "hooper-addons"
+    }) : _vm._e()], 2)], 1) : _vm._e(), _vm._v(" "), !_vm.my_profile ? _c("div", [_c("hooper", {
+      staticStyle: {
+        height: "100%"
+      }
+    }, [_vm._l(post.post_image, function (img, index) {
+      return _c("slide", {
+        key: index
+      }, [post.locked == 1 ? _c("div", [_vm.userpost(post.post_buy) == true ? _c("div", [img.image != null ? _c("img", {
+        directives: [{
+          name: "lazy",
+          rawName: "v-lazy.container",
+          value: img.image,
+          expression: "img.image",
+          modifiers: {
+            container: true
+          }
+        }],
+        staticClass: "img-fluid border-radius-lg shadow",
+        attrs: {
+          alt: "Image placeholder",
+          id: "img_post"
+        },
+        on: {
+          click: function click($event) {
+            return _vm.showFile(post.post_image);
+          }
+        }
+      }) : _vm._e(), _vm._v(" "), img.video ? _c("div", [img.thumbail ? _c("img", {
+        directives: [{
+          name: "lazy",
+          rawName: "v-lazy.container",
+          value: img.thumbail,
+          expression: "img.thumbail",
+          modifiers: {
+            container: true
+          }
+        }],
+        staticClass: "img-fluid border-radius-lg shadow",
+        attrs: {
+          alt: "Image placeholder",
+          id: "img_post"
+        }
+      }) : _vm._e(), _vm._v(" "), img.thumbail ? _c("div", [_c("button", {
+        staticClass: "video_reproducer",
+        attrs: {
+          id: "btn_video" + img.id
+        },
+        on: {
+          click: function click($event) {
+            return _vm.playVideo(img.video);
+          }
+        }
+      }, [_c("ion-icon", {
+        staticStyle: {
+          "font-size": "25px"
+        },
+        attrs: {
+          name: "play"
+        }
+      })], 1)]) : _vm._e()]) : _vm._e()]) : _c("div", [_c("img", {
+        staticClass: "img-fluid border-radius-lg shadow",
+        attrs: {
+          alt: "Image placeholder",
+          id: "img_post",
+          src: "/images/blocked.svg"
+        }
+      })])]) : _c("div", [img.image != null ? _c("img", {
+        directives: [{
+          name: "lazy",
+          rawName: "v-lazy.container",
+          value: img.image,
+          expression: "img.image",
+          modifiers: {
+            container: true
+          }
+        }],
+        staticClass: "img-fluid border-radius-lg shadow",
+        attrs: {
+          alt: "Image placeholder",
+          id: "img_post"
+        },
+        on: {
+          click: function click($event) {
+            return _vm.showFile(post.post_image);
+          }
+        }
+      }) : _vm._e(), _vm._v(" "), img.video ? _c("div", [img.thumbail ? _c("img", {
+        directives: [{
+          name: "lazy",
+          rawName: "v-lazy.container",
+          value: img.thumbail,
+          expression: "img.thumbail",
+          modifiers: {
+            container: true
+          }
+        }],
+        staticClass: "img-fluid border-radius-lg shadow",
+        attrs: {
+          alt: "Image placeholder",
+          id: "img_post"
+        }
+      }) : _vm._e(), _vm._v(" "), _c("div", {
+        staticClass: "video_play_profile hover_link"
+      }, [_c("button", {
+        staticClass: "btn btn-secondary bg-secondary-loole hover_link",
+        staticStyle: {
+          "margin-top": "8%"
+        },
+        attrs: {
+          type: "button",
+          id: "btn_video" + img.id
+        },
+        on: {
+          click: function click($event) {
+            return _vm.playVideo(img.video);
+          }
+        }
+      }, [_c("ion-icon", {
+        staticStyle: {
+          "font-size": "25px",
+          "margin-left": "10px"
+        },
+        attrs: {
+          name: "play"
+        }
+      })], 1)])]) : _vm._e()])]);
+    }), _vm._v(" "), post.post_image.length > 1 ? _c("hooper-pagination", {
+      attrs: {
+        slot: "hooper-addons"
+      },
+      slot: "hooper-addons"
+    }) : _vm._e(), _vm._v(" "), post.post_image.length > 1 ? _c("hooper-navigation", {
+      attrs: {
+        slot: "hooper-addons",
+        id: "hopper_addons"
+      },
+      slot: "hooper-addons"
+    }) : _vm._e()], 2)], 1) : _vm._e(), _vm._v(" "), _c("div", {
+      staticStyle: {
+        width: "100%",
+        display: "flex",
+        "flex-flow": "row wrap",
+        "align-items": "center",
+        "justify-content": "space-between",
+        padding: "16px 0"
+      }
+    }, [_c("div", {
+      staticStyle: {
+        display: "flex",
+        "flex-flow": "row wrap",
+        "align-items": "center",
+        "justify-content": "flex-start"
+      }
+    }, [_c("a", [_c("div", {
+      staticClass: "d-flex align-items-center"
+    }, [_c("ion-icon", {
+      staticClass: "md hydrated",
+      staticStyle: {
+        "font-size": "22px"
+      },
+      attrs: {
+        name: "videocam-outline",
+        role: "img"
+      }
+    }), _vm._v(" "), _c("span", {
+      staticClass: "text-sm me-3",
+      staticStyle: {
+        "margin-left": "5px"
+      }
+    }, [_vm._v("\n                      " + _vm._s(_vm.totalvideo(post.post_image)) + "\n                    ")])], 1)]), _vm._v(" "), _c("a", [_c("div", {
+      staticClass: "d-flex align-items-center"
+    }, [_c("ion-icon", {
+      staticClass: "md hydrated",
+      staticStyle: {
+        "font-size": "22px"
+      },
+      attrs: {
+        name: "image-outline",
+        role: "img"
+      }
+    }), _vm._v(" "), _c("span", {
+      staticClass: "text-sm me-3",
+      staticStyle: {
+        "margin-left": "6px"
+      }
+    }, [_vm._v("\n                      " + _vm._s(_vm.totalimagenes(post.post_image)) + "\n                    ")])], 1)])]), _vm._v(" "), post.locked == 1 ? _c("a", [_c("div", {
+      staticClass: "d-flex align-items-center justify-content-sm-end"
+    }, [_c("ion-icon", {
+      staticClass: "md hydrated",
+      staticStyle: {
+        "font-size": "22px"
+      },
+      attrs: {
+        name: "cash-outline",
+        role: "img"
+      }
+    }), _vm._v(" "), _c("span", {
+      staticClass: "text-sm",
+      staticStyle: {
+        "margin-left": "6px"
+      }
+    }, [_vm._v("\n                    " + _vm._s(post.post_buy.length) + "\n                  ")])], 1)]) : _vm._e()]), _vm._v(" "), post.locked == 1 && !_vm.my_profile ? _c("div", {
+      staticClass: "row align-items-center"
+    }, [_vm.userpost(post.post_buy) == true ? _c("div") : _c("div", [_c("div", {
+      staticClass: "col-12"
+    }, [_c("a", {
+      attrs: {
+        href: "/purchase/detail?item=".concat(post.post_key)
+      }
+    }, [_c("button", {
+      staticClass: "btn btn-primary bg-primary-loole rounded me-1",
+      staticStyle: {
+        width: "100%"
+      },
+      attrs: {
+        type: "button"
+      }
+    }, [_vm._v("\n                      Desbloquear publicación por CLP $" + _vm._s(_vm.formatPrice(post.price)) + "\n                    ")])])])])]) : _vm._e(), _vm._v(" "), _c("div", {
+      staticClass: "row align-items-center",
+      staticStyle: {
+        display: "none"
+      },
+      attrs: {
+        id: "btn_save_changes" + post.id
+      }
+    }, [_c("div", {
+      staticClass: "col-12"
+    }, [_c("button", {
+      staticClass: "btn btn-primary bg-primary-loole rounded me-1",
+      staticStyle: {
+        width: "100%"
+      },
+      attrs: {
+        type: "button"
+      },
+      on: {
+        click: _vm.saveChanges
+      }
+    }, [_vm._v("\n                  Guardar cambios\n                ")])])])])])]);
+  }), _vm._v(" "), _c("infinite-loading", {
+    ref: "InfiniteLoadingPostView",
+    staticStyle: {
+      "margin-top": "50%"
+    },
+    attrs: {
+      identifier: _vm.infiniteId
+    },
+    on: {
+      infinite: _vm.infiniteHandler
+    }
+  }, [_c("div", {
+    staticClass: "text-white",
+    attrs: {
+      slot: "no-more"
+    },
+    slot: "no-more"
+  }, [_vm._v("\n          No hay más publicaciones\n        ")]), _vm._v(" "), _c("div", {
+    attrs: {
+      slot: "no-results"
+    },
+    slot: "no-results"
+  }, [_vm._v("\n          No hay nada publicado aún\n        ")])])], 2)]), _vm._v(" "), _c("div", {
+    staticClass: "offcanvas offcanvas-bottom action-sheet",
+    staticStyle: {
+      visibility: "hidden"
+    },
+    attrs: {
+      tabindex: "-1",
+      id: "actionEdit",
+      "aria-hidden": "true"
+    }
+  }, [_vm._m(2), _vm._v(" "), _c("div", {
+    staticClass: "offcanvas-body"
+  }, [_c("ul", {
+    staticClass: "action-button-list"
+  }, [_c("li", [_c("a", {
+    staticClass: "btn btn-list",
+    attrs: {
+      href: "",
+      "data-bs-dismiss": "offcanvas"
+    },
+    on: {
+      click: _vm.editPost
+    }
+  }, [_c("span", [_c("ion-icon", {
+    staticClass: "md hydrated",
+    attrs: {
+      name: "create-outline",
+      role: "img",
+      "aria-label": "trash outline"
+    }
+  }), _vm._v("\n              Editar\n\n            ")], 1)])]), _vm._v(" "), _c("li", [_c("a", {
+    staticClass: "btn btn-list",
+    attrs: {
+      href: "",
+      "data-bs-dismiss": "offcanvas"
+    },
+    on: {
+      click: _vm.deletePost
+    }
+  }, [_c("span", [_c("ion-icon", {
+    staticClass: "md hydrated",
+    attrs: {
+      name: "trash-outline",
+      role: "img",
+      "aria-label": "trash outline"
+    }
+  }), _vm._v("\n              Eliminar\n            ")], 1)])]), _vm._v(" "), _c("li", {
+    staticClass: "action-divider"
+  }), _vm._v(" "), _c("li", [_c("a", {
+    staticClass: "btn btn-list text-danger",
+    attrs: {
+      href: "#",
+      "data-bs-dismiss": "offcanvas"
+    }
+  }, [_c("span", [_c("ion-icon", {
+    staticClass: "md hydrated",
+    attrs: {
+      name: "close-outline",
+      role: "img",
+      "aria-label": "close outline"
+    }
+  }), _vm._v("\n              Cancelar\n            ")], 1)])])])])]), _vm._v(" "), _c("div", {
+    staticClass: "modal fade modalbox",
+    staticStyle: {
+      display: "none"
+    },
+    attrs: {
+      id: "modalVideo",
+      "data-bs-backdrop": "static",
+      tabindex: "-1",
+      "aria-hidden": "true"
+    }
+  }, [_c("div", {
+    staticClass: "modal-dialog",
+    attrs: {
+      role: "document"
+    }
+  }, [_c("div", {
+    staticClass: "modal-content",
+    staticStyle: {
+      background: "rgb(0,0,0,0.3)"
+    }
+  }, [_c("div", {
+    staticClass: "modal-header",
+    staticStyle: {
+      background: "rgb(0,0,0,0.1)",
+      "border-bottom": "none"
+    }
+  }, [_c("a", {
+    staticClass: "profile-detail"
+  }), _vm._v(" "), _c("a", {
+    staticClass: "close-stories",
+    attrs: {
+      href: "#",
+      "data-bs-dismiss": "modal"
+    }
+  }, [_c("ion-icon", {
+    staticClass: "md hydrated",
+    staticStyle: {
+      color: "white",
+      "font-size": "28px"
+    },
+    attrs: {
+      name: "close",
+      role: "img",
+      "aria-label": "close"
+    }
+  })], 1)]), _vm._v(" "), _c("video", {
+    ref: "videoplay",
+    staticStyle: {
+      width: "100%",
+      height: "100%"
+    },
+    attrs: {
+      id: "videoPlayer",
+      controlslist: "nodownload",
+      controls: ""
+    }
+  }), _vm._v(" "), _c("div", {
+    staticClass: "modal-body"
+  })])])]), _vm._v(" "), _c("div", {
+    staticClass: "modal fade dialogbox",
+    staticStyle: {
+      display: "none"
+    },
+    attrs: {
+      id: "modalDeletePost",
+      "data-bs-backdrop": "static",
+      tabindex: "-1",
+      "aria-hidden": "true"
+    }
+  }, [_c("div", {
+    staticClass: "modal-dialog",
+    attrs: {
+      role: "document"
+    }
+  }, [_c("div", {
+    staticClass: "modal-content"
+  }, [_vm._m(3), _vm._v(" "), _c("div", {
+    staticClass: "modal-body"
+  }, [_vm._v("\n          Una vez realizada la acción, la publicación dejará de ser visible.\n        ")]), _vm._v(" "), _c("div", {
+    staticClass: "modal-footer"
+  }, [_c("div", {
+    staticClass: "btn-inline"
+  }, [_c("a", {
+    staticClass: "btn",
+    attrs: {
+      href: "#",
+      "data-bs-dismiss": "modal"
+    }
+  }, [_vm._v("\n\n              Cancelar\n            ")]), _vm._v(" "), _c("a", {
+    staticClass: "btn btn-text-danger",
+    attrs: {
+      href: "#",
+      "data-bs-dismiss": "modal"
+    },
+    on: {
+      click: function click($event) {
+        $event.preventDefault();
+        return _vm.hidePost.apply(null, arguments);
+      }
+    }
+  }, [_c("ion-icon", {
+    staticClass: "md hydrated",
+    attrs: {
+      name: "trash-outline",
+      role: "img",
+      "aria-label": "trash outline"
+    }
+  }), _vm._v("\n              Eliminar\n            ")], 1)])])])])])]);
+};
+
+var staticRenderFns = [function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("li", [_c("a", {
+    staticStyle: {
+      "margin-left": "5px"
+    }
+  }, [_c("strong", [_vm._v("\n                          Reportar\n                        ")])])]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("li", [_c("a", {
+    staticStyle: {
+      "margin-left": "5px"
+    }
+  }, [_c("strong", [_vm._v("\n                          Opciones\n                        ")])])]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "offcanvas-header"
+  }, [_c("h5", {
+    staticClass: "offcanvas-title"
+  }, [_vm._v("Publicación")])]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "modal-header"
+  }, [_c("h5", {
+    staticClass: "modal-title"
+  }, [_vm._v("Eliminar publicación")])]);
+}];
+render._withStripped = true;
+
 
 /***/ }),
 
@@ -893,1376 +1306,6 @@ webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Post/Post.vue?vue&type=template&id=4abc5918&":
-/*!************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Post/Post.vue?vue&type=template&id=4abc5918& ***!
-  \************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "appHeader box-shw-profile-header" }, [
-      _c(
-        "div",
-        { staticClass: "left", attrs: { id: "back_arrow" } },
-        [
-          _c(
-            "router-link",
-            {
-              staticClass: "headerButton goBack",
-              attrs: {
-                to: {
-                  path: "/" + _vm.username,
-                  params: { usermane: _vm.username },
-                },
-              },
-            },
-            [
-              _c("ion-icon", {
-                staticClass: "md hydrated",
-                attrs: {
-                  "aria-label": "chevron back outline",
-                  name: "chevron-back-outline",
-                  role: "img",
-                },
-              }),
-            ],
-            1
-          ),
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "pageTitle" }, [
-        _vm._v("\n      Publicaciones\n    "),
-      ]),
-    ]),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "appCapsule" } }, [
-      _c(
-        "div",
-        { attrs: { id: "post_home" } },
-        [
-          _vm._l(_vm.posts, function (post, indexM) {
-            return _c(
-              "div",
-              {
-                key: indexM,
-                staticClass: "section  ",
-                attrs: { id: "card_post" },
-              },
-              [
-                _c("div", { staticClass: "card no-box-shadow" }, [
-                  _c("div", { staticClass: "card-header no-boreder-bottom" }, [
-                    _c(
-                      "div",
-                      { staticClass: "d-flex align-items-center" },
-                      [
-                        _c(
-                          "router-link",
-                          {
-                            staticClass: " font_sixteen",
-                            staticStyle: { "font-weight": "700" },
-                            attrs: {
-                              to: {
-                                path: "/" + post.user.username,
-                                params: { usermane: post.user.username },
-                              },
-                            },
-                          },
-                          [
-                            _c("div", { staticClass: "image-wrapper" }, [
-                              _c("img", {
-                                staticClass: "imaged rounded avatar_post",
-                                attrs: {
-                                  src: post.user.profile_image,
-                                  alt: "image",
-                                },
-                              }),
-                            ]),
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "mx-3" }, [
-                          _c(
-                            "div",
-                            [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: " font_sixteen",
-                                  staticStyle: { "font-weight": "700" },
-                                  attrs: {
-                                    to: {
-                                      path: "/" + post.user.username,
-                                      params: { usermane: post.user.username },
-                                    },
-                                  },
-                                },
-                                [
-                                  _vm._v(
-                                    "\n\n                    " +
-                                      _vm._s(
-                                        post.user.username
-                                          ? _vm.shortName(post.user.username)
-                                          : post.user.name
-                                      ) +
-                                      "\n                    "
-                                  ),
-                                  _c("img", {
-                                    staticStyle: { "margin-top": "-2px" },
-                                    attrs: { src: "/images/sello/sello.svg" },
-                                  }),
-                                ]
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _vm.actualy_date.diff(post.created_at, "days") == 0 &&
-                          _vm.actualy_date.diff(post.created_at, "minute") >= 60
-                            ? _c(
-                                "small",
-                                { staticClass: "d-block font-eleven" },
-                                [
-                                  _vm._v(
-                                    "\n                  Hace " +
-                                      _vm._s(
-                                        _vm.actualy_date.diff(
-                                          post.created_at,
-                                          "hours"
-                                        )
-                                      ) +
-                                      " hrs\n                "
-                                  ),
-                                ]
-                              )
-                            : _vm._e(),
-                          _vm._v(" "),
-                          _vm.actualy_date.diff(post.created_at, "minute") <
-                            60 &&
-                          _vm.actualy_date.diff(post.created_at, "minute") >= 1
-                            ? _c(
-                                "small",
-                                { staticClass: "d-block font-eleven" },
-                                [
-                                  _vm._v(
-                                    "\n                  Hace " +
-                                      _vm._s(
-                                        _vm.actualy_date.diff(
-                                          post.created_at,
-                                          "minute"
-                                        )
-                                      ) +
-                                      " min\n                "
-                                  ),
-                                ]
-                              )
-                            : _vm._e(),
-                          _vm._v(" "),
-                          _vm.actualy_date.diff(post.created_at, "days") >= 1
-                            ? _c(
-                                "small",
-                                { staticClass: "d-block font-eleven" },
-                                [
-                                  _vm._v(
-                                    "\n                  Hace " +
-                                      _vm._s(
-                                        _vm.actualy_date.diff(
-                                          post.created_at,
-                                          "days"
-                                        )
-                                      ) +
-                                      " días\n                "
-                                  ),
-                                ]
-                              )
-                            : _vm._e(),
-                          _vm._v(" "),
-                          _vm.actualy_date.diff(post.created_at, "minute") < 1
-                            ? _c(
-                                "small",
-                                { staticClass: "d-block font-eleven" },
-                                [
-                                  _vm._v(
-                                    "\n                  Hace " +
-                                      _vm._s(
-                                        _vm.actualy_date.diff(
-                                          post.created_at,
-                                          "seconds"
-                                        )
-                                      ) +
-                                      " s\n                "
-                                  ),
-                                ]
-                              )
-                            : _vm._e(),
-                        ]),
-                        _vm._v(" "),
-                        _vm.usuario.id != post.user_id
-                          ? _c("div", { staticClass: "text-end ms-auto" }, [
-                              _c("div", { staticClass: "dropstart" }, [
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "text-secondary",
-                                    attrs: {
-                                      "aria-expanded": "false",
-                                      "data-bs-toggle": _vm.mobile
-                                        ? "offcanvas"
-                                        : "dropdown",
-                                      href: "javascript:",
-                                      id: "dropdownMarketingCard",
-                                      "data-bs-target": _vm.mobile
-                                        ? "#actionSheetDefault"
-                                        : "",
-                                    },
-                                    on: {
-                                      click: function ($event) {
-                                        return _vm.saveIdPost(post.id)
-                                      },
-                                    },
-                                  },
-                                  [
-                                    _c("ion-icon", {
-                                      staticStyle: {
-                                        "font-size": "20px",
-                                        color: "grey",
-                                      },
-                                      attrs: {
-                                        name: "ellipsis-vertical-outline",
-                                      },
-                                    }),
-                                  ],
-                                  1
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "ul",
-                                  {
-                                    staticClass:
-                                      " dropdown-menu dropdown-menu-lg-start px-2 py-3 box-s-nav ",
-                                    attrs: {
-                                      "aria-labelledby":
-                                        "dropdownMarketingCard",
-                                    },
-                                  },
-                                  [
-                                    _vm._m(0, true),
-                                    _vm._v(" "),
-                                    _vm._l(
-                                      _vm.report_options,
-                                      function (options, key) {
-                                        return _c("li", { key: key }, [
-                                          _c(
-                                            "a",
-                                            {
-                                              staticClass:
-                                                "dropdown-item border-radius-md",
-                                              on: {
-                                                click: function ($event) {
-                                                  return _vm.reportPost(
-                                                    post,
-                                                    options.option
-                                                  )
-                                                },
-                                              },
-                                            },
-                                            [
-                                              _vm._v(
-                                                "\n                        " +
-                                                  _vm._s(options.option) +
-                                                  "\n                      "
-                                              ),
-                                            ]
-                                          ),
-                                        ])
-                                      }
-                                    ),
-                                  ],
-                                  2
-                                ),
-                              ]),
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.usuario.id == post.user_id
-                          ? _c("div", { staticClass: "text-end ms-auto" }, [
-                              _c("div", { staticClass: "dropstart" }, [
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "text-secondary",
-                                    attrs: {
-                                      "aria-expanded": "false",
-                                      "data-bs-toggle": _vm.mobile
-                                        ? "offcanvas"
-                                        : "dropdown",
-                                      href: "javascript:",
-                                      id: "dropdownMarketingCard",
-                                      "data-bs-target": _vm.mobile
-                                        ? "#actionEdit"
-                                        : "",
-                                    },
-                                    on: {
-                                      click: function ($event) {
-                                        return _vm.saveIdPost(post)
-                                      },
-                                    },
-                                  },
-                                  [
-                                    _c("ion-icon", {
-                                      staticStyle: {
-                                        "font-size": "20px",
-                                        color: "grey",
-                                      },
-                                      attrs: {
-                                        name: "ellipsis-vertical-outline",
-                                      },
-                                    }),
-                                  ],
-                                  1
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "ul",
-                                  {
-                                    staticClass:
-                                      " dropdown-menu dropdown-menu-lg-start px-2 py-3 box-s-nav ",
-                                    attrs: {
-                                      "aria-labelledby":
-                                        "dropdownMarketingCard",
-                                    },
-                                  },
-                                  [
-                                    _vm._m(1, true),
-                                    _vm._v(" "),
-                                    _c("li", [
-                                      _c(
-                                        "a",
-                                        {
-                                          staticClass:
-                                            "dropdown-item border-radius-md hover_link",
-                                          on: {
-                                            click: function ($event) {
-                                              return _vm.editPost(post)
-                                            },
-                                          },
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                        Editar\n                      "
-                                          ),
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "a",
-                                        {
-                                          staticClass:
-                                            "dropdown-item border-radius-md hover_link",
-                                          on: {
-                                            click: function ($event) {
-                                              return _vm.deletePost(post.id)
-                                            },
-                                          },
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                        Eliminar\n                      "
-                                          ),
-                                        ]
-                                      ),
-                                    ]),
-                                  ]
-                                ),
-                              ]),
-                            ])
-                          : _vm._e(),
-                      ],
-                      1
-                    ),
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-body" }, [
-                    _c(
-                      "p",
-                      {
-                        staticClass: "mb-4 ",
-                        attrs: { id: "description" + post.id },
-                      },
-                      [
-                        _vm._v(
-                          "\n              " +
-                            _vm._s(
-                              post.description
-                                ? _vm.shortDescription(post.description)
-                                : ""
-                            ) +
-                            "\n            "
-                        ),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("textarea", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.description_post,
-                          expression: "description_post",
-                        },
-                      ],
-                      staticClass: "form-control no-display animated fadeIn",
-                      staticStyle: {
-                        "margin-bottom": "6px",
-                        "margin-top": "-10px",
-                        height: "100px",
-                      },
-                      attrs: { id: "textEdit" + post.id },
-                      domProps: { value: _vm.description_post },
-                      on: {
-                        input: function ($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.description_post = $event.target.value
-                        },
-                      },
-                    }),
-                    _vm._v(" "),
-                    _vm.my_profile
-                      ? _c(
-                          "div",
-                          [
-                            _c(
-                              "hooper",
-                              { staticStyle: { height: "100%" } },
-                              [
-                                _vm._l(post.post_image, function (img, index) {
-                                  return _c("slide", { key: index }, [
-                                    img.image != null
-                                      ? _c("img", {
-                                          directives: [
-                                            {
-                                              name: "lazy",
-                                              rawName: "v-lazy.container",
-                                              value: img.image,
-                                              expression: "img.image",
-                                              modifiers: { container: true },
-                                            },
-                                          ],
-                                          staticClass:
-                                            "img-fluid border-radius-lg shadow",
-                                          attrs: {
-                                            alt: "Image placeholder",
-                                            id: "img_post",
-                                          },
-                                        })
-                                      : _vm._e(),
-                                    _vm._v(" "),
-                                    img.video
-                                      ? _c("div", [
-                                          img.thumbail
-                                            ? _c("img", {
-                                                directives: [
-                                                  {
-                                                    name: "lazy",
-                                                    rawName: "v-lazy.container",
-                                                    value: img.thumbail,
-                                                    expression: "img.thumbail",
-                                                    modifiers: {
-                                                      container: true,
-                                                    },
-                                                  },
-                                                ],
-                                                staticClass:
-                                                  "img-fluid border-radius-lg shadow",
-                                                attrs: {
-                                                  alt: "Image placeholder",
-                                                  id: "img_post",
-                                                },
-                                              })
-                                            : _vm._e(),
-                                          _vm._v(" "),
-                                          _c(
-                                            "div",
-                                            {
-                                              staticClass:
-                                                "video_play_profile hover_link",
-                                            },
-                                            [
-                                              _c(
-                                                "button",
-                                                {
-                                                  staticClass:
-                                                    "btn btn-secondary bg-secondary-loole   hover_link ",
-                                                  staticStyle: {
-                                                    "margin-top": "8%",
-                                                  },
-                                                  attrs: {
-                                                    type: "button",
-                                                    id: "btn_video" + img.id,
-                                                  },
-                                                  on: {
-                                                    click: function ($event) {
-                                                      return _vm.playVideo(
-                                                        img.video
-                                                      )
-                                                    },
-                                                  },
-                                                },
-                                                [
-                                                  _c("ion-icon", {
-                                                    staticStyle: {
-                                                      "font-size": "25px",
-                                                      "margin-left": "10px",
-                                                    },
-                                                    attrs: { name: "play" },
-                                                  }),
-                                                ],
-                                                1
-                                              ),
-                                            ]
-                                          ),
-                                        ])
-                                      : _vm._e(),
-                                  ])
-                                }),
-                                _vm._v(" "),
-                                post.post_image.length > 1
-                                  ? _c("hooper-pagination", {
-                                      attrs: { slot: "hooper-addons" },
-                                      slot: "hooper-addons",
-                                    })
-                                  : _vm._e(),
-                                _vm._v(" "),
-                                post.post_image.length > 1
-                                  ? _c("hooper-navigation", {
-                                      attrs: {
-                                        slot: "hooper-addons",
-                                        id: "hopper_addons",
-                                      },
-                                      slot: "hooper-addons",
-                                    })
-                                  : _vm._e(),
-                              ],
-                              2
-                            ),
-                          ],
-                          1
-                        )
-                      : _vm._e(),
-                    _vm._v(" "),
-                    !_vm.my_profile
-                      ? _c(
-                          "div",
-                          [
-                            _c(
-                              "hooper",
-                              { staticStyle: { height: "100%" } },
-                              [
-                                _vm._l(post.post_image, function (img, index) {
-                                  return _c("slide", { key: index }, [
-                                    post.locked == 1
-                                      ? _c("div", [
-                                          _vm.userpost(post.post_buy) == true
-                                            ? _c("div", [
-                                                img.image != null
-                                                  ? _c("img", {
-                                                      directives: [
-                                                        {
-                                                          name: "lazy",
-                                                          rawName:
-                                                            "v-lazy.container",
-                                                          value: img.image,
-                                                          expression:
-                                                            "img.image",
-                                                          modifiers: {
-                                                            container: true,
-                                                          },
-                                                        },
-                                                      ],
-                                                      staticClass:
-                                                        "img-fluid border-radius-lg shadow",
-                                                      attrs: {
-                                                        alt: "Image placeholder",
-                                                        id: "img_post",
-                                                      },
-                                                      on: {
-                                                        click: function (
-                                                          $event
-                                                        ) {
-                                                          return _vm.showFile(
-                                                            post.post_image
-                                                          )
-                                                        },
-                                                      },
-                                                    })
-                                                  : _vm._e(),
-                                                _vm._v(" "),
-                                                img.video
-                                                  ? _c("div", [
-                                                      img.thumbail
-                                                        ? _c("img", {
-                                                            directives: [
-                                                              {
-                                                                name: "lazy",
-                                                                rawName:
-                                                                  "v-lazy.container",
-                                                                value:
-                                                                  img.thumbail,
-                                                                expression:
-                                                                  "img.thumbail",
-                                                                modifiers: {
-                                                                  container: true,
-                                                                },
-                                                              },
-                                                            ],
-                                                            staticClass:
-                                                              "img-fluid border-radius-lg shadow",
-                                                            attrs: {
-                                                              alt: "Image placeholder",
-                                                              id: "img_post",
-                                                            },
-                                                          })
-                                                        : _vm._e(),
-                                                      _vm._v(" "),
-                                                      img.thumbail
-                                                        ? _c("div", [
-                                                            _c(
-                                                              "button",
-                                                              {
-                                                                staticClass:
-                                                                  "video_reproducer",
-                                                                attrs: {
-                                                                  id:
-                                                                    "btn_video" +
-                                                                    img.id,
-                                                                },
-                                                                on: {
-                                                                  click:
-                                                                    function (
-                                                                      $event
-                                                                    ) {
-                                                                      return _vm.playVideo(
-                                                                        img.video
-                                                                      )
-                                                                    },
-                                                                },
-                                                              },
-                                                              [
-                                                                _c("ion-icon", {
-                                                                  staticStyle: {
-                                                                    "font-size":
-                                                                      "25px",
-                                                                  },
-                                                                  attrs: {
-                                                                    name: "play",
-                                                                  },
-                                                                }),
-                                                              ],
-                                                              1
-                                                            ),
-                                                          ])
-                                                        : _vm._e(),
-                                                    ])
-                                                  : _vm._e(),
-                                              ])
-                                            : _c("div", [
-                                                _c("img", {
-                                                  staticClass:
-                                                    "img-fluid border-radius-lg shadow",
-                                                  attrs: {
-                                                    alt: "Image placeholder",
-                                                    id: "img_post",
-                                                    src: "/images/blocked.svg",
-                                                  },
-                                                }),
-                                              ]),
-                                        ])
-                                      : _c("div", [
-                                          img.image != null
-                                            ? _c("img", {
-                                                directives: [
-                                                  {
-                                                    name: "lazy",
-                                                    rawName: "v-lazy.container",
-                                                    value: img.image,
-                                                    expression: "img.image",
-                                                    modifiers: {
-                                                      container: true,
-                                                    },
-                                                  },
-                                                ],
-                                                staticClass:
-                                                  "img-fluid border-radius-lg shadow",
-                                                attrs: {
-                                                  alt: "Image placeholder",
-                                                  id: "img_post",
-                                                },
-                                                on: {
-                                                  click: function ($event) {
-                                                    return _vm.showFile(
-                                                      post.post_image
-                                                    )
-                                                  },
-                                                },
-                                              })
-                                            : _vm._e(),
-                                          _vm._v(" "),
-                                          img.video
-                                            ? _c("div", [
-                                                img.thumbail
-                                                  ? _c("img", {
-                                                      directives: [
-                                                        {
-                                                          name: "lazy",
-                                                          rawName:
-                                                            "v-lazy.container",
-                                                          value: img.thumbail,
-                                                          expression:
-                                                            "img.thumbail",
-                                                          modifiers: {
-                                                            container: true,
-                                                          },
-                                                        },
-                                                      ],
-                                                      staticClass:
-                                                        "img-fluid border-radius-lg shadow",
-                                                      attrs: {
-                                                        alt: "Image placeholder",
-                                                        id: "img_post",
-                                                      },
-                                                    })
-                                                  : _vm._e(),
-                                                _vm._v(" "),
-                                                _c(
-                                                  "div",
-                                                  {
-                                                    staticClass:
-                                                      "video_play_profile hover_link",
-                                                  },
-                                                  [
-                                                    _c(
-                                                      "button",
-                                                      {
-                                                        staticClass:
-                                                          "btn btn-secondary bg-secondary-loole   hover_link ",
-                                                        staticStyle: {
-                                                          "margin-top": "8%",
-                                                        },
-                                                        attrs: {
-                                                          type: "button",
-                                                          id:
-                                                            "btn_video" +
-                                                            img.id,
-                                                        },
-                                                        on: {
-                                                          click: function (
-                                                            $event
-                                                          ) {
-                                                            return _vm.playVideo(
-                                                              img.video
-                                                            )
-                                                          },
-                                                        },
-                                                      },
-                                                      [
-                                                        _c("ion-icon", {
-                                                          staticStyle: {
-                                                            "font-size": "25px",
-                                                            "margin-left":
-                                                              "10px",
-                                                          },
-                                                          attrs: {
-                                                            name: "play",
-                                                          },
-                                                        }),
-                                                      ],
-                                                      1
-                                                    ),
-                                                  ]
-                                                ),
-                                              ])
-                                            : _vm._e(),
-                                        ]),
-                                  ])
-                                }),
-                                _vm._v(" "),
-                                post.post_image.length > 1
-                                  ? _c("hooper-pagination", {
-                                      attrs: { slot: "hooper-addons" },
-                                      slot: "hooper-addons",
-                                    })
-                                  : _vm._e(),
-                                _vm._v(" "),
-                                post.post_image.length > 1
-                                  ? _c("hooper-navigation", {
-                                      attrs: {
-                                        slot: "hooper-addons",
-                                        id: "hopper_addons",
-                                      },
-                                      slot: "hooper-addons",
-                                    })
-                                  : _vm._e(),
-                              ],
-                              2
-                            ),
-                          ],
-                          1
-                        )
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticStyle: {
-                          width: "100%",
-                          display: "flex",
-                          "flex-flow": "row wrap",
-                          "align-items": "center",
-                          "justify-content": "space-between",
-                          padding: "16px 0",
-                        },
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticStyle: {
-                              display: "flex",
-                              "flex-flow": "row wrap",
-                              "align-items": "center",
-                              "justify-content": "flex-start",
-                            },
-                          },
-                          [
-                            _c("a", [
-                              _c(
-                                "div",
-                                { staticClass: "d-flex align-items-center" },
-                                [
-                                  _c("ion-icon", {
-                                    staticClass: "md hydrated",
-                                    staticStyle: { "font-size": "22px" },
-                                    attrs: {
-                                      name: "videocam-outline",
-                                      role: "img",
-                                    },
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "span",
-                                    {
-                                      staticClass: "text-sm me-3 ",
-                                      staticStyle: { "margin-left": "5px" },
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                      " +
-                                          _vm._s(
-                                            _vm.totalvideo(post.post_image)
-                                          ) +
-                                          "\n                    "
-                                      ),
-                                    ]
-                                  ),
-                                ],
-                                1
-                              ),
-                            ]),
-                            _vm._v(" "),
-                            _c("a", [
-                              _c(
-                                "div",
-                                { staticClass: "d-flex align-items-center" },
-                                [
-                                  _c("ion-icon", {
-                                    staticClass: "md hydrated",
-                                    staticStyle: { "font-size": "22px" },
-                                    attrs: {
-                                      name: "image-outline",
-                                      role: "img",
-                                    },
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "span",
-                                    {
-                                      staticClass: "text-sm me-3 ",
-                                      staticStyle: { "margin-left": "6px" },
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                      " +
-                                          _vm._s(
-                                            _vm.totalimagenes(post.post_image)
-                                          ) +
-                                          "\n                    "
-                                      ),
-                                    ]
-                                  ),
-                                ],
-                                1
-                              ),
-                            ]),
-                          ]
-                        ),
-                        _vm._v(" "),
-                        post.locked == 1
-                          ? _c("a", [
-                              _c(
-                                "div",
-                                {
-                                  staticClass:
-                                    "d-flex align-items-center justify-content-sm-end",
-                                },
-                                [
-                                  _c("ion-icon", {
-                                    staticClass: "md hydrated",
-                                    staticStyle: { "font-size": "22px" },
-                                    attrs: {
-                                      name: "cash-outline",
-                                      role: "img",
-                                    },
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "span",
-                                    {
-                                      staticClass: "text-sm ",
-                                      staticStyle: { "margin-left": "6px" },
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                    " +
-                                          _vm._s(post.post_buy.length) +
-                                          "\n                  "
-                                      ),
-                                    ]
-                                  ),
-                                ],
-                                1
-                              ),
-                            ])
-                          : _vm._e(),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    post.locked == 1 && !_vm.my_profile
-                      ? _c("div", { staticClass: "row align-items-center" }, [
-                          _vm.userpost(post.post_buy) == true
-                            ? _c("div")
-                            : _c("div", [
-                                _c("div", { staticClass: "col-12" }, [
-                                  _c(
-                                    "a",
-                                    {
-                                      attrs: {
-                                        href:
-                                          "/purchase/detail?item=" +
-                                          post.post_key,
-                                      },
-                                    },
-                                    [
-                                      _c(
-                                        "button",
-                                        {
-                                          staticClass:
-                                            "btn btn-primary bg-primary-loole rounded me-1",
-                                          staticStyle: { width: "100%" },
-                                          attrs: { type: "button" },
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n                      Desbloquear publicación por CLP $" +
-                                              _vm._s(
-                                                _vm.formatPrice(post.price)
-                                              ) +
-                                              "\n                    "
-                                          ),
-                                        ]
-                                      ),
-                                    ]
-                                  ),
-                                ]),
-                              ]),
-                        ])
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "row align-items-center",
-                        staticStyle: { display: "none" },
-                        attrs: { id: "btn_save_changes" + post.id },
-                      },
-                      [
-                        _c("div", { staticClass: "col-12" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass:
-                                "btn btn-primary bg-primary-loole rounded me-1",
-                              staticStyle: { width: "100%" },
-                              attrs: { type: "button" },
-                              on: { click: _vm.saveChanges },
-                            },
-                            [
-                              _vm._v(
-                                "\n                  Guardar cambios\n                "
-                              ),
-                            ]
-                          ),
-                        ]),
-                      ]
-                    ),
-                  ]),
-                ]),
-              ]
-            )
-          }),
-          _vm._v(" "),
-          _c(
-            "infinite-loading",
-            {
-              ref: "InfiniteLoadingPostView",
-              staticStyle: { "margin-top": "50%" },
-              attrs: { identifier: _vm.infiniteId },
-              on: { infinite: _vm.infiniteHandler },
-            },
-            [
-              _c(
-                "div",
-                {
-                  staticClass: "text-white",
-                  attrs: { slot: "no-more" },
-                  slot: "no-more",
-                },
-                [_vm._v("\n          No hay más publicaciones\n        ")]
-              ),
-              _vm._v(" "),
-              _c("div", { attrs: { slot: "no-results" }, slot: "no-results" }, [
-                _vm._v("\n          No hay nada publicado aún\n        "),
-              ]),
-            ]
-          ),
-        ],
-        2
-      ),
-    ]),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass: "offcanvas offcanvas-bottom action-sheet",
-        staticStyle: { visibility: "hidden" },
-        attrs: { tabindex: "-1", id: "actionEdit", "aria-hidden": "true" },
-      },
-      [
-        _vm._m(2),
-        _vm._v(" "),
-        _c("div", { staticClass: "offcanvas-body" }, [
-          _c("ul", { staticClass: "action-button-list" }, [
-            _c("li", [
-              _c(
-                "a",
-                {
-                  staticClass: "btn btn-list",
-                  attrs: { href: "", "data-bs-dismiss": "offcanvas" },
-                  on: { click: _vm.editPost },
-                },
-                [
-                  _c(
-                    "span",
-                    [
-                      _c("ion-icon", {
-                        staticClass: "md hydrated",
-                        attrs: {
-                          name: "create-outline",
-                          role: "img",
-                          "aria-label": "trash outline",
-                        },
-                      }),
-                      _vm._v("\n              Editar\n\n            "),
-                    ],
-                    1
-                  ),
-                ]
-              ),
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c(
-                "a",
-                {
-                  staticClass: "btn btn-list",
-                  attrs: { href: "", "data-bs-dismiss": "offcanvas" },
-                  on: { click: _vm.deletePost },
-                },
-                [
-                  _c(
-                    "span",
-                    [
-                      _c("ion-icon", {
-                        staticClass: "md hydrated",
-                        attrs: {
-                          name: "trash-outline",
-                          role: "img",
-                          "aria-label": "trash outline",
-                        },
-                      }),
-                      _vm._v("\n              Eliminar\n            "),
-                    ],
-                    1
-                  ),
-                ]
-              ),
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "action-divider" }),
-            _vm._v(" "),
-            _c("li", [
-              _c(
-                "a",
-                {
-                  staticClass: "btn btn-list text-danger",
-                  attrs: { href: "#", "data-bs-dismiss": "offcanvas" },
-                },
-                [
-                  _c(
-                    "span",
-                    [
-                      _c("ion-icon", {
-                        staticClass: "md hydrated",
-                        attrs: {
-                          name: "close-outline",
-                          role: "img",
-                          "aria-label": "close outline",
-                        },
-                      }),
-                      _vm._v("\n              Cancelar\n            "),
-                    ],
-                    1
-                  ),
-                ]
-              ),
-            ]),
-          ]),
-        ]),
-      ]
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass: "modal fade modalbox",
-        staticStyle: { display: "none" },
-        attrs: {
-          id: "modalVideo",
-          "data-bs-backdrop": "static",
-          tabindex: "-1",
-          "aria-hidden": "true",
-        },
-      },
-      [
-        _c(
-          "div",
-          { staticClass: "modal-dialog", attrs: { role: "document" } },
-          [
-            _c(
-              "div",
-              {
-                staticClass: "modal-content",
-                staticStyle: { background: "rgb(0,0,0,0.3)" },
-              },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass: "modal-header",
-                    staticStyle: {
-                      background: "rgb(0,0,0,0.1)",
-                      "border-bottom": "none",
-                    },
-                  },
-                  [
-                    _c("a", { staticClass: "profile-detail" }),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      {
-                        staticClass: "close-stories",
-                        attrs: { href: "#", "data-bs-dismiss": "modal" },
-                      },
-                      [
-                        _c("ion-icon", {
-                          staticClass: "md hydrated",
-                          staticStyle: { color: "white", "font-size": "28px" },
-                          attrs: {
-                            name: "close",
-                            role: "img",
-                            "aria-label": "close",
-                          },
-                        }),
-                      ],
-                      1
-                    ),
-                  ]
-                ),
-                _vm._v(" "),
-                _c("video", {
-                  ref: "videoplay",
-                  staticStyle: { width: "100%", height: "100%" },
-                  attrs: {
-                    id: "videoPlayer",
-                    controlslist: "nodownload",
-                    controls: "",
-                  },
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-body" }),
-              ]
-            ),
-          ]
-        ),
-      ]
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass: "modal fade dialogbox",
-        staticStyle: { display: "none" },
-        attrs: {
-          id: "modalDeletePost",
-          "data-bs-backdrop": "static",
-          tabindex: "-1",
-          "aria-hidden": "true",
-        },
-      },
-      [
-        _c(
-          "div",
-          { staticClass: "modal-dialog", attrs: { role: "document" } },
-          [
-            _c("div", { staticClass: "modal-content" }, [
-              _vm._m(3),
-              _vm._v(" "),
-              _c("div", { staticClass: "modal-body" }, [
-                _vm._v(
-                  "\n          Una vez realizada la acción, la publicación dejará de ser visible.\n        "
-                ),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "modal-footer" }, [
-                _c("div", { staticClass: "btn-inline" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn ",
-                      attrs: { href: "#", "data-bs-dismiss": "modal" },
-                    },
-                    [_vm._v("\n\n              Cancelar\n            ")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn btn-text-danger",
-                      attrs: { href: "#", "data-bs-dismiss": "modal" },
-                      on: {
-                        click: function ($event) {
-                          $event.preventDefault()
-                          return _vm.hidePost.apply(null, arguments)
-                        },
-                      },
-                    },
-                    [
-                      _c("ion-icon", {
-                        staticClass: "md hydrated",
-                        attrs: {
-                          name: "trash-outline",
-                          role: "img",
-                          "aria-label": "trash outline",
-                        },
-                      }),
-                      _vm._v("\n              Eliminar\n            "),
-                    ],
-                    1
-                  ),
-                ]),
-              ]),
-            ]),
-          ]
-        ),
-      ]
-    ),
-  ])
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { staticStyle: { "margin-left": "5px" } }, [
-        _c("strong", [
-          _vm._v(
-            "\n                          Reportar\n                        "
-          ),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { staticStyle: { "margin-left": "5px" } }, [
-        _c("strong", [
-          _vm._v(
-            "\n                          Opciones\n                        "
-          ),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "offcanvas-header" }, [
-      _c("h5", { staticClass: "offcanvas-title" }, [_vm._v("Publicación")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-header" }, [
-      _c("h5", { staticClass: "modal-title" }, [
-        _vm._v("Eliminar publicación"),
-      ]),
-    ])
-  },
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
 /***/ "./resources/js/components/Post/Post.vue":
 /*!***********************************************!*\
   !*** ./resources/js/components/Post/Post.vue ***!
@@ -2323,10 +1366,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Post_vue_vue_type_template_id_4abc5918___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Post.vue?vue&type=template&id=4abc5918& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Post/Post.vue?vue&type=template&id=4abc5918&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Post_vue_vue_type_template_id_4abc5918___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_Post_vue_vue_type_template_id_4abc5918___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!../../../../node_modules/vue-loader/lib??vue-loader-options!./Post.vue?vue&type=template&id=4abc5918& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Post/Post.vue?vue&type=template&id=4abc5918&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_Post_vue_vue_type_template_id_4abc5918___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Post_vue_vue_type_template_id_4abc5918___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ref_6_node_modules_vue_loader_lib_index_js_vue_loader_options_Post_vue_vue_type_template_id_4abc5918___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
